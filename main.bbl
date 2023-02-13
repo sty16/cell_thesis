@@ -1,4 +1,4 @@
-\begin{thebibliography}{36}
+\begin{thebibliography}{30}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -31,210 +31,189 @@ Parmar C, Barry J~D, Hosny A, et~al.
 \newblock Data analysis strategies in medical imaging\allowbreak[J].
 \newblock Clinical Cancer Research, 2018, 24\allowbreak (15): 3492-3499.
 
-\bibitem[竺可桢(1973)]{zhukezhen1973}
-竺可桢.
-\newblock 物理学论\allowbreak[M].
-\newblock 北京: 科学出版社, 1973: 56-60.
+\bibitem[Cseke(1992)]{1992A}
+Cseke I.
+\newblock A fast segmentation scheme for white blood cell
+  images\allowbreak[C]//\allowbreak
+Iapr International Conference on Pattern Recognition.
+\newblock 1992.
 
-\bibitem[Dupont(1974)]{dupont1974bone}
-Dupont B.
-\newblock Bone marrow transplantation in severe combined immunodeficiency with
-  an unrelated mlc compatible donor\allowbreak[C]//\allowbreak
-White H~J, Smith R.
-\newblock Proceedings of the third annual meeting of the International Society
-  for Experimental Hematology.
-\newblock Houston: International Society for Experimental Hematology, 1974:
-  44-46.
+\bibitem[Jiang et~al.(2003)Jiang, Liao, and Dai]{2003A}
+Jiang K, Liao Q~M, Dai S~Y.
+\newblock A novel white blood cell segmentation scheme using scale-space
+  filtering and watershed clustering\allowbreak[C]//\allowbreak
+Proceedings of the 2003 International Conference on Machine Learning and
+  Cybernetics (IEEE Cat. No.03EX693).
+\newblock 2003.
 
-\bibitem[郑开青(1987)]{zhengkaiqing1987}
-郑开青.
-\newblock 通讯系统模拟及软件\allowbreak[D].
-\newblock 北京: 清华大学无线电系, 1987.
+\bibitem[Wu et~al.(2006)Wu, Zeng, Zhou, and Olivier]{Wu2006}
+Wu J, Zeng P, Zhou Y, et~al.
+\newblock A novel color image segmentation method and its application to white
+  blood cell image analysis\allowbreak[C]//\allowbreak
+2006 8th international Conference on Signal Processing: volume~2.
+\newblock IEEE, 2006.
 
-\bibitem[姜锡洲(1980)]{jiangxizhou1980}
-姜锡洲.
-\newblock 一种温热外敷药制备方案: 中国, 88105607.3\allowbreak[P].
-\newblock 1980-07-26.
+\bibitem[马建林\ 等(2008)马建林, 崔志明, 吴健, and
+  张娜敏]{Ma2008Novel}
+马建林, 崔志明, 吴健, 等.
+\newblock 一种新的基于区域增长的 ROI 分割算法\allowbreak[J].
+\newblock 计算机应用研究, 2008, 25\allowbreak (5): 1582-1585.
 
-\bibitem[中华人民共和国国家技术监督局(1994)]{jianduju1994}
-中华人民共和国国家技术监督局.
-\newblock GB3100-3102.
-  中华人民共和国国家标准-量与单位\allowbreak[S].
-\newblock 北京: 中国标准出版社, 1994.
+\bibitem[Sadeghian et~al.(2009)Sadeghian, Seman, Ramli, Kahar, and
+  Saripan]{Sadeghian2009A}
+Sadeghian F, Seman Z, Ramli A~R, et~al.
+\newblock A framework for white blood cell segmentation in microscopic blood
+  images using digital image processing\allowbreak[J].
+\newblock Biological Procedures Online, 2009, 11\allowbreak (1): 196-206.
 
-\bibitem[Merkt et~al.(1995)Merkt, Mackenzie, and Softley]{merkt1995rotational}
-Merkt F, Mackenzie S~R, Softley T~P.
-\newblock Rotational autoionization dynamics in high rydberg states of
-  nitrogen\allowbreak[J].
-\newblock J Chem Phys, 1995, 103: 4509-4518.
+\bibitem[Theera-Umpon(2005)]{theera2005white}
+Theera-Umpon N.
+\newblock White blood cell segmentation and classification in microscopic bone
+  marrow images\allowbreak[C]//\allowbreak
+Fuzzy Systems and Knowledge Discovery: Second International Conference, FSKD
+  2005, Changsha, China, August 27-29, 2005, Proceedings, Part II 2.
+\newblock Springer, 2005: 787-796.
 
-\bibitem[Mellinger et~al.(1996)Mellinger, Vidal, and
-  Jungen]{mellinger1996laser}
-Mellinger A, Vidal C~R, Jungen C.
-\newblock Laser reduced fluorescence study of the carbon monoxide nd triplet
-  rydberg series - experimental results and multichannel quantum defect
-  analysis\allowbreak[J].
-\newblock J Chem Phys, 1996, 104: 8913-8921.
+\bibitem[Ramoser et~al.(2006)Ramoser, Laurain, Bischof, and
+  Ecker]{ramoser2006leukocyte}
+Ramoser H, Laurain V, Bischof H, et~al.
+\newblock Leukocyte segmentation and classification in blood-smear
+  images\allowbreak[C]//\allowbreak
+2005 IEEE Engineering in Medicine and Biology 27th Annual Conference.
+\newblock IEEE, 2006: 3371-3374.
 
-\bibitem[Bixon et~al.(1996)Bixon and Jortner]{bixon1996dynamics}
-Bixon M, Jortner J.
-\newblock The dynamics of predissociating high {Rydberg} states of
-  {NO}\allowbreak[J].
-\newblock J Chem Phys, 1996, 105: 1363-1382.
+\bibitem[Xia et~al.(2019)Xia, Jiang, Fu, and Jin]{xia2019automated}
+Xia T, Jiang R, Fu Y~Q, et~al.
+\newblock Automated blood cell detection and counting via deep learning for
+  microfluidic point-of-care medical devices\allowbreak[C]//\allowbreak
+IOP conference series: materials science and engineering: volume 646.
+\newblock IOP Publishing, 2019: 012048.
 
-\bibitem[马辉\ 等(1995)马辉, 李俭, 刘耀明, et~al.]{mahui1995}
-马辉, 李俭, 刘耀明, 等.
-\newblock 利用 {REMPI} 方法测量 {BaF}
-  高里德堡系列光谱\allowbreak[J].
-\newblock 化学物理学报, 1995, 8: 308-311.
+\bibitem[Dhieb et~al.(2019)Dhieb, Ghazzai, Besbes, and
+  Massoud]{dhieb2019automated}
+Dhieb N, Ghazzai H, Besbes H, et~al.
+\newblock An automated blood cells counting and classification framework using
+  mask r-cnn deep learning model\allowbreak[C]//\allowbreak
+2019 31st international conference on microelectronics (ICM).
+\newblock IEEE, 2019: 300-303.
 
-\bibitem[Carlson et~al.(1981)Carlson, Taylor, Jones, and
-  Schawlow]{carlson1981two}
-Carlson N~W, Taylor A~J, Jones K~M, et~al.
-\newblock Two-step polarization-labeling spectroscopy of excited states of
-  {Na2}\allowbreak[J].
-\newblock Phys Rev A, 1981, 24: 822-834.
+\bibitem[Shakarami et~al.(2021)Shakarami, Menhaj, Mahdavi-Hormat, and
+  Tarrah]{shakarami2021fast}
+Shakarami A, Menhaj M~B, Mahdavi-Hormat A, et~al.
+\newblock A fast and yet efficient yolov3 for blood cell
+  detection\allowbreak[J].
+\newblock Biomedical Signal Processing and Control, 2021, 66: 102495.
 
-\bibitem[Taylor et~al.(1983)Taylor, Jones, and Schawlow]{taylor1983scanning}
-Taylor A~J, Jones K~M, Schawlow A~L.
-\newblock Scanning pulsed-polarization spectrometer applied to
-  {Na2}\allowbreak[J].
-\newblock J Opt Soc Am, 1983, 73: 994-998.
+\bibitem[Lu et~al.(2021)Lu, Qin, Fan, Lai, and Li]{lu2021wbc}
+Lu Y, Qin X, Fan H, et~al.
+\newblock Wbc-net: A white blood cell segmentation network based on unet++ and
+  resnet\allowbreak[J].
+\newblock Applied Soft Computing, 2021, 101: 107006.
 
-\bibitem[Taylor et~al.(1981)Taylor, Jones, and Schawlow]{taylor1981study}
-Taylor A~J, Jones K~M, Schawlow A~L.
-\newblock A study of the excited {1$\Sigma$g+} states in {Na2}\allowbreak[J].
-\newblock Opt Commun, 1981, 39: 47-50.
+\bibitem[Girshick et~al.(2014)Girshick, Donahue, Darrell, and
+  Malik]{girshick2014rich}
+Girshick R, Donahue J, Darrell T, et~al.
+\newblock Rich feature hierarchies for accurate object detection and semantic
+  segmentation\allowbreak[C]//\allowbreak
+Proceedings of the IEEE conference on computer vision and pattern recognition.
+\newblock 2014: 580-587.
 
-\bibitem[Shimizu et~al.(1983)Shimizu and Shimizu]{shimizu1983laser}
-Shimizu K, Shimizu F.
-\newblock Laser induced fluorescence spectra of the a {3$\Pi$u--X 1$\Sigma$g+}
-  band of {Na2} by molecular beam\allowbreak[J].
-\newblock J Chem Phys, 1983, 78: 1126-1131.
+\bibitem[He et~al.(2015)He, Zhang, Ren, and Sun]{he2015spatial}
+He K, Zhang X, Ren S, et~al.
+\newblock Spatial pyramid pooling in deep convolutional networks for visual
+  recognition\allowbreak[J].
+\newblock IEEE transactions on pattern analysis and machine intelligence, 2015,
+  37\allowbreak (9): 1904-1916.
 
-\bibitem[Atkinson et~al.(1982)Atkinson, Becker, and
-  Demtr{\"o}der]{atkinson1982experimental}
-Atkinson J~B, Becker J, Demtr{\"o}der W.
-\newblock Experimental observation of the a {3$\Pi$u} state of
-  {Na2}\allowbreak[J].
-\newblock Chem Phys Lett, 1982, 87: 92-97.
+\bibitem[Girshick(2015)]{girshick2015fast}
+Girshick R.
+\newblock Fast r-cnn\allowbreak[C]//\allowbreak
+Proceedings of the IEEE international conference on computer vision.
+\newblock 2015: 1440-1448.
 
-\bibitem[Kusch et~al.(1975)Kusch and Hessel]{kusch1975perturbations}
-Kusch P, Hessel M~M.
-\newblock Perturbations in the a {1$\Sigma$u+} state of {Na2}\allowbreak[J].
-\newblock J Chem Phys, 1975, 63: 4087-4088.
+\bibitem[Ren et~al.(2015)Ren, He, Girshick, and Sun]{ren2015faster}
+Ren S, He K, Girshick R, et~al.
+\newblock Faster r-cnn: Towards real-time object detection with region proposal
+  networks\allowbreak[J].
+\newblock Advances in neural information processing systems, 2015, 28.
 
-\bibitem[广西壮族自治区林业厅(1993)]{guangxi1993}
-广西壮族自治区林业厅.
-\newblock 广西自然保护区\allowbreak[M].
-\newblock 北京: 中国林业出版社, 1993.
+\bibitem[Redmon et~al.(2016)Redmon, Divvala, Girshick, and
+  Farhadi]{redmon2016you}
+Redmon J, Divvala S, Girshick R, et~al.
+\newblock You only look once: Unified, real-time object
+  detection\allowbreak[C]//\allowbreak
+Proceedings of the IEEE conference on computer vision and pattern recognition.
+\newblock 2016: 779-788.
 
-\bibitem[霍斯尼(1989)]{huosini1989guwu}
-霍斯尼.
-\newblock 谷物科学与工艺学原理\allowbreak[M].
-\newblock 李庆龙, 译. 2 版.
-\newblock 北京: 中国食品出版社, 1989: 15-20.
+\bibitem[Lin et~al.(2017)Lin, Goyal, Girshick, He, and
+  Doll{\'a}r]{lin2017focal}
+Lin T~Y, Goyal P, Girshick R, et~al.
+\newblock Focal loss for dense object detection\allowbreak[C]//\allowbreak
+Proceedings of the IEEE international conference on computer vision.
+\newblock 2017: 2980-2988.
 
-\bibitem[王夫之(1865（清同治四年）)]{wangfuzhi1865songlun}
-王夫之.
-\newblock 宋论\allowbreak[M].
-\newblock 刻本.
-\newblock 金陵: 曾氏, 1865（清同治四年）.
+\bibitem[Zhu et~al.(2020)Zhu, Su, Lu, Li, Wang, and Dai]{zhu2020deformable}
+Zhu X, Su W, Lu L, et~al.
+\newblock Deformable detr: Deformable transformers for end-to-end object
+  detection\allowbreak[A].
+\newblock 2020.
 
-\bibitem[赵耀东(1998)]{zhaoyaodong1998xinshidai}
-赵耀东.
-\newblock 新时代的工业工程师\allowbreak[M/OL].
-\newblock 台北: 天下文化出版社, 1998\allowbreak[1998-09-26].
-\newblock \url{http://www.ie.nthu.edu.tw/info/ie.newie.htm}.
+\bibitem[Long et~al.(2015)Long, Shelhamer, and Darrell]{long2015fully}
+Long J, Shelhamer E, Darrell T.
+\newblock Fully convolutional networks for semantic
+  segmentation\allowbreak[C]//\allowbreak
+Proceedings of the IEEE conference on computer vision and pattern recognition.
+\newblock 2015: 3431-3440.
 
-\bibitem[全国信息与文献工作标准化技术委员会出版物格式分委员会(2002)]{biaozhunhua2002tushu}
-全国信息与文献工作标准化技术委员会出版物格式分委员会.
-\newblock GB/T 12450-2001 图书书名页\allowbreak[S].
-\newblock 北京: 中国标准出版社, 2002: 1.
+\bibitem[伍柏青\ 等(2011)伍柏青 and 傅新文]{wubai2011}
+伍柏青, 傅新文.
+\newblock 当代五分类血细胞分析仪技术原理分析\allowbreak[J].
+\newblock 实验与检验医学, 2011, 29\allowbreak (4): 391-394.
 
-\bibitem[全国出版专业职业资格考试办公室(2004)]{chubanzhuanye2004}
-全国出版专业职业资格考试办公室.
-\newblock 全国出版专业职业资格考试辅导教材:
-  出版专业理论与实务•中级\allowbreak[M].
-\newblock 2014 版.
-\newblock 上海: 上海辞书出版社, 2004: 299-307.
+\bibitem[Ghosh et~al.(2010)Ghosh, Das, Mandal, Chakraborty, Pala, Maity, Pal,
+  and Ray]{ghosh2010statistical}
+Ghosh M, Das D, Mandal S, et~al.
+\newblock Statistical pattern analysis of white blood cell nuclei
+  morphometry\allowbreak[C]//\allowbreak
+2010 IEEE Students Technology Symposium (TechSym).
+\newblock IEEE, 2010: 59-66.
 
-\bibitem[{World Health Organization}(1970)]{who1970factors}
-{World Health Organization}.
-\newblock Factors regulating the immune response: Report of {WHO Scientific
-  Group}\allowbreak[R].
-\newblock Geneva: WHO, 1970.
+\bibitem[孙凯\ 等(2020)孙凯, 姚旭峰, and 黄钢]{sunkai2020}
+孙凯, 姚旭峰, 黄钢.
+\newblock 基于机器学习的白细胞六分类研究\allowbreak[J].
+\newblock 软件, 2020, 41\allowbreak (10): 5.
 
-\bibitem[Peebles(2001)]{peebles2001probability}
-Peebles P~Z, Jr.
-\newblock Probability, random variables, and random signal
-  principles\allowbreak[M].
-\newblock 4th ed.
-\newblock New York: McGraw Hill, 2001.
+\bibitem[袁满(2017)]{yuan2017}
+袁满.
+\newblock 血细胞图像白细胞的自动检测与识别\allowbreak[D].
+\newblock 东南大学, 2017.
 
-\bibitem[白书农(1998)]{baishunong1998zhiwu}
-白书农.
-\newblock 植物开花研究\allowbreak[M]//\allowbreak
-李承森.
-\newblock 植物科学进展.
-\newblock 北京: 高等教育出版社, 1998: 146-163.
+\bibitem[Matek et~al.(2019)Matek, Schwarz, Spiekermann, and
+  Marr]{matek2019human}
+Matek C, Schwarz S, Spiekermann K, et~al.
+\newblock Human-level recognition of blast cells in acute myeloid leukaemia
+  with convolutional neural networks\allowbreak[J].
+\newblock Nature Machine Intelligence, 2019, 1\allowbreak (11): 538-544.
 
-\bibitem[Weinstein et~al.(1974)Weinstein and Swertz]{weinstein1974pathogenic}
-Weinstein L, Swertz M~N.
-\newblock Pathogenic properties of invading
-  microorganism\allowbreak[M]//\allowbreak
-Sodeman W~A, Jr, Sodeman W~A.
-\newblock Pathologic physiology: mechanisms of disease.
-\newblock Philadelphia: Saunders, 1974: 745-772.
+\bibitem[Mori et~al.(2020)Mori, Kaji, Kawai, Kida, Tsubokura, Fukatsu, Harada,
+  Noji, Ikezoe, Maeda, et~al.]{mori2020assessment}
+Mori J, Kaji S, Kawai H, et~al.
+\newblock Assessment of dysplasia in bone marrow smear with convolutional
+  neural network\allowbreak[J].
+\newblock Scientific reports, 2020, 10\allowbreak (1): 1-8.
 
-\bibitem[韩吉人(1985)]{hanjiren1985lun}
-韩吉人.
-\newblock 论职工教育的特点\allowbreak[C]//\allowbreak
-中国职工教育研究会.
-\newblock 职工教育研究论文集.
-\newblock 北京: 人民教育出版社, 1985: 90-99.
+\bibitem[Fu et~al.(2020)Fu, Fu, Li, Peng, Lu, Fang, and Chen]{fu2020morphogo}
+Fu X, Fu M, Li Q, et~al.
+\newblock Morphogo: an automatic bone marrow cell classification system on
+  digital images analyzed by artificial intelligence\allowbreak[J].
+\newblock Acta Cytologica, 2020, 64\allowbreak (6): 588-596.
 
-\bibitem[中国地质学会(1936)]{dizhi1936dizhi}
-中国地质学会.
-\newblock 地质评论\allowbreak[J].
-\newblock 1936, 1\allowbreak (1)--.
-\newblock 北京: 地质出版社, 1936--.
-
-\bibitem[中国图书馆学会(1957)]{tushuguan1957tushuguanxue}
-中国图书馆学会.
-\newblock 图书馆学通讯\allowbreak[J].
-\newblock 1957\allowbreak (1)--1990\allowbreak (4).
-\newblock 北京: 北京图书馆, 1957--1990.
-
-\bibitem[{American Association for the Advancement of
-  Science}(1883)]{aaas1883science}
-{American Association for the Advancement of Science}.
-\newblock Science\allowbreak[J].
-\newblock 1883, 1\allowbreak (1)--.
-\newblock Washington, D.C.: American Association for the Advancement of
-  Science, 1883--.
-
-\bibitem[傅刚\ 等(2000)傅刚, 赵承, and 李佳路]{fugang2000fengsha}
-傅刚, 赵承, 李佳路.
-\newblock 大风沙过后的思考\allowbreak[N/OL].
-\newblock 北京青年报, 2000-04-12\allowbreak (14)\allowbreak[2002-03-06].
-\newblock \url{http://www.bjyouth.com.cn/Bqb/20000412/B/4216%5ED0412B1401.htm}.
-
-\bibitem[萧钰(2001)]{xiaoyu2001chubanye}
-萧钰.
-\newblock 出版业信息化迈入快车道\allowbreak[EB/OL].
-\newblock \allowbreak(2001-12-19)\allowbreak[2002-04-15].
-\newblock \url{http://www.creader.com/news/20011219/200112190019.htm}.
-
-\bibitem[{Online Computer Library Center, Inc}({[2000]})]{oclc2000about}
-{Online Computer Library Center, Inc}.
-\newblock About {OCLC}: History of cooperation\allowbreak[EB/OL].
-\newblock \allowbreak[2000-01-08].
-\newblock \url{http://www.oclc.org/about/cooperation.en.htm}.
-
-\bibitem[{Scitor Corporation}(1983)]{scitor2000project}
-{Scitor Corporation}.
-\newblock Project scheduler\allowbreak[CP/DK].
-\newblock Sunnyvale, Calif.: Scitor Corporation, 1983.
+\bibitem[Huang et~al.(2020)Huang, Wang, Zhang, Shen, Liu, Song, Wu, Zuo, Lu,
+  and Li]{huang2020attention}
+Huang P, Wang J, Zhang J, et~al.
+\newblock Attention-aware residual network based manifold learning for white
+  blood cells classification\allowbreak[J].
+\newblock IEEE Journal of Biomedical and Health Informatics, 2020,
+  25\allowbreak (4): 1206-1214.
 
 \end{thebibliography}
