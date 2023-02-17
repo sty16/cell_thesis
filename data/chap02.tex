@@ -1,7 +1,28 @@
 % !TeX root = ../thuthesis-example.tex
 
-\chapter{图表示例}
-
+\chapter{基础知识}
+本章主要介绍本文所涉及的基础理论知识，首先概述了骨髓血细胞不同类别与发育阶段形态学特征。
+然后介绍了骨髓血细胞检验技术与数字化骨髓血细胞图像与数据集的构建。接着本文介绍了神经网络相关概念，最后对骨髓血细胞检测与识别软件系统涉及到的相关框架进行了介绍。
+\section{骨髓血细胞图像及预处理}
+\subsection{骨髓血细胞形态学介绍}
+人体血管内的血细胞主要由骨髓内的造血干细胞分化而成。造血干细胞由髓系干细胞与淋系干细胞构成。其中髓系干细胞分化为粒细胞系统、红细包系统、单核细胞系统与巨核细胞系统，
+淋系干细胞分化为浆细胞系统与淋巴细胞系统。不同系统的细胞按照发育成熟过程可以分为原始、早幼与成熟这三个阶段。而粒细胞与红细胞的幼稚阶段可再划分为早幼，中幼与晚幼这
+三个发育阶段。粒细胞系统根据细胞质内特殊颗粒对酸碱性物质亲和性，可分为嗜酸性粒细胞，嗜碱性粒细胞和中性粒细胞。骨髓血细胞六大系统血细胞的发育过程如~\ref{fig:development}所示：
+\begin{figure}
+  \centering
+  \includegraphics[width=1.0\linewidth]{development.png}
+  \caption{骨髓血细胞发育成熟过程示意图}
+  \label{fig:development}
+\end{figure}
+\subsection{骨髓血细胞数据集与预处理}
+\section{神经网络技术概述}
+\subsection{神经元与梯度优化}
+\subsection{目标检测技术概述}
+\subsection{目标识别技术概述}
+\section{软件设计相关技术}
+\subsection{前端技术}
+\subsection{后端技术}
+\subsection{Mysql数据库}
 \section{插图}
 
 图片通常在 \env{figure} 环境中使用 \cs{includegraphics} 插入，如图~\ref{fig:example} 的源代码。

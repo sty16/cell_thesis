@@ -1259,6 +1259,9 @@ INPUT data/chap01.tex
 INPUT ./data/chap01.tex
 INPUT ./data/chap01.tex
 INPUT data/chap01.tex
+INPUT ./figures//structure.png
+INPUT ./figures//structure.png
+INPUT figures//structure.png
 INPUT ./data/chap02.tex
 INPUT ./data/chap02.tex
 INPUT ./data/chap02.tex
@@ -1266,6 +1269,9 @@ INPUT data/chap02.tex
 INPUT ./data/chap02.tex
 INPUT ./data/chap02.tex
 INPUT data/chap02.tex
+INPUT ./figures//development.png
+INPUT ./figures//development.png
+INPUT figures//development.png
 INPUT c:/texlive/2022/texmf-dist/tex/latex/mwe/example-image-a.pdf
 INPUT c:/texlive/2022/texmf-dist/tex/latex/mwe/example-image-a.pdf
 INPUT c:/texlive/2022/texmf-dist/tex/latex/mwe/example-image-a.pdf

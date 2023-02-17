@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  12 FEB 2023 20:53
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  17 FEB 2023 15:53
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1274,197 +1274,203 @@ LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
 [1
 
 
-] [2] [3] [4] [5]) (./data/chap02.tex [6]
+] [2] [3] [4] [5] [6]
+File: figures//structure.png Graphic file (type bmp)
+<figures//structure.png>
+ [7] [8]) (./data/chap02.tex [9]
 第2章
+File: figures//development.png Graphic file (type bmp)
+<figures//development.png>
 LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
-(Font)              scaled to size 12.74046pt on input line 7.
+(Font)              scaled to size 12.74046pt on input line 28.
+[10
+
+]
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
 File: example-image-b.pdf Graphic file (type pdf)
 <use example-image-b.pdf>
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 47.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 68.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 11.04242pt on input line 47.
+(Font)              scaled to size 11.04242pt on input line 68.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 7.72966pt on input line 47.
+(Font)              scaled to size 7.72966pt on input line 68.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 5.5212pt on input line 47.
+(Font)              scaled to size 5.5212pt on input line 68.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 11.04005pt on input line 47.
+(Font)              scaled to size 11.04005pt on input line 68.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 7.728pt on input line 47.
+(Font)              scaled to size 7.728pt on input line 68.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 5.52002pt on input line 47.
-[7
-
-]
+(Font)              scaled to size 5.52002pt on input line 68.
+ [11]
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 77.
+(Font)              scaled to size 7.00075pt on input line 98.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 77.
+(Font)              scaled to size 5.00053pt on input line 98.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 77.
+(Font)              scaled to size 6.99925pt on input line 98.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 77.
- [8]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 123.
-) (./data/chap03.tex [9]
+(Font)              scaled to size 4.99947pt on input line 98.
+ [12]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 144.
+) (./data/chap03.tex [13]
 第3章
-[10
+[14
 
-]) (./data/chap04.tex [11]
+]) (./data/chap04.tex [15]
 第4章
 
-Package natbib Warning: Citation `zhangkun1994' on page 12 undefined on input line 34.
+Package natbib Warning: Citation `zhangkun1994' on page 16 undefined on input line 34.
 
 
-Package natbib Warning: Citation `zhangkun1994' on page 12 undefined on input line 35.
+Package natbib Warning: Citation `zhangkun1994' on page 16 undefined on input line 35.
 
 
-Package natbib Warning: Citation `zhangkun1994' on page 12 undefined on input line 36.
+Package natbib Warning: Citation `zhangkun1994' on page 16 undefined on input line 36.
 
 
-Package natbib Warning: Citation `zhangkun1994' on page 12 undefined on input line 37.
+Package natbib Warning: Citation `zhangkun1994' on page 16 undefined on input line 37.
 
 
-Package natbib Warning: Citation `zhangkun1994' on page 12 undefined on input line 38.
+Package natbib Warning: Citation `zhangkun1994' on page 16 undefined on input line 38.
 
 
-Package natbib Warning: Citation `zhukezhen1973' on page 12 undefined on input line 38.
+Package natbib Warning: Citation `zhukezhen1973' on page 16 undefined on input line 38.
 
 
-Package natbib Warning: Citation `zhangkun1994' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `zhangkun1994' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `zhukezhen1973' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `zhukezhen1973' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `dupont1974bone' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `dupont1974bone' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `zhengkaiqing1987' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `zhengkaiqing1987' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `jiangxizhou1980' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `jiangxizhou1980' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `jianduju1994' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `jianduju1994' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `merkt1995rotational' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `merkt1995rotational' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `mellinger1996laser' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `mellinger1996laser' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `bixon1996dynamics' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `bixon1996dynamics' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `mahui1995' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `mahui1995' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `carlson1981two' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `carlson1981two' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `taylor1983scanning' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `taylor1983scanning' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `taylor1981study' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `taylor1981study' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `shimizu1983laser' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `shimizu1983laser' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `atkinson1982experimental' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `atkinson1982experimental' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `kusch1975perturbations' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `kusch1975perturbations' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `guangxi1993' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `guangxi1993' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `huosini1989guwu' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `huosini1989guwu' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `wangfuzhi1865songlun' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `wangfuzhi1865songlun' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `zhaoyaodong1998xinshidai' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `zhaoyaodong1998xinshidai' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `biaozhunhua2002tushu' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `biaozhunhua2002tushu' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `chubanzhuanye2004' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `chubanzhuanye2004' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `who1970factors' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `who1970factors' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `peebles2001probability' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `peebles2001probability' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `baishunong1998zhiwu' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `baishunong1998zhiwu' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `weinstein1974pathogenic' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `weinstein1974pathogenic' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `hanjiren1985lun' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `hanjiren1985lun' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `dizhi1936dizhi' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `dizhi1936dizhi' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `tushuguan1957tushuguanxue' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `tushuguan1957tushuguanxue' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `aaas1883science' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `aaas1883science' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `fugang2000fengsha' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `fugang2000fengsha' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `xiaoyu2001chubanye' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `xiaoyu2001chubanye' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `oclc2000about' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `oclc2000about' on page 16 undefined on input line 73.
 
 
-Package natbib Warning: Citation `scitor2000project' on page 12 undefined on input line 73.
+Package natbib Warning: Citation `scitor2000project' on page 16 undefined on input line 73.
 
 )
 Underfull \hbox (badness 10000) in paragraph at lines 62--57
 []\TU/SimSun(0)/m/n/12.045 注 意，|  引 文 参 考 文 献 的 每 条 都 要 在 正 文 中 标
  []
 
-[12
+[16
 
-] (./main.bbl [13
+] (./main.bbl [17
 
 
 
-]) (./data/appendix.tex [14]
+]) (./data/appendix.tex [18]
 附录 A
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-[15
+[19
 
-]) (./data/acknowledgements.tex [16]) [17
-
-
-] (./data/resume.tex [18
+]) (./data/acknowledgements.tex [20]) [21
 
 
-]) (./data/comments.tex [19
+] (./data/resume.tex [22
 
 
-] [20
+]) (./data/comments.tex [23
 
-]) (./data/resolution.tex [21
+
+] [24
+
+]) (./data/resolution.tex [25
 
 
 ])
@@ -1473,15 +1479,15 @@ Package natbib Warning: There were undefined citations.
 
 (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DC77B2BDCC499A53778D4F665E6EBBF2;4573.
+(rerunfilecheck)             Checksum: 91ED82D30A7038ECF51F7B65F4C8298A;6366.
  ) 
 Here is how much of TeX's memory you used:
- 31041 strings out of 476179
- 670208 string characters out of 5813073
- 1062264 words of memory out of 5000000
- 51235 multiletter control sequences out of 15000+600000
+ 31067 strings out of 476179
+ 670781 string characters out of 5813073
+ 1064282 words of memory out of 5000000
+ 51256 multiletter control sequences out of 15000+600000
  479147 words of font info for 192 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  102i,16n,129p,1451b,2766s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (37 pages, 490368 bytes).
+Output written on main.xdv (41 pages, 600932 bytes).
