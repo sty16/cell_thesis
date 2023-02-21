@@ -243,7 +243,7 @@
 数据标注是深度学习模型训练的基础，并且直接影响模型的性能和泛化能力。我们在合作医院病理医师的协作下对血细胞的边界框与类别信息进行精准的标注，完成了骨髓血细胞数据集（BMCD, Bone Marrow Cell Dataset）的制作。
 原始数据集总共包含9250张骨髓血细胞图像，我们只关注图像中的有核细胞，而将成熟红细胞作为背景。因为缺少相关专业知识，我们仅标记出血细胞边界框的位置。
 我们使用labelme软件作为标注工具，如图~\ref{fig:annotations}所示，针对每一张图像生成json标注文件，记录血细胞边界框的左上角与右下角的坐标，最后再将标注转化为coco格式，并将数据集划分为训练集、测试集与验证集。
-经过检测网络，我们得到了单一血细胞图像，即图像中仅有一个完整的骨髓血细胞，这些图像再由经验丰富的病理医生完成类别标签的标注。本数据集原图像与裁剪后图像如图所示：
+经过检测网络，我们得到了单一血细胞图像，即图像中仅有一个完整的骨髓血细胞，这些图像再由经验丰富的病理医生完成类别标签的标注。
 
 
 \begin{figure}
@@ -254,10 +254,10 @@
 \end{figure}
 
 大量的数据标注需要消耗很高的人力物力成本，我们采用主动学习技术去发掘数据集中高信息量的样本，提高标注的效率与精度，降低标注成本。
-主动学习的基本思想是标注少量部分数据，然后利用已标注数据训练深度学习模型，然后使用模型对未标注的数据进行预测，根据最大化熵、不确定度采样等进行排序，
+主动学习的基本思想是标注少量部分数据，利用已标注的数据训练深度学习模型。然后使用模型对未标注的数据进行预测，根据最大化熵、不确定度采样等进行排序，
 筛选出不确定性最高的一些数据优先进行标注。不断迭代上述过程，直到标注与模型性能达到预期。具体而言，对于血细胞检测任务，首先标注将部分图像，然后训练Faster-RCNN网络
 得到一个初步的检测模型，然后对每张图像进行检测，并生成标注json文件，再反馈到labelme标注软件中进行微调。针对血细胞识别任务，经过检测网络，我们得到了多张单个血细胞图像，首先完成部分
-类别标注，训练初步的识别网络。对未标注的血细胞筛选出熵最大的预测样本反馈给病理医生进行核对。上述主动学习流程如图~\ref{fig:active}所示：
+类别标注，训练初步的识别网络。对未标注的血细胞筛选出熵最大的预测样本反馈给病理医生进行核对。主动学习流程如图~\ref{fig:active}所示：
 
 \begin{figure}
   \centering
@@ -278,7 +278,10 @@
 
 \section{神经网络技术概述}
 \subsection{神经元与梯度优化}
-神经网络发展历史最早可以追溯到20世纪五十年代，当时研究人员受到神经科学启发，模拟生物神经元结构提出了最早期的神经网络。
+
+\textbf{1）神经元}
+
+神经网络发展历史最早可以追溯到20世纪五十年代，当时研究人员受到神经科学启发，模拟生物神经元结构提出了神经网络。
 神经元是神经网络的基本单元，其结构如图~\ref{fig:neuron}所示，由输入、加权、激活函数、输出这四个部分组成。
 \begin{figure}
   \centering
@@ -295,7 +298,74 @@
   \label{eq:neuron}
 \end{equation}
 
-\subsection{经典模型}
+式~\ref{eq:neuron}中$f(\cdot)$为激活函数。常用的激活函数有修正线性单元函数（Rectified linear unit function，ReLU）、双曲正切函数、sigmoid函数等。
+
+\textbf{2）感知机}
+
+感知机由美国心理学家弗兰克·罗森布\cite{1958perceptron}在1958年提出，它是一种最简单的神经网络，拓扑结构如图~\ref{fig:perceptron}所示。
+网络包含了输入层、隐含层与输出层，前一层的每个神经元都与后一层的神经元相连。前一层神经元输出信息传递到下一层神经元的过程称为前向传播。
+该过程可以用一系列矩阵乘法与激活函数进行描述，若输入数据为$x$, 网络结构总共有$L$层，则前向传播过程可以表示为:
+
+\begin{equation}
+  \begin{aligned}
+  z^{1} & =W^{1} x+b^{1} \\
+  a^{1} & =g^{1}\left(z^{1}\right) \\
+  & \vdots \\
+  z^{L} & =W^{L} a^{L-1}+b^{L} \\
+  a^{L} & =g^{L}\left(z^{L}\right)=\hat{y}
+  \label{eq:perceptron}
+\end{aligned}
+\end{equation}
+
+其中 $z^{l}$ 表示第$l$层的未激活值，$a^{l}$ 表示第$l$层的激活值，$W^{l}$ 和 $b^{l}$ 分别表示第$l$层的权重矩阵和偏置向量。
+\begin{figure}
+  \centering
+  \includegraphics[width=0.65\linewidth]{perceptron.jpg}
+  \caption{感知机网络模型示意图}
+  \label{fig:perceptron}
+\end{figure}
+
+\textbf{3）反向传播与梯度优化}
+
+反向传播全称是误差反向传播（back propgation，BP），是用于神经网络训练的算法。神经网络经过前向传播得到网络预测值，采用
+损失函数衡量预测值与真实值之间的误差。通过损失函数最小化计算神经网络参数的导数，然后调整更新神经网络权重参数以减小误差。不断迭代上述过程，
+直到模型参数收敛。
+
+假设 $L$ 为损失函数，$w_{ij}^k$ 表示第$k$层第$i$个神经元到第$j$个神经元之间的权重，$a_j^l$ 表示$l$ 层的第$j$个神经元的非激活值
+$z_j$ 表示第 $j$ 层神经元输出，$\sigma_l(\cdot)$为第l层激活函数。反向传播过程计算过程如下：
+\begin{enumerate}[label=(\alph*)]
+  \item 网络进行前向传播得到预测值
+  \item 定义输出层的误差$\delta_k^L$为损失函数对输出层非激活值的导数，如式~\ref{eq:delta}所示，
+  \begin{equation}
+    \delta_k^L = \frac{\partial L}{\partial a_k^L} = \frac{\partial L}{\partial z_k^L} \frac{\partial z_k^L}{\partial a_k^L}
+    \label{eq:delta}
+  \end{equation}
+  \item 对于中间隐含层，可以通过链式法则求出第$l$层的传播误差$\delta_j^l$
+  \begin{equation}
+    \begin{aligned}
+    \delta_j^l & = \frac{\partial L}{\partial a_j^l} = \frac{\partial L}{\partial z_j^l} \frac{\partial z_j^l}{\partial a_j^l} \\
+    \frac{{\partial L}}{{\partial z_j^l}} & = \sum\limits_i^{} {\frac{{\partial L}}{{\partial a_i^{l + 1}}}} \frac{{\partial a_i^{l + 1}}}{{\partial z_j^l}} = \sum\limits_i^{} {\delta _i^{l + 1}} w_{ij}^{l + 1} \\
+    \delta_j^l & = \frac{{\partial L}}{{\partial a_j^l}} = \sigma _l^\prime \left( {a_j^l} \right)\sum\limits_i^{} {w_{ij}^{l + 1}} \delta _i^{l + 1}
+    \end{aligned}
+    \label{eq:delta_l}
+  \end{equation}
+  \item 计算损失函数对于某一隐含层$l$权重$w_{ij}^k$的梯度值
+  \begin{equation}
+    \frac{{\partial L}}{{\partial w_{ij}^l}} = \frac{{\partial L}}{{\partial a_j^l}}\frac{{\partial a_j^l}}{{\partial w_{ij}^l}} = \delta_j^l z_i^{l - 1}
+    \label{eq:delta_w}
+  \end{equation}
+  \item 若训练的学习率为$\eta$，随机抽取小批量样本$\left\{ {\left( {{{\bf{x}}_m},{{\bf{y}}_m}} \right)} \right\}_{m = 1}^{{N_0}}$，权重值的更新如下
+  \begin{equation}
+    w_{ij}^{l(\tau  + 1)} = w_{ij}^{l(\tau )} - \eta \frac{1}{{{N_0}}}\sum\limits_{m = 1}^{{N_0}} {\frac{{\partial {L_m}}}{{\partial w_{ij}^l}}}
+    \label{eq:update}
+  \end{equation}
+  \item 重复上述步骤，直到损失函数达到极小值，得到收敛后最优的网络模型参数
+\end{enumerate}
+
+
+
+
+\subsection{卷积神经网络}
 \subsection{训练方法}
 
 \section{软件设计相关技术}
