@@ -2,6 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: thuthesis-numeric.bst
+I found no \citation commands---while reading file main.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 150 items from 100.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
@@ -15,79 +16,45 @@ Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ref/refs.bib
-Warning--I didn't find a database entry for "zhangkun1994"
-Warning--I didn't find a database entry for "zhukezhen1973"
-Warning--I didn't find a database entry for "dupont1974bone"
-Warning--I didn't find a database entry for "zhengkaiqing1987"
-Warning--I didn't find a database entry for "jiangxizhou1980"
-Warning--I didn't find a database entry for "jianduju1994"
-Warning--I didn't find a database entry for "merkt1995rotational"
-Warning--I didn't find a database entry for "mellinger1996laser"
-Warning--I didn't find a database entry for "bixon1996dynamics"
-Warning--I didn't find a database entry for "mahui1995"
-Warning--I didn't find a database entry for "carlson1981two"
-Warning--I didn't find a database entry for "taylor1983scanning"
-Warning--I didn't find a database entry for "taylor1981study"
-Warning--I didn't find a database entry for "shimizu1983laser"
-Warning--I didn't find a database entry for "atkinson1982experimental"
-Warning--I didn't find a database entry for "kusch1975perturbations"
-Warning--I didn't find a database entry for "guangxi1993"
-Warning--I didn't find a database entry for "huosini1989guwu"
-Warning--I didn't find a database entry for "wangfuzhi1865songlun"
-Warning--I didn't find a database entry for "zhaoyaodong1998xinshidai"
-Warning--I didn't find a database entry for "biaozhunhua2002tushu"
-Warning--I didn't find a database entry for "chubanzhuanye2004"
-Warning--I didn't find a database entry for "who1970factors"
-Warning--I didn't find a database entry for "peebles2001probability"
-Warning--I didn't find a database entry for "baishunong1998zhiwu"
-Warning--I didn't find a database entry for "weinstein1974pathogenic"
-Warning--I didn't find a database entry for "hanjiren1985lun"
-Warning--I didn't find a database entry for "dizhi1936dizhi"
-Warning--I didn't find a database entry for "tushuguan1957tushuguanxue"
-Warning--I didn't find a database entry for "aaas1883science"
-Warning--I didn't find a database entry for "fugang2000fengsha"
-Warning--I didn't find a database entry for "xiaoyu2001chubanye"
-Warning--I didn't find a database entry for "oclc2000about"
-Warning--I didn't find a database entry for "scitor2000project"
-You've used 30 entries,
+You've used 0 entries,
             5374 wiz_defined-function locations,
-            1258 strings with 14482 characters,
-and the built_in function-call counts, 249600 in all, are:
-= -- 5092
-> -- 28701
-< -- 36343
-+ -- 10404
-- -- 2023
-* -- 1474
-:= -- 34758
-add.period$ -- 90
-call.type$ -- 30
-change.case$ -- 70
-chr.to.int$ -- 9098
-cite$ -- 30
-duplicate$ -- 779
-empty$ -- 2135
-format.name$ -- 997
-if$ -- 64840
+            1042 strings with 7646 characters,
+and the built_in function-call counts, 85 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 48
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 2
 int.to.chr$ -- 1
-int.to.str$ -- 31
+int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 178
-num.names$ -- 90
-pop$ -- 12650
+newline$ -- 14
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
-purify$ -- 30
+purify$ -- 0
 quote$ -- 0
-skip$ -- 25738
+skip$ -- 2
 stack$ -- 0
-substring$ -- 11740
-swap$ -- 34
-text.length$ -- 720
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 330
+type$ -- 0
 warning$ -- 0
-while$ -- 765
+while$ -- 0
 width$ -- 0
-write$ -- 428
-(There were 34 warnings)
+write$ -- 13
+(There was 1 error message)

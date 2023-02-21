@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  17 FEB 2023 15:53
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  21 FEB 2023 14:46
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -773,58 +773,63 @@ LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `bold'
  (c:/texlive/2022/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box68
+) (c:/texlive/2022/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen287
+\c@nlinenum=\count344
+\TeXr@lab=\toks35
 ) (c:/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip82
-\multirow@cntb=\count344
+\multirow@cntb=\count345
 \multirow@dima=\skip83
-\bigstrutjot=\dimen287
+\bigstrutjot=\dimen288
 ) (c:/texlive/2022/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTleft=\skip84
 \LTright=\skip85
 \LTpre=\skip86
 \LTpost=\skip87
-\LTchunksize=\count345
-\LTcapwidth=\dimen288
+\LTchunksize=\count346
+\LTcapwidth=\dimen289
 \LT@head=\box69
 \LT@firsthead=\box70
 \LT@foot=\box71
 \LT@lastfoot=\box72
 \LT@gbox=\box73
-\LT@cols=\count346
-\LT@rows=\count347
-\c@LT@tables=\count348
-\c@LT@chunks=\count349
-\LT@p@ftn=\toks35
+\LT@cols=\count347
+\LT@rows=\count348
+\c@LT@tables=\count349
+\c@LT@chunks=\count350
+\LT@p@ftn=\toks36
 ) (c:/texlive/2022/texmf-dist/tex/latex/algorithms/algorithm.sty
 Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
  (c:/texlive/2022/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count350
-\float@exts=\toks36
+\c@float@type=\count351
+\float@exts=\toks37
 \float@box=\box74
-\@float@everytoks=\toks37
+\@float@everytoks=\toks38
 \@floatcapt=\box75
 )
-\@float@every@algorithm=\toks38
-\c@algorithm=\count351
+\@float@every@algorithm=\toks39
+\c@algorithm=\count352
 ) (c:/texlive/2022/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count352
-\c@ALC@line=\count353
-\c@ALC@rem=\count354
-\c@ALC@depth=\count355
+\c@ALC@unique=\count353
+\c@ALC@line=\count354
+\c@ALC@rem=\count355
+\c@ALC@depth=\count356
 \ALC@tlm=\skip88
 \algorithmicindent=\skip89
 ) (c:/texlive/2022/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2022-02-15 v3.0.49 A comprehensive (SI) units package
-\l__siunitx_angle_tmp_dim=\dimen289
+\l__siunitx_angle_tmp_dim=\dimen290
 \l__siunitx_angle_marker_box=\box76
 \l__siunitx_angle_unit_box=\box77
-\l__siunitx_compound_count_int=\count356
+\l__siunitx_compound_count_int=\count357
  (c:/texlive/2022/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
  (c:/texlive/2022/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
@@ -836,29 +841,29 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
 ))
-\l__siunitx_number_exponent_fixed_int=\count357
-\l__siunitx_number_min_decimal_int=\count358
-\l__siunitx_number_min_integer_int=\count359
-\l__siunitx_number_round_precision_int=\count360
-\l__siunitx_number_group_minimum_int=\count361
+\l__siunitx_number_exponent_fixed_int=\count358
+\l__siunitx_number_min_decimal_int=\count359
+\l__siunitx_number_min_integer_int=\count360
+\l__siunitx_number_round_precision_int=\count361
+\l__siunitx_number_group_minimum_int=\count362
 \l__siunitx_table_tmp_box=\box78
-\l__siunitx_table_tmp_dim=\dimen290
-\l__siunitx_table_column_width_dim=\dimen291
+\l__siunitx_table_tmp_dim=\dimen291
+\l__siunitx_table_column_width_dim=\dimen292
 \l__siunitx_table_integer_box=\box79
 \l__siunitx_table_decimal_box=\box80
 \l__siunitx_table_before_box=\box81
 \l__siunitx_table_after_box=\box82
-\l__siunitx_table_before_dim=\dimen292
-\l__siunitx_table_carry_dim=\dimen293
-\l__siunitx_unit_tmp_int=\count362
-\l__siunitx_unit_position_int=\count363
-\l__siunitx_unit_total_int=\count364
+\l__siunitx_table_before_dim=\dimen293
+\l__siunitx_table_carry_dim=\dimen294
+\l__siunitx_unit_tmp_int=\count363
+\l__siunitx_unit_position_int=\count364
+\l__siunitx_unit_total_int=\count365
 ) (c:/texlive/2022/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip90
 \bibsep=\skip91
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count365
+\c@NAT@ctr=\count366
 )) (c:/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
  (c:/texlive/2022/texmf-dist/tex/generic/pdfescape/pdfescape.sty
@@ -870,9 +875,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 ) (c:/texlive/2022/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen294
-\Hy@linkcounter=\count366
-\Hy@pagecounter=\count367
+\@linkdim=\dimen295
+\Hy@linkcounter=\count367
+\Hy@pagecounter=\count368
  (c:/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
 ) (c:/texlive/2022/texmf-dist/tex/generic/intcalc/intcalc.sty
@@ -880,7 +885,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (c:/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count368
+\Hy@SavedSpaceFactor=\count369
  (c:/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
 )
@@ -892,17 +897,17 @@ Package hyperref Info: Plain pages OFF on input line 4152.
 Package hyperref Info: Backreferencing OFF on input line 4157.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4390.
-\c@Hy@tempcnt=\count369
+\c@Hy@tempcnt=\count370
 LaTeX Info: Redefining \url on input line 4749.
-\XeTeXLinkMargin=\dimen295
+\XeTeXLinkMargin=\dimen296
  (c:/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (c:/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count370
-\Field@Width=\dimen296
-\Fld@charsize=\dimen297
+\Fld@menulength=\count371
+\Field@Width=\dimen297
+\Fld@charsize=\dimen298
 Package hyperref Info: Hyper figures OFF on input line 6027.
 Package hyperref Info: Link nesting OFF on input line 6032.
 Package hyperref Info: Hyper index ON on input line 6035.
@@ -916,9 +921,9 @@ LaTeX Info: Redefining \pageref on input line 6101.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count371
-\c@Item=\count372
-\c@Hfootnote=\count373
+\Hy@abspage=\count372
+\c@Item=\count373
+\c@Hfootnote=\count374
 )
 Package hyperref Info: Driver (autodetected): hxetex.
  (c:/texlive/2022/texmf-dist/tex/latex/hyperref/hxetex.def
@@ -927,10 +932,10 @@ File: hxetex.def 2022-02-21 v7.00n Hyperref driver for XeTeX
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \pdfm@box=\box83
-\c@Hy@AnnotLevel=\count374
-\HyField@AnnotCount=\count375
-\Fld@listcount=\count376
-\c@bookmark@seq@number=\count377
+\c@Hy@AnnotLevel=\count375
+\HyField@AnnotCount=\count376
+\Fld@listcount=\count377
+\c@bookmark@seq@number=\count378
  (c:/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
  (c:/texlive/2022/texmf-dist/tex/latex/base/atveryend-ltx.sty
@@ -955,7 +960,7 @@ File: psdextra.def 2022-02-21 v7.00n Hyperref: Additions to PDF string support
 Package hyperref Info: Option `breaklinks' set `true' on input line 18.
 Package hyperref Info: Option `plainpages' set `false' on input line 18.
 Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 18.
-\c@thu@bookmark=\count378
+\c@thu@bookmark=\count379
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 21.
  (./main.aux)
 \openout1 = `main.aux'.
@@ -1057,7 +1062,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (c:/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count379
+\c@section@level=\count380
 )
 LaTeX Info: Redefining \ref on input line 21.
 LaTeX Info: Redefining \pageref on input line 21.
@@ -1245,249 +1250,293 @@ LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
 ]) [2
 
 
-] (./main.toc [3
-
-
-])
+] (./main.toc)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [4] (./main.lof)
+ [3
+
+
+] (./main.lof)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [5
+ [4
 
 
 ] (./main.lot)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- (./data/denotation.tex [6
+ (./data/denotation.tex [5
 
 
-] [7
+] [6
 
 
-]) [8] (./data/chap01.tex
+]) [7] [8
+
+] (./data/chap02.tex
 第1章
-[1
-
-
-] [2] [3] [4] [5] [6]
-File: figures//structure.png Graphic file (type bmp)
-<figures//structure.png>
- [7] [8]) (./data/chap02.tex [9]
-第2章
 File: figures//development.png Graphic file (type bmp)
 <figures//development.png>
-LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
-(Font)              scaled to size 12.74046pt on input line 28.
-[10
 
-]
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
-File: example-image-b.pdf Graphic file (type pdf)
-<use example-image-b.pdf>
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 68.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 11.04242pt on input line 68.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 7.72966pt on input line 68.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 5.5212pt on input line 68.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 11.04005pt on input line 68.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 7.728pt on input line 68.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 5.52002pt on input line 68.
- [11]
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 98.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 98.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 98.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 98.
- [12]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 144.
-) (./data/chap03.tex [13]
-第3章
-[14
-
-]) (./data/chap04.tex [15]
-第4章
-
-Package natbib Warning: Citation `zhangkun1994' on page 16 undefined on input line 34.
-
-
-Package natbib Warning: Citation `zhangkun1994' on page 16 undefined on input line 35.
-
-
-Package natbib Warning: Citation `zhangkun1994' on page 16 undefined on input line 36.
-
-
-Package natbib Warning: Citation `zhangkun1994' on page 16 undefined on input line 37.
-
-
-Package natbib Warning: Citation `zhangkun1994' on page 16 undefined on input line 38.
-
-
-Package natbib Warning: Citation `zhukezhen1973' on page 16 undefined on input line 38.
-
-
-Package natbib Warning: Citation `zhangkun1994' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `zhukezhen1973' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `dupont1974bone' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `zhengkaiqing1987' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `jiangxizhou1980' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `jianduju1994' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `merkt1995rotational' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `mellinger1996laser' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `bixon1996dynamics' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `mahui1995' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `carlson1981two' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `taylor1983scanning' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `taylor1981study' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `shimizu1983laser' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `atkinson1982experimental' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `kusch1975perturbations' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `guangxi1993' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `huosini1989guwu' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `wangfuzhi1865songlun' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `zhaoyaodong1998xinshidai' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `biaozhunhua2002tushu' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `chubanzhuanye2004' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `who1970factors' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `peebles2001probability' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `baishunong1998zhiwu' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `weinstein1974pathogenic' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `hanjiren1985lun' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `dizhi1936dizhi' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `tushuguan1957tushuguanxue' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `aaas1883science' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `fugang2000fengsha' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `xiaoyu2001chubanye' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `oclc2000about' on page 16 undefined on input line 73.
-
-
-Package natbib Warning: Citation `scitor2000project' on page 16 undefined on input line 73.
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 62--57
-[]\TU/SimSun(0)/m/n/12.045 注 意，|  引 文 参 考 文 献 的 每 条 都 要 在 正 文 中 标
+Overfull \hbox (9.24347pt too wide) in alignment at lines 33--41
+ [] [] [] [] [] 
  []
 
-[16
 
-] (./main.bbl [17
+Overfull \hbox (9.24347pt too wide) in alignment at lines 41--49
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (9.24347pt too wide) in alignment at lines 49--52
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (9.24347pt too wide) in alignment at lines 52--53
+ [] [] [] [] [] 
+ []
+
+File: figures//cell_example/原始细胞.jpg Graphic file (type bmp)
+<figures//cell_example/原始细胞.jpg>
+
+Underfull \hbox (badness 1859) in paragraph at lines 61--61
+\TU/SimSun(0)/m/n/11.04124 有 多 个 小 而 清 晰
+ []
+
+File: figures//cell_example/单核细胞.jpg Graphic file (type bmp)
+<figures//cell_example/单核细胞.jpg>
+
+Underfull \hbox (badness 8170) in paragraph at lines 70--70
+[]|\TU/SimSun(0)/m/n/11.04124 圆 形 或 椭 圆
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\TU/SimSun(0)/m/n/11.04124 形，|  直 径 在
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 72--72
+\TU/SimSun(0)/m/n/11.04124 可 见 空 泡 与 紫 红
+ []
+
+File: figures//cell_example/淋巴细胞.jpg Graphic file (type bmp)
+<figures//cell_example/淋巴细胞.jpg>
+
+Underfull \hbox (badness 8170) in paragraph at lines 80--80
+[]|\TU/SimSun(0)/m/n/11.04124 类 圆 形 或 不
+ []
+
+File: figures//cell_example/浆细胞.jpg Graphic file (type bmp)
+<figures//cell_example/浆细胞.jpg>
+
+Underfull \hbox (badness 8170) in paragraph at lines 90--90
+[]|\TU/SimSun(0)/m/n/11.04124 椭 圆 形 或 不
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 92--92
+[]|\TU/SimSun(0)/m/n/11.04124 细 胞 质 为 不 透 明
+ []
+
+File: figures//cell_example/红细胞.jpg Graphic file (type bmp)
+<figures//cell_example/红细胞.jpg>
+
+Underfull \hbox (badness 2269) in paragraph at lines 100--100
+[]|\TU/SimSun(0)/m/n/11.04124 规 则 类 圆 形，|
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 100--100
+\TU/SimSun(0)/m/n/11.04124 直 径 在 \TU/TimesNewRoman(0)/m/n/11.04124 7~10
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 101--101
+[]|\TU/SimSun(0)/m/n/11.04124 圆 形 位 于 细 胞 中
+ []
+
+File: figures//cell_example/早幼粒细胞.jpg Graphic file (type bmp)
+<figures//cell_example/早幼粒细胞.jpg>
+
+Underfull \hbox (badness 2772) in paragraph at lines 110--110
+\TU/SimSun(0)/m/n/11.04124 在 \TU/TimesNewRoman(0)/m/n/11.04124 12~25 \TU/SimSun(0)/m/n/11.04124 微
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 112--112
+\TU/SimSun(0)/m/n/11.04124 态 不 一 的 非 特 异
+ []
+
+File: figures//cell_example/中幼粒细胞.jpg Graphic file (type bmp)
+<figures//cell_example/中幼粒细胞.jpg>
+
+Underfull \hbox (badness 2772) in paragraph at lines 120--120
+\TU/SimSun(0)/m/n/11.04124 在 \TU/TimesNewRoman(0)/m/n/11.04124 10~20 \TU/SimSun(0)/m/n/11.04124 微
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 122--122
+\TU/SimSun(0)/m/n/11.04124 其 中 存 在 大 小 均
+ []
+
+File: figures//cell_example/中性晚幼粒.jpg Graphic file (type bmp)
+<figures//cell_example/中性晚幼粒.jpg>
+
+Underfull \hbox (badness 2269) in paragraph at lines 130--130
+[]|\TU/SimSun(0)/m/n/11.04124 胞 体 类 圆 形，|
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 132--132
+\TU/SimSun(0)/m/n/11.04124 存 在 较 多 中 性 颗
+ []
+
+File: figures//cell_example/中性晚幼粒.jpg Graphic file (type bmp)
+<figures//cell_example/中性晚幼粒.jpg>
+
+Underfull \hbox (badness 2269) in paragraph at lines 140--140
+[]|\TU/SimSun(0)/m/n/11.04124 胞 体 类 圆 形，|
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 142--142
+\TU/SimSun(0)/m/n/11.04124 存 在 较 多 中 性 颗
+ []
+
+File: figures//cell_example/中性晚幼粒.jpg Graphic file (type bmp)
+<figures//cell_example/中性晚幼粒.jpg>
+
+Underfull \hbox (badness 2269) in paragraph at lines 150--150
+[]|\TU/SimSun(0)/m/n/11.04124 胞 体 类 圆 形，|
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 152--152
+\TU/SimSun(0)/m/n/11.04124 存 在 较 多 中 性 颗
+ []
+
+File: figures//cell_example/中性晚幼粒.jpg Graphic file (type bmp)
+<figures//cell_example/中性晚幼粒.jpg>
+
+Underfull \hbox (badness 2269) in paragraph at lines 160--160
+[]|\TU/SimSun(0)/m/n/11.04124 胞 体 类 圆 形，|
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 162--162
+\TU/SimSun(0)/m/n/11.04124 存 在 较 多 中 性 颗
+ []
+
+File: figures//cell_example/嗜酸性.jpg Graphic file (type bmp)
+<figures//cell_example/嗜酸性.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+[]|\TU/SimSun(0)/m/n/11.04124 直 径 \TU/TimesNewRoman(0)/m/n/11.04124 15~20
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 172--172
+\TU/SimSun(0)/m/n/11.04124 红 色 的 嗜 酸 性 颗
+ []
+
+File: figures//cell_example/嗜碱性.jpg Graphic file (type bmp)
+<figures//cell_example/嗜碱性.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\TU/SimSun(0)/m/n/11.04124 直 径 \TU/TimesNewRoman(0)/m/n/11.04124 10~15
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 182--182
+\TU/SimSun(0)/m/n/11.04124 态 不 一 深 紫 红 色
+ []
+
+
+Overfull \hbox (9.24347pt too wide) in alignment at lines 53--184
+ [] [] [] [] [] 
+ []
+
+[1
+
+] [2]
+File: figures//cell_pre/step1.jpg Graphic file (type bmp)
+<figures//cell_pre/step1.jpg>
+File: figures//cell_pre/step2.jpg Graphic file (type bmp)
+<figures//cell_pre/step2.jpg>
+File: figures//cell_pre/step3.jpg Graphic file (type bmp)
+<figures//cell_pre/step3.jpg>
+File: figures//cell_pre/step4.jpg Graphic file (type bmp)
+<figures//cell_pre/step4.jpg>
+File: figures//cell_pre/step5.jpg Graphic file (type bmp)
+<figures//cell_pre/step5.jpg>
+File: figures//cell_pre/step6.jpg Graphic file (type bmp)
+<figures//cell_pre/step6.jpg>
+ [3]
+File: figures//annotations.jpg Graphic file (type bmp)
+<figures//annotations.jpg>
+ [4]
+File: figures//active.jpg Graphic file (type bmp)
+<figures//active.jpg>
+ [5]
+File: figures//neuron.jpg Graphic file (type bmp)
+<figures//neuron.jpg>
+ [6]) [7] (./main.bbl
+
+Package natbib Warning: Empty `thebibliography' environment on input line 14.
+
+) (./data/appendix.tex [8
 
 
 
-]) (./data/appendix.tex [18]
+]
 附录 A
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-[19
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 29.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
+(Font)              scaled to size 11.04242pt on input line 29.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
+(Font)              scaled to size 7.72966pt on input line 29.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
+(Font)              scaled to size 5.5212pt on input line 29.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
+(Font)              scaled to size 11.04005pt on input line 29.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
+(Font)              scaled to size 7.728pt on input line 29.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
+(Font)              scaled to size 5.52002pt on input line 29.
+[9
 
-]) (./data/acknowledgements.tex [20]) [21
+]) (./data/acknowledgements.tex [10]) [11
 
 
-] (./data/resume.tex [22
+] (./data/resume.tex [12
 
 
-]) (./data/comments.tex [23
+]) (./data/comments.tex [13
 
 
-] [24
+] [14
 
-]) (./data/resolution.tex [25
+]) (./data/resolution.tex [15
 
 
-])
-
-Package natbib Warning: There were undefined citations.
-
-(./main.aux)
+]) (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 91ED82D30A7038ECF51F7B65F4C8298A;6366.
+(rerunfilecheck)             Checksum: D23D543888A810EF365B809ACFB05AF9;4166.
  ) 
 Here is how much of TeX's memory you used:
- 31067 strings out of 476179
- 670781 string characters out of 5813073
- 1064282 words of memory out of 5000000
- 51256 multiletter control sequences out of 15000+600000
- 479147 words of font info for 192 fonts, out of 8000000 for 9000
+ 31049 strings out of 476179
+ 664207 string characters out of 5813073
+ 1071713 words of memory out of 5000000
+ 51233 multiletter control sequences out of 15000+600000
+ 478611 words of font info for 182 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
- 102i,16n,129p,1451b,2766s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,12n,129p,1451b,2766s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (41 pages, 600932 bytes).
+Output written on main.xdv (31 pages, 311920 bytes).
