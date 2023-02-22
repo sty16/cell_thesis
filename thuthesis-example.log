@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  21 FEB 2023 22:32
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  22 FEB 2023 11:22
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1494,146 +1494,146 @@ File: figures//neuron.jpg Graphic file (type bmp)
  [15]
 File: figures//perceptron.jpg Graphic file (type bmp)
 <figures//perceptron.jpg>
- [16]) (./data/chap03.tex [17]
+ [16] [17]) (./data/chap03.tex [18]
 第3章
 LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
 (Font)              scaled to size 12.74046pt on input line 17.
-[18
+[19
 
-]) (./data/chap04.tex [19]
+]) (./data/chap04.tex [20]
 第4章
 
-Package natbib Warning: Citation `zhangkun1994' on page 20 undefined on input line 34.
+Package natbib Warning: Citation `zhangkun1994' on page 21 undefined on input line 34.
 
 
-Package natbib Warning: Citation `zhangkun1994' on page 20 undefined on input line 35.
+Package natbib Warning: Citation `zhangkun1994' on page 21 undefined on input line 35.
 
 
-Package natbib Warning: Citation `zhangkun1994' on page 20 undefined on input line 36.
+Package natbib Warning: Citation `zhangkun1994' on page 21 undefined on input line 36.
 
 
-Package natbib Warning: Citation `zhangkun1994' on page 20 undefined on input line 37.
+Package natbib Warning: Citation `zhangkun1994' on page 21 undefined on input line 37.
 
 
-Package natbib Warning: Citation `zhangkun1994' on page 20 undefined on input line 38.
+Package natbib Warning: Citation `zhangkun1994' on page 21 undefined on input line 38.
 
 
-Package natbib Warning: Citation `zhukezhen1973' on page 20 undefined on input line 38.
+Package natbib Warning: Citation `zhukezhen1973' on page 21 undefined on input line 38.
 
 
-Package natbib Warning: Citation `zhangkun1994' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `zhangkun1994' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `zhukezhen1973' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `zhukezhen1973' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `dupont1974bone' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `dupont1974bone' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `zhengkaiqing1987' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `zhengkaiqing1987' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `jiangxizhou1980' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `jiangxizhou1980' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `jianduju1994' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `jianduju1994' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `merkt1995rotational' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `merkt1995rotational' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `mellinger1996laser' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `mellinger1996laser' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `bixon1996dynamics' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `bixon1996dynamics' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `mahui1995' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `mahui1995' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `carlson1981two' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `carlson1981two' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `taylor1983scanning' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `taylor1983scanning' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `taylor1981study' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `taylor1981study' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `shimizu1983laser' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `shimizu1983laser' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `atkinson1982experimental' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `atkinson1982experimental' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `kusch1975perturbations' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `kusch1975perturbations' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `guangxi1993' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `guangxi1993' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `huosini1989guwu' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `huosini1989guwu' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `wangfuzhi1865songlun' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `wangfuzhi1865songlun' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `zhaoyaodong1998xinshidai' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `zhaoyaodong1998xinshidai' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `biaozhunhua2002tushu' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `biaozhunhua2002tushu' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `chubanzhuanye2004' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `chubanzhuanye2004' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `who1970factors' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `who1970factors' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `peebles2001probability' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `peebles2001probability' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `baishunong1998zhiwu' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `baishunong1998zhiwu' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `weinstein1974pathogenic' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `weinstein1974pathogenic' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `hanjiren1985lun' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `hanjiren1985lun' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `dizhi1936dizhi' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `dizhi1936dizhi' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `tushuguan1957tushuguanxue' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `tushuguan1957tushuguanxue' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `aaas1883science' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `aaas1883science' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `fugang2000fengsha' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `fugang2000fengsha' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `xiaoyu2001chubanye' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `xiaoyu2001chubanye' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `oclc2000about' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `oclc2000about' on page 21 undefined on input line 73.
 
 
-Package natbib Warning: Citation `scitor2000project' on page 20 undefined on input line 73.
+Package natbib Warning: Citation `scitor2000project' on page 21 undefined on input line 73.
 
 )
 Underfull \hbox (badness 10000) in paragraph at lines 62--57
 []\TU/SimSun(0)/m/n/12.045 注 意，|  引 文 参 考 文 献 的 每 条 都 要 在 正 文 中 标
  []
 
-[20
+[21
 
-] (./thuthesis-example.bbl [21
+] (./thuthesis-example.bbl [22
 
 
 
-]) (./data/appendix.tex [22]
+]) (./data/appendix.tex [23]
 附录 A
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
@@ -1650,20 +1650,20 @@ LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
 (Font)              scaled to size 7.728pt on input line 29.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
 (Font)              scaled to size 5.52002pt on input line 29.
-[23
+[24
 
-]) (./data/acknowledgements.tex [24]) [25
-
-
-] (./data/resume.tex [26
+]) (./data/acknowledgements.tex [25]) [26
 
 
-]) (./data/comments.tex [27
+] (./data/resume.tex [27
 
 
-] [28
+]) (./data/comments.tex [28
 
-]) (./data/resolution.tex [29
+
+] [29
+
+]) (./data/resolution.tex [30
 
 
 ])
@@ -1672,15 +1672,15 @@ Package natbib Warning: There were undefined citations.
 
 (./thuthesis-example.aux)
 Package rerunfilecheck Info: File `thuthesis-example.out' has not changed.
-(rerunfilecheck)             Checksum: E897E4E8F8396A166DF5F550971B6309;6020.
+(rerunfilecheck)             Checksum: 1164347F1E2D2FC56238AF4F27D91954;6036.
  ) 
 Here is how much of TeX's memory you used:
- 31333 strings out of 476179
- 676231 string characters out of 5813073
- 1075856 words of memory out of 5000000
- 51502 multiletter control sequences out of 15000+600000
+ 31336 strings out of 476179
+ 676263 string characters out of 5813073
+ 1076005 words of memory out of 5000000
+ 51505 multiletter control sequences out of 15000+600000
  478643 words of font info for 186 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  102i,12n,129p,1464b,2766s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on thuthesis-example.xdv (45 pages, 649692 bytes).
+Output written on thuthesis-example.xdv (46 pages, 659248 bytes).

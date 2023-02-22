@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  21 FEB 2023 23:11
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  22 FEB 2023 12:22
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1494,11 +1494,11 @@ File: figures//neuron.jpg Graphic file (type bmp)
  [15]
 File: figures//perceptron.jpg Graphic file (type bmp)
 <figures//perceptron.jpg>
- [16]) [17] [18] (./main.bbl [19
+ [16] [17] [18]) [19] (./main.bbl [20
 
 
 
-]) (./data/appendix.tex [20]
+]) (./data/appendix.tex [21]
 附录 A
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
@@ -1515,33 +1515,33 @@ LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
 (Font)              scaled to size 7.728pt on input line 29.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
 (Font)              scaled to size 5.52002pt on input line 29.
-[21
+[22
 
-]) (./data/acknowledgements.tex [22]) [23
-
-
-] (./data/resume.tex [24
+]) (./data/acknowledgements.tex [23]) [24
 
 
-]) (./data/comments.tex [25
+] (./data/resume.tex [25
 
 
-] [26
+]) (./data/comments.tex [26
 
-]) (./data/resolution.tex [27
+
+] [27
+
+]) (./data/resolution.tex [28
 
 
 ]) (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D57225EC953C99FE740336DCE0C180A8;5171.
+(rerunfilecheck)             Checksum: 004B7F512C76FF72103CEDF7C50B5673;5044.
  ) 
 Here is how much of TeX's memory you used:
- 31219 strings out of 476179
- 669632 string characters out of 5813073
- 1074878 words of memory out of 5000000
- 51398 multiletter control sequences out of 15000+600000
+ 31223 strings out of 476179
+ 669674 string characters out of 5813073
+ 1074900 words of memory out of 5000000
+ 51402 multiletter control sequences out of 15000+600000
  478611 words of font info for 182 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  102i,12n,129p,1451b,2766s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (43 pages, 589916 bytes).
+Output written on main.xdv (44 pages, 602612 bytes).

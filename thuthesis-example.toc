@@ -16,31 +16,31 @@
 \contentsline {subsection}{\numberline {2.1.1}骨髓血细胞形态学介绍}{10}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}骨髓血细胞数据集与预处理}{12}{subsection.2.1.2}%
 \contentsline {section}{\numberline {2.2}神经网络技术概述}{15}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}基本结构}{15}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}卷积神经网络模型}{17}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}训练方法}{17}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}软件设计相关技术}{17}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}前端技术}{17}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}后端技术}{17}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Mysql数据库}{17}{subsection.2.3.3}%
-\contentsline {chapter}{\numberline {第3章}数学符号和公式}{18}{chapter.3}%
-\contentsline {section}{\numberline {3.1}数学符号}{18}{section.3.1}%
-\contentsline {section}{\numberline {3.2}数学公式}{19}{section.3.2}%
-\contentsline {section}{\numberline {3.3}数学定理}{19}{section.3.3}%
-\contentsline {chapter}{\numberline {第4章}引用文献的标注}{20}{chapter.4}%
-\contentsline {section}{\numberline {4.1}顺序编码制}{20}{section.4.1}%
-\contentsline {section}{\numberline {4.2}著者-出版年制}{20}{section.4.2}%
+\contentsline {subsection}{\numberline {2.2.1}神经元与梯度优化}{15}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}卷积神经网络}{18}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}训练方法}{18}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}软件设计相关技术}{18}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}前端技术}{18}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}后端技术}{18}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Mysql数据库}{18}{subsection.2.3.3}%
+\contentsline {chapter}{\numberline {第3章}数学符号和公式}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}数学符号}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.2}数学公式}{20}{section.3.2}%
+\contentsline {section}{\numberline {3.3}数学定理}{20}{section.3.3}%
+\contentsline {chapter}{\numberline {第4章}引用文献的标注}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}顺序编码制}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}著者-出版年制}{21}{section.4.2}%
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{参考文献}{21}{section*.28}%
+\contentsline {chapter}{参考文献}{22}{section*.28}%
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{\numberline {附录 A}补充内容}{23}{appendix.A}%
-\contentsline {section}{\numberline {A.1}图表示例}{23}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}图}{23}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}表格}{23}{subsection.A.1.2}%
-\contentsline {section}{\numberline {A.2}数学公式}{24}{section.A.2}%
-\contentsline {chapter}{致\hskip 1em\relax 谢}{25}{section*.32}%
-\contentsline {chapter}{声\hspace {1em}明}{26}{section*.34}%
-\contentsline {chapter}{个人简历、在学期间完成的相关学术成果}{27}{section*.36}%
-\contentsline {chapter}{指导教师评语}{28}{appendix*.42}%
-\contentsline {chapter}{答辩委员会决议书}{29}{appendix*.43}%
+\contentsline {chapter}{\numberline {附录 A}补充内容}{24}{appendix.A}%
+\contentsline {section}{\numberline {A.1}图表示例}{24}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}图}{24}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}表格}{24}{subsection.A.1.2}%
+\contentsline {section}{\numberline {A.2}数学公式}{25}{section.A.2}%
+\contentsline {chapter}{致\hskip 1em\relax 谢}{26}{section*.32}%
+\contentsline {chapter}{声\hspace {1em}明}{27}{section*.34}%
+\contentsline {chapter}{个人简历、在学期间完成的相关学术成果}{28}{section*.36}%
+\contentsline {chapter}{指导教师评语}{29}{appendix*.42}%
+\contentsline {chapter}{答辩委员会决议书}{30}{appendix*.43}%
 \contentsfinish 

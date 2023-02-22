@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex thuthesis-example"] 1676989950 "thuthesis-example.aux" "thuthesis-example.bbl" "thuthesis-example" 1676989963
+["bibtex thuthesis-example"] 1677036146 "thuthesis-example.aux" "thuthesis-example.bbl" "thuthesis-example" 1677036165
   "./thuthesis-numeric.bst" 1664959156 46116 cd3bc71ff82c01699bd493d2be7a78bd ""
   "ref/refs.bib" 1676963077 9806 2a8acd3794417be785cd9d6f499da85f ""
-  "thuthesis-example.aux" 1676989957 14273 345981dca19c574fb006bb4cecac17f3 "xelatex"
+  "thuthesis-example.aux" 1677036159 14554 8186c601c3bd4c9cfd3d017364dbfaf7 "xelatex"
   (generated)
   "thuthesis-example.bbl"
   "thuthesis-example.blg"
-["xdvipdfmx"] 1676989958 "thuthesis-example.xdv" "thuthesis-example.pdf" "thuthesis-example" 1676989963
-  "thuthesis-example.xdv" 1676989957 649692 410c0952ff6bcda14cb34108ce8d0d24 "xelatex"
+["xdvipdfmx"] 1677036160 "thuthesis-example.xdv" "thuthesis-example.pdf" "thuthesis-example" 1677036165
+  "thuthesis-example.xdv" 1677036159 659248 ec6a2d0d95488a9de06ecd2a1929ee53 "xelatex"
   (generated)
   "thuthesis-example.pdf"
-["xelatex"] 1676989951 "e:/sty/thu_study/硕士/毕业/毕业论文/thuthesis-v7.3.1/thuthesis-example.tex" "thuthesis-example.xdv" "thuthesis-example" 1676989963
+["xelatex"] 1677036154 "e:/sty/thu_study/硕士/毕业/毕业论文/thuthesis-v7.3.1/thuthesis-example.tex" "thuthesis-example.xdv" "thuthesis-example" 1677036165
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1675950911 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1675952387 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1675950572 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -146,7 +146,7 @@
   "data/acknowledgements.tex" 1602688786 548 acb072c9b5b159b9d806e9f0b9778dac ""
   "data/appendix.tex" 1622465812 1478 f680cdb2534540f690fe9bd00d21f0df ""
   "data/chap01.tex" 1676366791 24758 4c965caa3030bdb2c68ff13ec3a62b18 ""
-  "data/chap02.tex" 1676989884 28787 221e7f58404925689afacb651f1e357a ""
+  "data/chap02.tex" 1677036149 30559 b5943111e764c6e5b5498416789becdf ""
   "data/chap03.tex" 1664959154 3836 ba22c6bf0a3d95130a3f3ab90b3fb29b ""
   "data/chap04.tex" 1676037240 2984 b3ddf74f7eb4a68f48926301e2ba1ca6 ""
   "data/comments.tex" 1664959156 279 87fd759317b7dbbf3ab78980223cea5b ""
@@ -178,14 +178,14 @@
   "figures//perceptron.jpg" 1676966892 71963 a9d6bc88da4172350e2fab16c9014cea ""
   "figures//structure.png" 1676366650 66372 7aad0d29dea591c3c726b19be80e22f7 ""
   "thusetup.tex" 1676950118 4800 b52cfb15fa62eab1b0993818cec807b7 ""
-  "thuthesis-example.aux" 1676989957 14273 345981dca19c574fb006bb4cecac17f3 "xelatex"
-  "thuthesis-example.bbl" 1676989951 9475 a38cd1c88dff7820fc70d0a6bf662010 "bibtex thuthesis-example"
-  "thuthesis-example.lof" 1676989957 1168 7d0fc9483ca9b14134e78d1cbca9a6ef "xelatex"
-  "thuthesis-example.lot" 1676989957 271 11b4c903e777836a7549272b3d2f0e58 "xelatex"
-  "thuthesis-example.out" 1676989957 6020 e897e4e8f8396a166df5f550971b6309 "xelatex"
+  "thuthesis-example.aux" 1677036159 14554 8186c601c3bd4c9cfd3d017364dbfaf7 "xelatex"
+  "thuthesis-example.bbl" 1677036147 9475 a38cd1c88dff7820fc70d0a6bf662010 "bibtex thuthesis-example"
+  "thuthesis-example.lof" 1677036159 1168 d121811217749b2d8b48d7c0c969f6f7 "xelatex"
+  "thuthesis-example.lot" 1677036159 271 9d3a18af44ea916fe02a2614ae14d061 "xelatex"
+  "thuthesis-example.out" 1677036159 6036 1164347f1e2d2fc56238af4f27d91954 "xelatex"
   "thuthesis-example.tex" 1675956497 2580 f09eb50cfe32b6169260e18e28ceac13 ""
-  "thuthesis-example.toc" 1676989957 3418 95ced4435fc23cd8e7bf21c17e8172f9 "xelatex"
-  "thuthesis.cls" 1676989935 112463 72705b84252c4f64a294fb60487d981d ""
+  "thuthesis-example.toc" 1677036159 3424 fc4e3148e29e4782380988ef13b5a216 "xelatex"
+  "thuthesis.cls" 1677036139 112463 72705b84252c4f64a294fb60487d981d ""
   (generated)
   "thuthesis-example.aux"
   "thuthesis-example.lof"
