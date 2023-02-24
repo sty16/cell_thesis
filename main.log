@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  22 FEB 2023 12:22
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  24 FEB 2023 23:09
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1253,31 +1253,32 @@ LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
 ] (./main.toc [3
 
 
-])
+] [4])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [4] (./main.lof)
+ [5] (./main.lof)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [5
+ [6
 
 
 ] (./main.lot)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- (./data/denotation.tex [6
+ (./data/denotation.tex [7
 
 
-] [7
+] [8
 
 
-]) [8] (./data/chap01.tex
+]) [9] [10
+
+] (./data/chap01.tex
 第1章
 [1
-
 
 ] [2] [3] [4] [5] [6]
 File: figures//structure.png Graphic file (type bmp)
@@ -1494,11 +1495,37 @@ File: figures//neuron.jpg Graphic file (type bmp)
  [15]
 File: figures//perceptron.jpg Graphic file (type bmp)
 <figures//perceptron.jpg>
- [16] [17] [18]) [19] (./main.bbl [20
+ [16] [17] [18]
+File: figures//cnn.jpg Graphic file (type bmp)
+<figures//cnn.jpg>
+File: figures//conv.jpg Graphic file (type bmp)
+<figures//conv.jpg>
+ [19]
+File: figures//pool.jpg Graphic file (type bmp)
+<figures//pool.jpg>
+ [20] [21]
+File: figures//MVVM.jpg Graphic file (type bmp)
+<figures//MVVM.jpg>
+ [22]
+File: figures//django.jpg Graphic file (type bmp)
+<figures//django.jpg>
+ [23]) (./data/chap03.tex [24]
+第3章
+) (./data/chap04.tex [25
+
+]
+第4章
+) (./data/chap05.tex [26
+
+]
+第5章
+) [27
+
+] (./main.bbl [28
 
 
 
-]) (./data/appendix.tex [21]
+]) (./data/appendix.tex [29]
 附录 A
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
@@ -1515,33 +1542,33 @@ LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
 (Font)              scaled to size 7.728pt on input line 29.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
 (Font)              scaled to size 5.52002pt on input line 29.
-[22
+[30
 
-]) (./data/acknowledgements.tex [23]) [24
-
-
-] (./data/resume.tex [25
+]) (./data/acknowledgements.tex [31]) [32
 
 
-]) (./data/comments.tex [26
+] (./data/resume.tex [33
 
 
-] [27
+]) (./data/comments.tex [34
 
-]) (./data/resolution.tex [28
+
+] [35
+
+]) (./data/resolution.tex [36
 
 
 ]) (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 004B7F512C76FF72103CEDF7C50B5673;5044.
+(rerunfilecheck)             Checksum: D0E8B4551E8872D4DDE521122957F95E;11468.
  ) 
 Here is how much of TeX's memory you used:
- 31223 strings out of 476179
- 669674 string characters out of 5813073
- 1074900 words of memory out of 5000000
- 51402 multiletter control sequences out of 15000+600000
+ 31325 strings out of 476179
+ 672433 string characters out of 5813073
+ 1082044 words of memory out of 5000000
+ 51490 multiletter control sequences out of 15000+600000
  478611 words of font info for 182 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  102i,12n,129p,1451b,2766s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (44 pages, 602612 bytes).
+Output written on main.xdv (54 pages, 877664 bytes).
