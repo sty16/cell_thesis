@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  26 FEB 2023 22:57
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  26 FEB 2023 22:45
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**e:/sty/thu_study/硕士/毕业/毕业论文/thuthesis-v7.3.1/main.tex
-(e:/sty/thu_study/硕士/毕业/毕业论文/thuthesis-v7.3.1/main.tex
+**e:/sty/thu_study/硕士/毕业/毕业论文/thuthesis-v7.3.1/thuthesis-example.tex
+(e:/sty/thu_study/硕士/毕业/毕业论文/thuthesis-v7.3.1/thuthesis-example.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (./thuthesis.cls
 Document Class: thuthesis 2022/10/05 7.3.1 Tsinghua University Thesis Template
@@ -962,8 +962,8 @@ Package hyperref Info: Option `plainpages' set `false' on input line 18.
 Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 18.
 \c@thu@bookmark=\count379
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 21.
- (./main.aux)
-\openout1 = `main.aux'.
+ (./thuthesis-example.aux)
+\openout1 = `thuthesis-example.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
@@ -1067,9 +1067,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 21.
 LaTeX Info: Redefining \pageref on input line 21.
 LaTeX Info: Redefining \nameref on input line 21.
- (./main.out) (./main.out)
+ (./thuthesis-example.out) (./thuthesis-example.out)
 \@outlinefile=\write3
-\openout3 = `main.out'.
+\openout3 = `thuthesis-example.out'.
 
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
@@ -1250,23 +1250,23 @@ LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
 ]) [2
 
 
-] (./main.toc [3
+] (./thuthesis-example.toc [3
 
 
 ] [4])
 \tf@toc=\write4
-\openout4 = `main.toc'.
+\openout4 = `thuthesis-example.toc'.
 
- [5] (./main.lof)
+ [5] (./thuthesis-example.lof)
 \tf@lof=\write5
-\openout5 = `main.lof'.
+\openout5 = `thuthesis-example.lof'.
 
  [6
 
 
-] (./main.lot)
+] (./thuthesis-example.lot)
 \tf@lot=\write6
-\openout6 = `main.lot'.
+\openout6 = `thuthesis-example.lot'.
 
  (./data/denotation.tex [7
 
@@ -1517,62 +1517,58 @@ File: figures//django.jpg Graphic file (type bmp)
 File: figures//faster_rcnn.jpg Graphic file (type bmp)
 <figures//faster_rcnn.jpg>
  [26]
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 72.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 68.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 11.04242pt on input line 72.
+(Font)              scaled to size 11.04242pt on input line 68.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 7.72966pt on input line 72.
+(Font)              scaled to size 7.72966pt on input line 68.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 5.5212pt on input line 72.
+(Font)              scaled to size 5.5212pt on input line 68.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 11.04005pt on input line 72.
+(Font)              scaled to size 11.04005pt on input line 68.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 7.728pt on input line 72.
+(Font)              scaled to size 7.728pt on input line 68.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 5.52002pt on input line 72.
+(Font)              scaled to size 5.52002pt on input line 68.
 ) (./data/chap04.tex [27] [28]
 第4章
-) (./data/chap05.tex [29
+) [29
 
-]
-第5章
-) [30
-
-] [31] (./main.bbl [32
+] (./thuthesis-example.bbl [30
 
 
 
-]) (./data/appendix.tex [33]
+]) (./data/appendix.tex [31]
 附录 A
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-[34
+[32
 
-]) (./data/acknowledgements.tex [35]) [36
-
-
-] (./data/resume.tex [37
+]) (./data/acknowledgements.tex [33]) [34
 
 
-]) (./data/comments.tex [38
+] (./data/resume.tex [35
 
 
-] [39
-
-]) (./data/resolution.tex [40
+]) (./data/comments.tex [36
 
 
-]) (./main.aux)
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 585B4634D3C84C1B54DA45DF7B374FC0;12524.
+] [37
+
+]) (./data/resolution.tex [38
+
+
+]) (./thuthesis-example.aux)
+Package rerunfilecheck Info: File `thuthesis-example.out' has not changed.
+(rerunfilecheck)             Checksum: 59CCED9F31343BC0AD83DC5BFBAD25AF;10487.
  ) 
 Here is how much of TeX's memory you used:
- 31347 strings out of 476179
- 673344 string characters out of 5813073
- 1083245 words of memory out of 5000000
- 51511 multiletter control sequences out of 15000+600000
+ 31337 strings out of 476179
+ 673628 string characters out of 5813073
+ 1081116 words of memory out of 5000000
+ 51504 multiletter control sequences out of 15000+600000
  478611 words of font info for 182 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
- 102i,12n,129p,1451b,2766s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,12n,129p,1464b,2766s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (58 pages, 943744 bytes).
+Output written on thuthesis-example.xdv (56 pages, 867312 bytes).

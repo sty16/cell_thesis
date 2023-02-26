@@ -26,6 +26,28 @@
 \section{基于深度学习的目标检测网络}
 
 \subsection{快速区域卷积神经网络}
+快速区域卷积网络（Faster-RCNN）是目标检测领域最为经典的两阶段检测器，其网络架构如图\ref{fig:faster_rcnn}所示，主要由
+骨干网络特征提取器（BackBone）、区域举荐网络（Region proposal Network，RPN）与分类回归网络（R-CNN）这三部分组成。骨干网络为深度卷积神经网络，
+用于图像特征提取。RPN网络在提取的特征图上快速生成区域坐标与相应前景分数，这些区域用于后续的分类与坐标回归。
+R-CNN网络对于这些区域首先进行ROI池化（Region of Interest Pooling）将区域转换为特定大小的特征图，然后这些特征图会分别进入到
+分类分支与回归分支，得到待检测目标的类别与位置信息。
+
+\begin{figure}  
+   \centering   
+   \includegraphics[width=1.0\linewidth]{faster_rcnn.jpg}   
+   \caption{快速区域卷积神经网络结构示意图}   
+   \label{fig:faster_rcnn} 
+\end{figure}  
+
+\subsubsection{骨干网络}
+骨干网络是神经网络的主体部分，用于提取图像抽象的语义特征，为后续任务提供图像的嵌入向量表示。
+因此骨干网络的性能对于整体网络性能具有很大的影响。常用的骨干网络有VGG、ResNet、DenseNet与Inception等，
+其中ResNet是应用最为广泛的骨干网络，其特点是引入了残差模块，可以实现非常深层的卷积网络。
+
+\subsubsection{特征金字塔网络}
+\subsubsection{RPN网络}
+\subsubsection{分类与回归网络}
+
 \subsection{单阶段RetinaNet检测网络}
 \subsection{通用目标检测网络性能对比}
 
@@ -41,7 +63,32 @@
 骨髓血细胞图像来自邃蓝智能科技(上海)有限公司合作医院提供，首先采用第2.1小节阐述的主动学习标注策略进行边界框的标注。
 我们总共标记了6821张血细胞图像，训练集与测试集按照4:1的比例进行随机划分，训练集包含了5456张图像，测试集包含了1365张图像。
 通常每个图像中包含1到10个有核血细胞，数据集总共标记了11352个血细胞，训练集有9065个血细胞，测试集有2287个血细胞。数据集的分布如
-表~\ref{}所示：
+表~\ref{table:cell_detect}所示：
+
+\begin{table}
+  \caption{骨髓血细胞检测数据集分布}   
+  \centering 
+  \label{table:cell_detect}
+  \begin{tabular}{ccccc}
+    \toprule[2pt]
+    序号 & 类别名  &  类别简写 & 训练集数量 & 测试集数量 \\
+    \midrule[1.5pt] 
+    1 & 原始细胞 & Prim & 1856 & 467 \\ 
+    2 & 淋巴细胞 & Lym & 996 & 226   \\ 
+    3 & 单核细胞 & Mono & 206 & 52   \\ 
+    4 & 浆细胞 & Plas & 272 & 70   \\ 
+    5 & 红细胞 & Red & 1880 & 503   \\ 
+    6 & 早幼粒细胞 & Promy & 357 & 107   \\ 
+    7 & 嗜中性中幼粒细胞 & Myelo & 701 & 150   \\ 
+    8 & 嗜中性晚幼粒细胞 & Late & 503 & 144   \\ 
+    9 & 嗜中性杆状核细胞 & Rods & 998 & 241   \\  
+    10 & 嗜中分叶核细胞 & Lobu & 821 & 195   \\  
+    11 & 嗜酸性粒细胞 & Eosl & 475 & 132   \\  
+    \hline
+    总计 &   &   & 9065 & 2287 \\
+    \bottomrule[2pt]      
+  \end{tabular} 
+\end{table}
 
 
 
