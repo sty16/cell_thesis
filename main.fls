@@ -1387,6 +1387,15 @@ INPUT bottleneck.jpg
 INPUT ./figures//fpn.jpg
 INPUT ./figures//fpn.jpg
 INPUT figures//fpn.jpg
+INPUT ./figures//rpn.jpg
+INPUT ./figures//rpn.jpg
+INPUT figures//rpn.jpg
+INPUT ./figures//anchor_a.jpg
+INPUT ./figures//anchor_a.jpg
+INPUT figures//anchor_a.jpg
+INPUT ./figures//anchor_b.jpg
+INPUT ./figures//anchor_b.jpg
+INPUT figures//anchor_b.jpg
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm

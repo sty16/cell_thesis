@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  27 FEB 2023 16:15
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  28 FEB 2023 00:22
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1526,63 +1526,70 @@ Missing character: There is no ， (U+FF0C) in font [XITSMath-Regular.otf]/OT:sc
 [27]
 File: figures//fpn.jpg Graphic file (type bmp)
 <figures//fpn.jpg>
+File: figures//rpn.jpg Graphic file (type bmp)
+<figures//rpn.jpg>
  [28]
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 119.
+File: figures//anchor_a.jpg Graphic file (type bmp)
+<figures//anchor_a.jpg>
+File: figures//anchor_b.jpg Graphic file (type bmp)
+<figures//anchor_b.jpg>
+ [29]
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 205.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 11.04242pt on input line 119.
+(Font)              scaled to size 11.04242pt on input line 205.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 7.72966pt on input line 119.
+(Font)              scaled to size 7.72966pt on input line 205.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 5.5212pt on input line 119.
+(Font)              scaled to size 5.5212pt on input line 205.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 11.04005pt on input line 119.
+(Font)              scaled to size 11.04005pt on input line 205.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 7.728pt on input line 119.
+(Font)              scaled to size 7.728pt on input line 205.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 5.52002pt on input line 119.
-) (./data/chap04.tex [29] [30]
+(Font)              scaled to size 5.52002pt on input line 205.
+) (./data/chap04.tex [30] [31]
 第4章
-) (./data/chap05.tex [31
+) (./data/chap05.tex [32
 
 ]
 第5章
-) [32
+) [33
 
-] [33] (./main.bbl [34
+] [34] (./main.bbl [35
 
 
 
-]) (./data/appendix.tex [35]
+]) (./data/appendix.tex [36]
 附录 A
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-[36
+[37
 
-]) (./data/acknowledgements.tex [37]) [38
-
-
-] (./data/resume.tex [39
+]) (./data/acknowledgements.tex [38]) [39
 
 
-]) (./data/comments.tex [40
+] (./data/resume.tex [40
 
 
-] [41
+]) (./data/comments.tex [41
 
-]) (./data/resolution.tex [42
+
+] [42
+
+]) (./data/resolution.tex [43
 
 
 ]) (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 27E35188B3D6DC30898B324B846BF03D;12548.
+(rerunfilecheck)             Checksum: 3A7CA91C0121096F988ED47AE753EC3F;12565.
  ) 
 Here is how much of TeX's memory you used:
- 31376 strings out of 476179
- 673921 string characters out of 5813073
- 1083418 words of memory out of 5000000
- 51537 multiletter control sequences out of 15000+600000
+ 31412 strings out of 476179
+ 674664 string characters out of 5813073
+ 1083788 words of memory out of 5000000
+ 51570 multiletter control sequences out of 15000+600000
  478611 words of font info for 182 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  102i,12n,129p,1451b,2766s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (60 pages, 977968 bytes).
+Output written on main.xdv (61 pages, 1012316 bytes).
