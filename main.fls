@@ -1378,6 +1378,15 @@ INPUT data/chap03.tex
 INPUT ./figures//faster_rcnn.jpg
 INPUT ./figures//faster_rcnn.jpg
 INPUT figures//faster_rcnn.jpg
+INPUT ./figures//resnet50.jpg
+INPUT ./figures//resnet50.jpg
+INPUT figures//resnet50.jpg
+INPUT ./bottleneck.jpg
+INPUT ./bottleneck.jpg
+INPUT bottleneck.jpg
+INPUT ./figures//fpn.jpg
+INPUT ./figures//fpn.jpg
+INPUT figures//fpn.jpg
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm

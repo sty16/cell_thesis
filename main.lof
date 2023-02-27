@@ -11,7 +11,10 @@
 \contentsline {figure}{\numberline {2.10}{\ignorespaces MVVM框架示意图\relax }}{22}{figure.caption.31}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Django框架示意图\relax }}{23}{figure.caption.32}%
 \contentsline {figure}{\numberline {3.1}{\ignorespaces 快速区域卷积神经网络结构示意图\relax }}{26}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces ResNet50网络结构示意图\relax }}{27}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces BottleNeck模块结构示意图\relax }}{27}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 特征金字塔网络结构示意图\relax }}{28}{figure.caption.36}%
 \let \contentsline \ttl@gobblecontents 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces 附录中的图片示例\relax }}{34}{figure.caption.37}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces 附录中的图片示例\relax }}{36}{figure.caption.40}%
 \contentsfinish 
 \contentsfinish 
