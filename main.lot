@@ -1,6 +1,8 @@
 \contentsline {table}{\numberline {2.1}{\ignorespaces Short Caption}}{11}{table.2.1}%
-\contentsline {table}{\numberline {3.1}{\ignorespaces 骨髓血细胞检测数据集分布\relax }}{31}{table.caption.39}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces 不同网络结构参数量、计算量与速度对比\relax }}{33}{table.caption.41}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces 不同目标检测方法在骨髓血细胞测试集上的检测结果\relax }}{33}{table.caption.42}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces 骨髓血细胞检测数据集分布\relax }}{34}{table.caption.43}%
 \let \contentsline \ttl@gobblecontents 
-\contentsline {table}{\numberline {A.1}{\ignorespaces 附录中的表格示例\relax }}{37}{table.caption.43}%
+\contentsline {table}{\numberline {A.1}{\ignorespaces 附录中的表格示例\relax }}{41}{table.caption.47}%
 \contentsfinish 
 \contentsfinish 

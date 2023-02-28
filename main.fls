@@ -1396,6 +1396,12 @@ INPUT figures//anchor_a.jpg
 INPUT ./figures//anchor_b.jpg
 INPUT ./figures//anchor_b.jpg
 INPUT figures//anchor_b.jpg
+INPUT ./figures//subnets.jpg
+INPUT ./figures//subnets.jpg
+INPUT figures//subnets.jpg
+INPUT ./figures//retinanet.jpg
+INPUT ./figures//retinanet.jpg
+INPUT figures//retinanet.jpg
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm

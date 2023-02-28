@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  28 FEB 2023 00:22
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  28 FEB 2023 23:43
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1521,9 +1521,7 @@ File: figures//resnet50.jpg Graphic file (type bmp)
 <figures//resnet50.jpg>
 File: bottleneck.jpg Graphic file (type bmp)
 <bottleneck.jpg>
-
-Missing character: There is no ， (U+FF0C) in font [XITSMath-Regular.otf]/OT:script=math;language=dflt;+ss08;!
-[27]
+ [27]
 File: figures//fpn.jpg Graphic file (type bmp)
 <figures//fpn.jpg>
 File: figures//rpn.jpg Graphic file (type bmp)
@@ -1534,62 +1532,68 @@ File: figures//anchor_a.jpg Graphic file (type bmp)
 File: figures//anchor_b.jpg Graphic file (type bmp)
 <figures//anchor_b.jpg>
  [29]
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 205.
+File: figures//subnets.jpg Graphic file (type bmp)
+<figures//subnets.jpg>
+ [30]
+File: figures//retinanet.jpg Graphic file (type bmp)
+<figures//retinanet.jpg>
+ [31]
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 264.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 11.04242pt on input line 205.
+(Font)              scaled to size 11.04242pt on input line 264.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 7.72966pt on input line 205.
+(Font)              scaled to size 7.72966pt on input line 264.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 5.5212pt on input line 205.
+(Font)              scaled to size 5.5212pt on input line 264.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 11.04005pt on input line 205.
+(Font)              scaled to size 11.04005pt on input line 264.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 7.728pt on input line 205.
+(Font)              scaled to size 7.728pt on input line 264.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 5.52002pt on input line 205.
-) (./data/chap04.tex [30] [31]
+(Font)              scaled to size 5.52002pt on input line 264.
+ [32] [33]) (./data/chap04.tex [34] [35]
 第4章
-) (./data/chap05.tex [32
+) (./data/chap05.tex [36
 
 ]
 第5章
-) [33
+) [37
 
-] [34] (./main.bbl [35
+] [38] (./main.bbl [39
 
 
 
-]) (./data/appendix.tex [36]
+]) (./data/appendix.tex [40]
 附录 A
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-[37
+[41
 
-]) (./data/acknowledgements.tex [38]) [39
-
-
-] (./data/resume.tex [40
+]) (./data/acknowledgements.tex [42]) [43
 
 
-]) (./data/comments.tex [41
+] (./data/resume.tex [44
 
 
-] [42
+]) (./data/comments.tex [45
 
-]) (./data/resolution.tex [43
+
+] [46
+
+]) (./data/resolution.tex [47
 
 
 ]) (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3A7CA91C0121096F988ED47AE753EC3F;12565.
+(rerunfilecheck)             Checksum: 68F57C626D98D7EBFA862EC8CE143C8C;14222.
  ) 
 Here is how much of TeX's memory you used:
- 31412 strings out of 476179
- 674664 string characters out of 5813073
- 1083788 words of memory out of 5000000
- 51570 multiletter control sequences out of 15000+600000
+ 31443 strings out of 476179
+ 675317 string characters out of 5813073
+ 1085904 words of memory out of 5000000
+ 51599 multiletter control sequences out of 15000+600000
  478611 words of font info for 182 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
- 102i,12n,129p,1451b,2766s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,16n,129p,1451b,2766s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (61 pages, 1012316 bytes).
+Output written on main.xdv (65 pages, 1079936 bytes).
