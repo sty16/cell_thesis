@@ -18,7 +18,9 @@
 \contentsline {figure}{\numberline {3.6}{\ignorespaces (a) Anchor在图像中的示意图， (b) Anchor、预测框与真值框之间的关系\relax }}{29}{figure.caption.38}%
 \contentsline {figure}{\numberline {3.7}{\ignorespaces 分类与回归网络结构示意图\relax }}{30}{figure.caption.39}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces 分类与回归网络结构示意图\relax }}{31}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces 四种检测网络的PR曲线（IOU=0.75）\relax }}{34}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces (a) Faster-RCNN网络PR曲线，(b) Cascade-RCNN网络PR曲线， (c) RetinaNet网络PR曲线， (d) YOLOV3网络PR曲线\relax }}{35}{figure.caption.44}%
 \let \contentsline \ttl@gobblecontents 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces 附录中的图片示例\relax }}{41}{figure.caption.46}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces 附录中的图片示例\relax }}{42}{figure.caption.48}%
 \contentsfinish 
 \contentsfinish 

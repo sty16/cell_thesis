@@ -19,7 +19,7 @@
 \contentsline {subsection}{\numberline {2.2.1}神经元与梯度优化}{15}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}卷积神经网络}{18}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}软件开发相关技术}{20}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}前端技术}{21}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}前端技术}{20}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}后端技术}{22}{subsection.2.3.2}%
 \contentsline {chapter}{\numberline {第3章}基于深度学习的骨髓血细胞检测算法设计与实现}{25}{chapter.3}%
 \contentsline {section}{\numberline {3.1}引言}{25}{section.3.1}%
@@ -29,67 +29,67 @@
 \contentsline {subsubsection}{\numberline {3.2.1.2}特征金字塔网络}{27}{subsubsection.3.2.1.2}%
 \contentsline {subsubsection}{\numberline {3.2.1.3}区域举荐网络}{28}{subsubsection.3.2.1.3}%
 \contentsline {subsubsection}{\numberline {3.2.1.4}分类与回归网络}{30}{subsubsection.3.2.1.4}%
-\contentsline {subsection}{\numberline {3.2.2}单阶段目标检测网络}{31}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}单阶段目标检测网络}{30}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}单双阶段目标检测网络性能对比}{32}{subsection.3.2.3}%
 \contentsline {subsubsection}{\numberline {3.2.3.1}单双阶段网络性能对比}{32}{subsubsection.3.2.3.1}%
 \contentsline {subsubsection}{\numberline {3.2.3.2}检测网络与检测识别网络对比}{34}{subsubsection.3.2.3.2}%
-\contentsline {section}{\numberline {3.3}改进的RetinaNet骨髓血细胞检测网络}{34}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}路径聚合网络}{34}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}基于最优输运的标签分配策略}{34}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}卷积模块}{34}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}算法实现与实验结果分析}{34}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}实验环境}{34}{subsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.1.1}数据集介绍}{34}{subsubsection.3.4.1.1}%
-\contentsline {subsubsection}{\numberline {3.4.1.2}训练策略}{35}{subsubsection.3.4.1.2}%
-\contentsline {subsubsection}{\numberline {3.4.1.3}预测策略}{35}{subsubsection.3.4.1.3}%
-\contentsline {subsection}{\numberline {3.4.2}实验结果}{35}{subsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.2.1}评价指标}{35}{subsubsection.3.4.2.1}%
-\contentsline {subsubsection}{\numberline {3.4.2.2}实验结果}{35}{subsubsection.3.4.2.2}%
-\contentsline {subsection}{\numberline {3.4.3}实验分析}{35}{subsection.3.4.3}%
-\contentsline {subsubsection}{\numberline {3.4.3.1}路径聚合网络}{35}{subsubsection.3.4.3.1}%
-\contentsline {subsubsection}{\numberline {3.4.3.2}标签分配策略}{35}{subsubsection.3.4.3.2}%
-\contentsline {subsubsection}{\numberline {3.4.3.3}不同卷积模块对实验结果影响}{35}{subsubsection.3.4.3.3}%
-\contentsline {section}{\numberline {3.5}小结}{35}{section.3.5}%
-\contentsline {chapter}{\numberline {第4章}基于改进Vision Transformer骨髓血细胞检测算法设计与实现}{36}{chapter.4}%
-\contentsline {section}{\numberline {4.1}引言}{36}{section.4.1}%
-\contentsline {section}{\numberline {4.2}基于Vision Transformer血细胞识别网络}{36}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}编码层}{36}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}自注意机制}{36}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}改进的Vision Transformer骨髓血细胞识别网络}{36}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}重叠图像块划分}{36}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}辨识性区域选择模块}{36}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}损失函数}{36}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}基于分级网络的骨髓血细胞识别方法}{36}{section.4.4}%
-\contentsline {section}{\numberline {4.5}算法实现与实验结果分析}{36}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}实验环境}{36}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}消融实验}{36}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}分级网络性能分析}{36}{subsection.4.5.3}%
-\contentsline {section}{\numberline {4.6}小结}{36}{section.4.6}%
-\contentsline {chapter}{\numberline {第5章}骨髓血细胞检测与识别软件设计}{37}{chapter.5}%
-\contentsline {section}{\numberline {5.1}需求分析}{37}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}功能需求分析}{37}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}非功能需求分析}{37}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}软件设计}{37}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}软件架构设计}{37}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}软件数据库设计}{37}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}各个模块设计}{37}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}骨髓血细胞检测模块}{37}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}骨髓血细胞识别模块}{37}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}患者信息录入与核查模块}{37}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}患者数据分析模块}{37}{subsection.5.3.4}%
-\contentsline {section}{\numberline {5.4}软件实现与测试}{38}{section.5.4}%
-\contentsline {section}{\numberline {5.5}小结}{38}{section.5.5}%
+\contentsline {section}{\numberline {3.3}改进的RetinaNet骨髓血细胞检测网络}{35}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}路径聚合网络}{35}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}基于最优输运的标签分配策略}{35}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}卷积模块}{35}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}算法实现与实验结果分析}{35}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}实验环境}{35}{subsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.1.1}数据集介绍}{35}{subsubsection.3.4.1.1}%
+\contentsline {subsubsection}{\numberline {3.4.1.2}训练策略}{36}{subsubsection.3.4.1.2}%
+\contentsline {subsubsection}{\numberline {3.4.1.3}预测策略}{36}{subsubsection.3.4.1.3}%
+\contentsline {subsection}{\numberline {3.4.2}实验结果}{36}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}评价指标}{36}{subsubsection.3.4.2.1}%
+\contentsline {subsubsection}{\numberline {3.4.2.2}实验结果}{36}{subsubsection.3.4.2.2}%
+\contentsline {subsection}{\numberline {3.4.3}实验分析}{36}{subsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.3.1}路径聚合网络}{36}{subsubsection.3.4.3.1}%
+\contentsline {subsubsection}{\numberline {3.4.3.2}标签分配策略}{36}{subsubsection.3.4.3.2}%
+\contentsline {subsubsection}{\numberline {3.4.3.3}不同卷积模块对实验结果影响}{36}{subsubsection.3.4.3.3}%
+\contentsline {section}{\numberline {3.5}小结}{36}{section.3.5}%
+\contentsline {chapter}{\numberline {第4章}基于改进Vision Transformer骨髓血细胞检测算法设计与实现}{37}{chapter.4}%
+\contentsline {section}{\numberline {4.1}引言}{37}{section.4.1}%
+\contentsline {section}{\numberline {4.2}基于Vision Transformer血细胞识别网络}{37}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}编码层}{37}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}自注意机制}{37}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}改进的Vision Transformer骨髓血细胞识别网络}{37}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}重叠图像块划分}{37}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}辨识性区域选择模块}{37}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}损失函数}{37}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}基于分级网络的骨髓血细胞识别方法}{37}{section.4.4}%
+\contentsline {section}{\numberline {4.5}算法实现与实验结果分析}{37}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}实验环境}{37}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}消融实验}{37}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}分级网络性能分析}{37}{subsection.4.5.3}%
+\contentsline {section}{\numberline {4.6}小结}{37}{section.4.6}%
+\contentsline {chapter}{\numberline {第5章}骨髓血细胞检测与识别软件设计}{38}{chapter.5}%
+\contentsline {section}{\numberline {5.1}需求分析}{38}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}功能需求分析}{38}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}非功能需求分析}{38}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}软件设计}{38}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}软件架构设计}{38}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}软件数据库设计}{38}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}各个模块设计}{38}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}骨髓血细胞检测模块}{38}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}骨髓血细胞识别模块}{38}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}患者信息录入与核查模块}{38}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}患者数据分析模块}{38}{subsection.5.3.4}%
+\contentsline {section}{\numberline {5.4}软件实现与测试}{39}{section.5.4}%
+\contentsline {section}{\numberline {5.5}小结}{39}{section.5.5}%
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{参考文献}{39}{section*.44}%
+\contentsline {chapter}{参考文献}{40}{section*.46}%
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{\numberline {附录 A}补充内容}{41}{appendix.A}%
-\contentsline {section}{\numberline {A.1}图表示例}{41}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}图}{41}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}表格}{41}{subsection.A.1.2}%
-\contentsline {section}{\numberline {A.2}数学公式}{42}{section.A.2}%
-\contentsline {chapter}{致\hskip 1em\relax 谢}{43}{section*.48}%
-\contentsline {chapter}{声\hspace {1em}明}{44}{section*.50}%
-\contentsline {chapter}{个人简历、在学期间完成的相关学术成果}{45}{section*.52}%
-\contentsline {chapter}{指导教师评语}{46}{appendix*.58}%
-\contentsline {chapter}{答辩委员会决议书}{47}{appendix*.59}%
+\contentsline {chapter}{\numberline {附录 A}补充内容}{42}{appendix.A}%
+\contentsline {section}{\numberline {A.1}图表示例}{42}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}图}{42}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}表格}{42}{subsection.A.1.2}%
+\contentsline {section}{\numberline {A.2}数学公式}{43}{section.A.2}%
+\contentsline {chapter}{致\hskip 1em\relax 谢}{44}{section*.50}%
+\contentsline {chapter}{声\hspace {1em}明}{45}{section*.52}%
+\contentsline {chapter}{个人简历、在学期间完成的相关学术成果}{46}{section*.54}%
+\contentsline {chapter}{指导教师评语}{47}{appendix*.60}%
+\contentsline {chapter}{答辩委员会决议书}{48}{appendix*.61}%
 \contentsfinish 

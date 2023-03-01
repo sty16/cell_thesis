@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  28 FEB 2023 23:43
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  1 MAR 2023 23:32
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1495,9 +1495,10 @@ File: figures//neuron.jpg Graphic file (type bmp)
  [15]
 File: figures//perceptron.jpg Graphic file (type bmp)
 <figures//perceptron.jpg>
- [16] [17] [18]
+ [16] [17]
 File: figures//cnn.jpg Graphic file (type bmp)
 <figures//cnn.jpg>
+ [18]
 File: figures//conv.jpg Graphic file (type bmp)
 <figures//conv.jpg>
  [19]
@@ -1538,62 +1539,80 @@ File: figures//subnets.jpg Graphic file (type bmp)
 File: figures//retinanet.jpg Graphic file (type bmp)
 <figures//retinanet.jpg>
  [31]
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 264.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 256.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 11.04242pt on input line 264.
+(Font)              scaled to size 11.04242pt on input line 256.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 7.72966pt on input line 264.
+(Font)              scaled to size 7.72966pt on input line 256.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 5.5212pt on input line 264.
+(Font)              scaled to size 5.5212pt on input line 256.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 11.04005pt on input line 264.
+(Font)              scaled to size 11.04005pt on input line 256.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 7.728pt on input line 264.
+(Font)              scaled to size 7.728pt on input line 256.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 5.52002pt on input line 264.
- [32] [33]) (./data/chap04.tex [34] [35]
+(Font)              scaled to size 5.52002pt on input line 256.
+ [32] [33]
+File: figures//PR_net.png Graphic file (type bmp)
+<figures//PR_net.png>
+File: figures//PR_1.png Graphic file (type bmp)
+<figures//PR_1.png>
+File: figures//PR_2.png Graphic file (type bmp)
+<figures//PR_2.png>
+File: figures//PR_3.png Graphic file (type bmp)
+<figures//PR_3.png>
+File: figures//PR_4.png Graphic file (type bmp)
+<figures//PR_4.png>
+
+
+LaTeX Warning: Reference `' on page 34 undefined on input line 362.
+
+[34]) (./data/chap04.tex [35] [36]
 第4章
-) (./data/chap05.tex [36
+) (./data/chap05.tex [37
 
 ]
 第5章
-) [37
+) [38
 
-] [38] (./main.bbl [39
+] [39] (./main.bbl [40
 
 
 
-]) (./data/appendix.tex [40]
+]) (./data/appendix.tex [41]
 附录 A
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-[41
+[42
 
-]) (./data/acknowledgements.tex [42]) [43
-
-
-] (./data/resume.tex [44
+]) (./data/acknowledgements.tex [43]) [44
 
 
-]) (./data/comments.tex [45
+] (./data/resume.tex [45
 
 
-] [46
+]) (./data/comments.tex [46
 
-]) (./data/resolution.tex [47
+
+] [47
+
+]) (./data/resolution.tex [48
 
 
 ]) (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 68F57C626D98D7EBFA862EC8CE143C8C;14222.
+(rerunfilecheck)             Checksum: C890B5176C8B15DE8A707F31868BA843;14222.
  ) 
 Here is how much of TeX's memory you used:
- 31443 strings out of 476179
- 675317 string characters out of 5813073
- 1085904 words of memory out of 5000000
- 51599 multiletter control sequences out of 15000+600000
+ 31513 strings out of 476179
+ 677736 string characters out of 5813073
+ 1086079 words of memory out of 5000000
+ 51664 multiletter control sequences out of 15000+600000
  478611 words of font info for 182 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  102i,16n,129p,1451b,2766s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (65 pages, 1079936 bytes).
+Output written on main.xdv (66 pages, 1105632 bytes).

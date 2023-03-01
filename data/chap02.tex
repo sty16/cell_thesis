@@ -245,7 +245,6 @@
 我们使用labelme软件作为标注工具，如图~\ref{fig:annotations}所示，针对每一张图像生成json标注文件，记录血细胞边界框的左上角与右下角的坐标，最后再将标注转化为coco格式，并将数据集划分为训练集、测试集与验证集。
 经过检测网络，我们得到了单一血细胞图像，即图像中仅有一个完整的骨髓血细胞，这些图像再由经验丰富的病理医生完成类别标签的标注。
 
-
 \begin{figure}
   \centering
   \includegraphics[width=0.8\linewidth]{annotations.jpg}
@@ -292,7 +291,6 @@
 
 输入部分，神经元接收其他神经元的信息$x_1, x_2, \dots, x_4$，每个输入与权重进行关联。加权部分表示神经元对于输入部分的敏感程度。
 激活函数将加权和进行变换，保证输出数值范围并引入非线性的特性。输出部分是激活函数处理后的结果，如式~\ref{eq:neuron}所示，可作为后续神经元的输入。
-
 \begin{equation}
   h(x) = f({{\bf{W}}^T}{\bf{x}}) = f(\sum\limits_{i = 1}^m {{w_i}{x_i} + b})
   \label{eq:neuron}
@@ -305,7 +303,6 @@
 感知机由美国心理学家弗兰克·罗森布\cite{1958perceptron}在1958年提出，它是一种最简单的神经网络，拓扑结构如图~\ref{fig:perceptron}所示。
 网络包含了输入层、隐含层与输出层，前一层的每个神经元都与后一层的神经元相连。前一层神经元输出信息传递到下一层神经元的过程称为前向传播。
 该过程可以用一系列矩阵乘法与激活函数进行描述，若输入数据为$x$, 网络结构总共有$L$层，则前向传播过程可以表示为:
-
 \begin{equation}
   \begin{aligned}
   z^{1} & =W^{1} x+b^{1} \\
@@ -367,7 +364,6 @@ $z_j$ 表示第 $j$ 层神经元输出，$\sigma_l(\cdot)$为第l层激活函数
 在定义好损失函数后，通过误差反向传播算法调整网络中的权重参数，使得网络在训练数据集上的误差最小化。但传统梯度优化算法面临着诸多困难，
 损失函数存在着大量的鞍点与平坦区域，可能收敛到局部极小值点。此外训练集数据量巨大，计算全部数据梯度非常耗时。针对上述问题，研究学者提出了小批量
 随机梯度下降算法（mini-batch stochastic gradient descent），每次从训练集中随机抽取出m个样本组成小批量样本，对于这组样本计算梯度均值用于更新权重系数，如式~\ref{eq:msgd}所示
-
 \begin{equation}
   \begin{aligned}
     \boldsymbol{g}  & \leftarrow \nabla_{w}\left(\frac{1}{m} \sum_{i=1}^{m} L\left(f\left(\boldsymbol{x}_{i} ; \boldsymbol{w}\right), \boldsymbol{y}_{i}\right)\right) \\
@@ -378,7 +374,6 @@ $z_j$ 表示第 $j$ 层神经元输出，$\sigma_l(\cdot)$为第l层激活函数
 
 小批量随机梯度下降算法面临着学习率选择困难问题。学习率过小收敛慢，过大导致震荡。Adagrad是最早的自适应学习率优化算法。
 其设置了一个梯度二阶累积统计量$r$，每次使用小批量梯度平方和来更新$r$，权重更新如下
-
 \begin{equation}
   \begin{aligned}
     \boldsymbol{r}  & \leftarrow   \boldsymbol{r}  +  \boldsymbol{g}^2\\
@@ -397,7 +392,6 @@ Adagrad算法在训练后期，由于累计平方很大，网络更新停止。�
 
 Adam优化算法(Adaptive Moment estimation)集成了动量与多种优化算法的优势，使梯度更新更平滑，适用于大多数的神经网络优化问题，是目前应用最广泛的梯度优化算法。
 该算法计算了梯度的一阶矩$\boldsymbol{m}$与二阶矩$\boldsymbol{v}$，一阶矩类似于动量，降低梯度随机变化大的影响，二阶矩用于控制自适应学习率。参数更新公式如下：
-
 \begin{equation}
   \begin{aligned}
     \boldsymbol{m_t}  & \leftarrow  \beta_1 \boldsymbol{m_{t-1}}  + (1 - \beta_1) \boldsymbol{g_t} \\
@@ -434,7 +428,6 @@ CNN引入了卷积层与池化层，通过稀疏连接与权值共享，可以�
 多个卷积通道拼接后组成卷积层的输出。卷积核将输入特征图局部区域像素与卷积核对应元素相乘后求和，再将结果写入到输出特征图对应位置，如式~\ref{eq:conv}所示。
 卷积核有四个描述参数，卷积核大小（kernel size）、步幅（stride）、边界扩充（stride）、输入与输出通道数量（channel）。
 通过卷积操作抽取图像特征，再不断将特征进行组合，形成最终图像的特征描述。
-
 \begin{equation}
   \begin{array}{l}
     y(m, n)=\sum_{i} \sum_{j} I(i, j) h(m-i, n-j) \\
