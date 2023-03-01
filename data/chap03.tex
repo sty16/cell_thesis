@@ -270,8 +270,8 @@ Faster-RCNN、Cascade-RCNN、RetinaNet与YOLOV3四种网络在输入图像大小
 
 \textbf{2）检测精度对比}
 
-四种检测网络在骨髓血细胞测试集上的结果如表~\ref{table:cell_test}所示，其中$AP_{Prim}$表示原始细胞在$IOU=0.75$下的$AP$值，
-其他$AP_{*}$代表各类血细胞的$AP$值。$mAP$为所有类别$AP$的平均值，可以直观的衡量网络检测效果。
+四种检测网络在骨髓血细胞测试集上的结果如表~\ref{table:cell_test}所示，其中$\text{AP}_{Prim}$表示原始细胞在$IOU=0.75$下的$\text{AP}$值，
+其他$\text{AP}_{*}$代表各类血细胞的$\text{AP}$值。$\text{mAP}$为所有类别$\text{AP}$的平均值，可以直观的衡量网络检测效果。
 
 \begin{table}   
   \caption{不同目标检测方法在骨髓血细胞测试集上的检测结果}      
@@ -280,7 +280,7 @@ Faster-RCNN、Cascade-RCNN、RetinaNet与YOLOV3四种网络在输入图像大小
   \resizebox{0.95\linewidth}{!}{ 
   \begin{tabular}{ccccccc}     
     \toprule[1pt]     
-    方法 & $AP_{prim}$  & $AP_{lym}$ & $AP_{mono}$ &  $AP_{plas}$ & $AP_{red}$ & $AP_{promy}$    \\ 
+    方法 & $\text{AP}_{prim}$ & $\text{AP}_{lym}$ & $\text{AP}_{mono}$ &  $\text{AP}_{plas}$ & $\text{AP}_{red}$ & $\text{AP}_{promy}$    \\ 
     \midrule[1pt]      
     Faster-RCNN  & 0.861 & 0.690 & 0.262 & 0.715 & 0.871 & 0.640  \\      
     Cascade-RCNN & 0.860 & 0.621 & 0.409 & 0.683 & 0.875 & 0.620  \\      
@@ -292,7 +292,7 @@ Faster-RCNN、Cascade-RCNN、RetinaNet与YOLOV3四种网络在输入图像大小
   \centering  
   \resizebox{0.95\linewidth}{!}{ 
   \begin{tabular}{ccccccc}                 
-    方法 & $AP_{myelo}$  &$AP_{late}$ & $AP_{rods}$ & $AP_{lobu}$ &  $AP_{eosl}$ & mAP \\          
+    方法 & $\text{AP}_{myelo}$  &$\text{AP}_{late}$ & $\text{AP}_{rods}$ & $\text{AP}_{lobu}$ &  $\text{AP}_{eosl}$ & $\text{mAP}$ \\          
     \midrule[1pt]           
     Faster-RCNN  & 0.678 & 0.656 & 0.672 & 0.712 & 0.754 & 0.682 \\     
     Cascade-RCNN & 0.721 & 0.724 & 0.787 & 0.846 & 0.775 & $\pmb{0.719}$   \\          
@@ -303,45 +303,44 @@ Faster-RCNN、Cascade-RCNN、RetinaNet与YOLOV3四种网络在输入图像大小
   }  
 \end{table} 
 
-从表中可以看出，所有检测器针对单核细胞(Mono)的检测效果较差。$AP$值均小于$0.5$，
-针对有核红细胞的检测效果最好，$AP$值大于$0.85$，单核细胞在数据集中样本数量最少，有核红细胞在数据集中的
+从表中可以看出，所有检测器针对单核细胞(Mono)的检测效果较差。$\text{AP}$值均小于$0.5$，
+针对有核红细胞的检测效果最好，$\text{AP}$值大于$0.85$，单核细胞在数据集中样本数量最少，有核红细胞在数据集中的
 样本数量最多，因此网络学习的效果与数据集中的样本量有关，需要增加类别较差样本的数量来提升该类血细胞的检测精度。
 平均检测精度（mAP）最高的网络为双阶段网络Cascade-RCNN，单阶网络RetinaNet次之，Faster-RCNN检测精度最差。RetinaNet在多类血细胞如原始细胞、浆细胞、
 红细胞等平均检测精度最高，虽然平均检测精度稍低于Cascade-RCNN，但相比于Cascade-RCNN的计算量更少与速度更快，具有更高的性价比。
 
 骨髓血细胞检测是多类别检测问题，对于每一类血细胞都有自己的精确率与召回率关系。为了更加直观的比较不同网络的结果，
-对于某一召回率，我们计算所有类别的平均精确率来绘制PR曲线。四种网络在$IOU=0.75$的条件下PR曲线如图~\ref{fig:pr_net}所示。四种网络每类血细胞的PR曲线如图
+对于某一召回率，我们计算所有类别的平均精确率来绘制PR曲线。四种网络在$\text{IOU}=0.75$的条件下PR曲线如图~\ref{fig:pr_net}所示。四种网络每类血细胞的PR曲线如图
 ~\ref{fig:pr_curve}所示。
-
 \begin{figure}                     
   \centering                      
-  \includegraphics[width=0.70\linewidth]{PR_net.png}                      
+  \includegraphics[width=0.60\linewidth]{PR_net.png}                      
   \caption{四种检测网络的PR曲线（IOU=0.75）}                      
   \label{fig:pr_net}       
 \end{figure}   
 
 \begin{figure}[htbp]
 	\centering
-	\begin{subfigure}{0.45\linewidth}
+	\begin{subfigure}{0.4\linewidth}
 		\centering
 		\includegraphics[width=0.95\linewidth, height=0.72\linewidth]{PR_1.png}
     \caption{}
 	\end{subfigure}
 	\centering
-	\begin{subfigure}{0.45\linewidth}
+	\begin{subfigure}{0.4\linewidth}
 		\centering
 		\includegraphics[width=0.95\linewidth, height=0.72\linewidth]{PR_2.png}
     \caption{}
 	\end{subfigure}
   
 	\centering
-	\begin{subfigure}{0.45\linewidth}
+	\begin{subfigure}{0.4\linewidth}
 		\centering
 		\includegraphics[width=0.95\linewidth, height=0.72\linewidth]{PR_3.png}
     \caption{}
 	\end{subfigure}
 	\centering
-	\begin{subfigure}{0.45\linewidth}
+	\begin{subfigure}{0.4\linewidth}
 		\centering
 		\includegraphics[width=0.95\linewidth, height=0.72\linewidth]{PR_4.png}
     \caption{}
@@ -355,12 +354,52 @@ Faster-RCNN、Cascade-RCNN、RetinaNet与YOLOV3四种网络在输入图像大小
 \subsubsection{检测网络与检测识别网络对比}
 
   骨髓血细胞检测识别任务中，网络同时给出骨髓血细胞的位置与类别，由于各个类别血细胞数量在检测数据集中严重不均衡，导致某些类别血细胞如单核细胞
-的平均检测精度小于0.5，不能满足实际应用的需求。因此，我们考虑仅用目标检测网络进行血细胞前景检测与坐标回归，再将血细胞裁剪为切片，使用血细胞识别网络
+的检测结果较差，不能满足实际应用的需求。因此，我们考虑仅用目标检测网络进行血细胞前景检测与坐标回归，再将血细胞裁剪为切片，使用血细胞识别网络
 进行识别来提高识别准确率。
   
-我们以RetinaNet单阶段检测网络为基线模型，对比了仅做检测与检测与识别网络在特征图与混淆矩阵上的差异。骨髓血细胞检测的混淆矩阵的定义如下，首先对网络输出的检测框按照分数进行过滤，
-只有分数大于0.3的检测框才参与混淆矩阵的计算。判断检测结果是否正确用IOU来衡量。以图~\ref{}为例，
+我们以RetinaNet单阶段检测网络为基线模型，对比了检测网络与检测识别网络在特征图与混淆矩阵上的差异。骨髓血细胞检测的混淆矩阵的定义如下，首先对网络输出的检测框
+按照分类置信度进行过滤，只有分类置信度大于阈值的检测框才参与混淆矩阵的计算。
+判断检测结果是否正确用IOU与标签信息来衡量。以图~\ref{fig:confusion}为例，绿色框为真实框，红色框为网络检出框。
+第一张图中检测框与真实框IOU大于阈值，且类别正确，为真正例TP。第二张图中IOU大于阈值，但是类别检测错误，分叶核（Lobu）真实类别被错误预测为杆状核（Rods）类别。
+第三张图中，检测框与所有真实框IOU均小于阈值，背景类错误检测为Lobu类。第四张图片未检出，为Lobu类别错误检测为背景类（FN）。
 
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}{0.24\linewidth}
+		\centering
+		\includegraphics[width=0.95\linewidth, height=0.95\linewidth]{det1.jpg}
+    \caption{检测正确TP}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.24\linewidth}
+		\centering
+		\includegraphics[width=0.95\linewidth, height=0.95\linewidth]{det2.jpg}
+    \caption{分类错误FP}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.24\linewidth}
+		\centering
+		\includegraphics[width=0.95\linewidth, height=0.95\linewidth]{det3.jpg}
+    \caption{IOU小于阈值FN}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.24\linewidth}
+		\centering
+		\includegraphics[width=0.95\linewidth, height=0.95\linewidth]{det4.jpg}
+    \caption{未检出FP}
+	\end{subfigure}
+	\caption{检测类型判别}
+	\label{fig:confusion}
+\end{figure}
+
+RetinaNet网络在score > 0.3、IOU=0.5条件下的混淆矩阵如图~\ref{fig:det_confusion}所示，score为分类置信度。
+
+\begin{figure}                  
+  \centering                   
+  \includegraphics[width=0.75\linewidth]{det_confusion.png}                   
+  \caption{RetinaNet网络检测混淆矩阵}                   
+  \label{fig:det_confusion}      
+\end{figure}   
 
 
 
