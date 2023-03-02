@@ -21,8 +21,8 @@
 \contentsline {figure}{\numberline {3.9}{\ignorespaces 四种检测网络的PR曲线（IOU=0.75）\relax }}{34}{figure.caption.43}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces (a) Faster-RCNN网络PR曲线，(b) Cascade-RCNN网络PR曲线， (c) RetinaNet网络PR曲线， (d) YOLOV3网络PR曲线\relax }}{34}{figure.caption.44}%
 \contentsline {figure}{\numberline {3.11}{\ignorespaces 检测类型判别\relax }}{35}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces RetinaNet网络检测混淆矩阵\relax }}{36}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces RetinaNet检测识别网络的混淆矩阵\relax }}{36}{figure.caption.47}%
 \let \contentsline \ttl@gobblecontents 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces 附录中的图片示例\relax }}{43}{figure.caption.50}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces 附录中的图片示例\relax }}{44}{figure.caption.51}%
 \contentsfinish 
 \contentsfinish 

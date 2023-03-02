@@ -353,15 +353,14 @@ Faster-RCNN、Cascade-RCNN、RetinaNet与YOLOV3四种网络在输入图像大小
 
 \subsubsection{检测网络与检测识别网络对比}
 
-  骨髓血细胞检测识别任务中，网络同时给出骨髓血细胞的位置与类别，由于各个类别血细胞数量在检测数据集中严重不均衡，导致某些类别血细胞如单核细胞
-的检测结果较差，不能满足实际应用的需求。因此，我们考虑仅用目标检测网络进行血细胞前景检测与坐标回归，再将血细胞裁剪为切片，使用血细胞识别网络
-进行识别来提高识别准确率。
-  
-我们以RetinaNet单阶段检测网络为基线模型，对比了检测网络与检测识别网络在特征图与混淆矩阵上的差异。骨髓血细胞检测的混淆矩阵的定义如下，首先对网络输出的检测框
-按照分类置信度进行过滤，只有分类置信度大于阈值的检测框才参与混淆矩阵的计算。
-判断检测结果是否正确用IOU与标签信息来衡量。以图~\ref{fig:confusion}为例，绿色框为真实框，红色框为网络检出框。
-第一张图中检测框与真实框IOU大于阈值，且类别正确，为真正例TP。第二张图中IOU大于阈值，但是类别检测错误，分叶核（Lobu）真实类别被错误预测为杆状核（Rods）类别。
-第三张图中，检测框与所有真实框IOU均小于阈值，背景类错误检测为Lobu类。第四张图片未检出，为Lobu类别错误检测为背景类（FN）。
+骨髓血细胞检测识别网络需要给出骨髓血细胞的位置与类别，检测网络只需要进行前景检测输出血细胞的位置信息。
+我们以RetinaNet单阶段网络作为基线模型，对比了检测网络与检测识别网络在特征图与混淆矩阵上的差异。
+
+骨髓血细胞检测识别的混淆矩阵的定义如下，首先对网络输出的检测框
+按照分类置信度进行过滤，只有分类置信度大于阈值的检测框才参与混淆矩阵的计算，然后
+基于IOU与标签信息来衡量检测结果是否正确。以图~\ref{fig:confusion}为例，绿色框为真实框，红色框为网络检出框。
+第一张图中检测框与真实框IOU大于阈值，且类别正确，为真正例TP。第二张图中IOU大于阈值，但是类别检测错误，分叶核（Lobu）真实类别被错误检测为杆状核（Rods）类别。
+第三张图中，检测框与所有真实框IOU均小于阈值，背景类被错误检测为Lobu类。第四张图片未检出，Lobu类别被错误检测为背景类（FN）。
 
 \begin{figure}[htbp]
 	\centering
@@ -380,29 +379,68 @@ Faster-RCNN、Cascade-RCNN、RetinaNet与YOLOV3四种网络在输入图像大小
 	\begin{subfigure}{0.24\linewidth}
 		\centering
 		\includegraphics[width=0.95\linewidth, height=0.95\linewidth]{det3.jpg}
-    \caption{IOU小于阈值FN}
+    \caption{IOU小于阈值BG}
 	\end{subfigure}
 	\centering
 	\begin{subfigure}{0.24\linewidth}
 		\centering
 		\includegraphics[width=0.95\linewidth, height=0.95\linewidth]{det4.jpg}
-    \caption{未检出FP}
+    \caption{未检出FN}
 	\end{subfigure}
 	\caption{检测类型判别}
 	\label{fig:confusion}
 \end{figure}
 
-RetinaNet网络在score > 0.3、IOU=0.5条件下的混淆矩阵如图~\ref{fig:det_confusion}所示，score为分类置信度。
+
+RetinaNet检测识别网络在score（分类置信度） > 0.3、IOU=0.5条件下的混淆矩阵如图~\ref{fig:det_confusion}(a)所示。
+各个类别的召回率与精确率如表~\ref{table:cell_cls}所示。单核细胞(Mono)、杆状核细胞(Rods)与嗜酸性粒细胞(Eosl)
+存在比较严重的漏检的问题，召回率小于0.5。嗜中性中幼粒细胞(myelo)与嗜中性晚幼粒细胞(Late)的识准确正确率较差。
+RetinaNet检测网络在score（分类置信度） > 0.3、IOU=0.5条件下的混淆矩阵如图~\ref{fig:det_confusion}(b)所示，
+血细胞的召回率与准确率极高。
+
+
+
+
+\begin{table}   
+  \caption{置信度大于0.3，IOU=0.5条件下的准确率与召回率}      
+  \centering    
+  \label{table:cell_cls}
+  \resizebox{0.8\linewidth}{!}{ 
+  \begin{tabular}{ccccccc}     
+    \hline    
+     & prim & lym & mono &  plas & red & promy    \\ 
+    \midrule[1pt]      
+    Precision    & 0.644 & 0.621 & 0.553 & 0.783 & 0.787 & 0.512  \\      
+    Recall       & 0.780 & 0.682 & 0.236 & 0.591 & 0.888 & 0.454 \\      
+    \hline         
+  \end{tabular} 
+  }
+  \centering  
+  \resizebox{0.8\linewidth}{!}{ 
+  \begin{tabular}{ccccccc}                 
+     & myelo  & late & rods & lobu &  eosl & 平均 \\          
+    \hline          
+    Precision    & 0.448 & 0.439 & 0.778 & 0.715 & 0.857 &  0.581   \\      
+    Recall       & 0.646 & 0.506 & 0.319 & 0.672 & 0.505 &   \\       
+    \hline            
+  \end{tabular} 
+  }  
+\end{table}
 
 \begin{figure}                  
   \centering                   
-  \includegraphics[width=0.75\linewidth]{det_confusion.png}                   
-  \caption{RetinaNet网络检测混淆矩阵}                   
+  \includegraphics[width=0.70\linewidth]{det_confusion.png}                   
+  \caption{RetinaNet检测识别网络的混淆矩阵}                   
   \label{fig:det_confusion}      
 \end{figure}   
 
+我们认为在检测识别网络中，识别任务的难度要远高于坐标回归检测任务。识别任务需要提取精细、丰富的全局特征，
+坐标回归任务只需关注中心、边缘等局部特征。两类任务共享骨干网络提取的特征图，
+由于任务之间可能存在相互干扰，梯度更新方向不一致，导致识别任务性能较差。
 
-
+ 由于检测识别一体化的网络效果较差，不能满足实际应用的需求。因此，我们先用目标检测网络进行血细胞前景检测与坐标回归，再将血细胞裁剪为切片，
+ 然后使用血细胞识别网络进行识别。通过将检测任务与识别任务解耦来提高血细胞分类计数任务的准确性。
+ 
 
 \section{改进的RetinaNet骨髓血细胞检测网络}
 \subsection{路径聚合网络}
