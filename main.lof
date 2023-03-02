@@ -11,7 +11,7 @@
 \contentsline {figure}{\numberline {2.10}{\ignorespaces MVVM框架示意图\relax }}{22}{figure.caption.31}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Django框架示意图\relax }}{23}{figure.caption.32}%
 \contentsline {figure}{\numberline {3.1}{\ignorespaces 快速区域卷积神经网络结构示意图\relax }}{26}{figure.caption.33}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces ResNet50网络结构示意图\relax }}{27}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces ResNet50网络结构示意图\relax }}{26}{figure.caption.34}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces BottleNeck模块结构示意图\relax }}{27}{figure.caption.35}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces 特征金字塔网络结构示意图\relax }}{28}{figure.caption.36}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces 特征金字塔网络结构示意图\relax }}{28}{figure.caption.37}%
@@ -19,9 +19,9 @@
 \contentsline {figure}{\numberline {3.7}{\ignorespaces 分类与回归网络结构示意图\relax }}{30}{figure.caption.39}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces 分类与回归网络结构示意图\relax }}{31}{figure.caption.40}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces 四种检测网络的PR曲线（IOU=0.75）\relax }}{34}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces (a) Faster-RCNN网络PR曲线，(b) Cascade-RCNN网络PR曲线， (c) RetinaNet网络PR曲线， (d) YOLOV3网络PR曲线\relax }}{34}{figure.caption.44}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces 检测类型判别\relax }}{35}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces RetinaNet检测识别网络的混淆矩阵\relax }}{36}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces (a) Faster-RCNN网络PR曲线，(b) Cascade-RCNN网络PR曲线， (c) RetinaNet网络PR曲线， (d) YOLOV3网络PR曲线\relax }}{35}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces 检测类型判别\relax }}{36}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces RetinaNet检测识别与检测网络的混淆矩阵\relax }}{37}{figure.caption.47}%
 \let \contentsline \ttl@gobblecontents 
 \contentsline {figure}{\numberline {A.1}{\ignorespaces 附录中的图片示例\relax }}{44}{figure.caption.51}%
 \contentsfinish 
