@@ -21,7 +21,7 @@
 R-CNN网络对于这些区域首先进行ROI池化（Region of Interest Pooling）将区域转换为特定大小的特征图，然后这些特征图会分别进入到
 分类分支与回归分支，得到待检测目标的类别与位置信息。
 
-\begin{figure}  
+\begin{figure}[htbp]  
    \centering   
    \includegraphics[width=0.9\linewidth]{faster_rcnn.jpg}   
    \caption{快速区域卷积神经网络结构示意图}   
@@ -39,7 +39,7 @@ ResNet50总共由五个阶段(stage)构成，第一个阶段由一个$7\times7$�
 每经过一个stage，特征图的大小减小为原来的一半，通道数变为原来的两倍。五个阶段输出的特征图分别为$C_1, C_2, \dots, C_5$，
 其中$C_5$特征图的大小为$7\times7\times2048$。最后特征图经过均值池化变为2048的向量，经过全连接层用于分类识别。
 
-\begin{figure}      
+\begin{figure}[htbp]      
   \centering       
   \includegraphics[width=0.9\linewidth]{resnet50.jpg}       
   \caption{ResNet50网络结构示意图}       
@@ -52,7 +52,7 @@ ResNet50总共由五个阶段(stage)构成，第一个阶段由一个$7\times7$�
 该结构还包括了一个残差模块，通过一个$1\times1$的卷积确保输入与输出的通道数相同后，在与输出直连相加。残差连接可以让网络更好的学习高层特征，
 同时避免网络浅层部分梯度消失或爆炸等问题。图中BN为批归一化层、ReLU为激活函数。
 
-\begin{figure}         
+\begin{figure}[htbp]        
   \centering          
   \includegraphics[width=0.7\linewidth]{bottleneck.jpg}          
   \caption{BottleNeck模块结构示意图}          
@@ -71,7 +71,7 @@ ResNet50总共由五个阶段(stage)构成，第一个阶段由一个$7\times7$�
 $P_5$经过二倍上采样（由反卷积实现）与$C_4$经过$1\times1$、通道数为256的卷积的结果相加得到$P_4$。其他特征图同样由上述过程生成。
 最后FPN使用$3 \times 3$卷积对融合后的特征图进行平滑处理消除直接相加可能导致的融合不充分问题。至此，完成了特征金字塔的构建。
 
-\begin{figure}            
+\begin{figure}[htbp]            
   \centering             
   \includegraphics[width=0.65\linewidth]{fpn.jpg}             
   \caption{特征金字塔网络结构示意图}             
@@ -85,7 +85,7 @@ RPN网络结构如图~\ref{fig:rpn}所示，包含了两个分支，上面一条
 下面一条分支用于计算锚框边界坐标的回归信息，以生成更加精准的区域坐标。最后生成的候选框区域综合了前景分数与坐标修正，
 实现了目标的初步定位。
 
-\begin{figure}               
+\begin{figure}[htbp]              
   \centering                
   \includegraphics[width=0.90\linewidth]{rpn.jpg}                
   \caption{特征金字塔网络结构示意图}                
@@ -161,7 +161,7 @@ $W_{*}$为$1\times1$卷积层需学习的参数，$d_{*}(A)=d_{x}(A), d_{y}(A), 
 RPN网络生成的候选区域大小形状各不相同，需要经过ROI池化保证尺寸相同。首先将候选区域对应位置映射到特征图上，将对应特征图区域
 划分为$pool_w \times pool_h$的网格，在每个网格区域内进行最大池化，这样每个区域转化为$pool_w \times pool_h$固定大小输出。
 
-\begin{figure}                  
+\begin{figure}[htbp]                  
   \centering                   
   \includegraphics[width=0.75\linewidth]{subnets.jpg}                   
   \caption{分类与回归网络结构示意图}                   
@@ -185,7 +185,7 @@ RPN网络生成的候选区域大小形状各不相同，需要经过ROI池化�
 在该损失函数引导下，网络增加了对难以区分正样本的关注，减少了对易分辨背景样本的关注。RetinaNet网络结构如图~\ref{fig:retinanet}所示，由骨干网络、特征金字塔网络与分类回归网络组成，
 网络主体结构在~\ref{section:faster-rcnn}节已进行详细阐述。
 
-\begin{figure}                     
+\begin{figure}[htbp]                     
   \centering                      
   \includegraphics[width=0.80\linewidth]{retinanet.jpg}                      
   \caption{分类与回归网络结构示意图}                      
@@ -279,11 +279,106 @@ $(0.25, 0.75)$。
 
 \subsubsection{评价指标}
 
-在目标检测领域，通常使用检测框与真实框的交并比（IOU）来判断检测框是属于正样本还是负样本
+在目标检测领域，通常使用检测框与真实框的交并比（IOU）来判断检测框是属于正样本还是负样本。交并比的定义如图~\ref{fig:iou}所示，对于预测框A与真实框B，
+IOU值等于两个矩形框的交集面积$S(A \cap B)$与并集面积$S(A \cup B)$的比值。IOU的取值范围为$0 \sim 1$，值越大表示两个矩形相似程度越高。
+\begin{figure}[htbp]                     
+  \centering                      
+  \includegraphics[width=0.60\linewidth]{iou.jpg}                      
+  \caption{IOU计算示意图}                      
+  \label{fig:iou}       
+\end{figure}   
+
+在深度学习中，TP（True Positive）表示被正确检测为正类的正样本；FP（False Positive）表示被错误检测为正类的负样本；
+TN（True Negative）表示被正确检测为负类的负样本。FN（False Negative）表示被错误检测为负类的正样本。
+对于检测任务，需要根据检测框的置信度分数与交并比来判断
+以图~\ref{fig:confusion}为例，绿色框为真实框，红色框为网络检出框。
+第一张图中检测框与真实框IOU大于阈值，且类别正确，为真正例TP。第二张图中IOU大于阈值，但是类别检测错误，分叶核（Lobu）真实类别被错误检测为杆状核（Rods）类别（FP）。
+第三张图中，检测框与所有真实框IOU均小于阈值，背景类被错误检测为Lobu类（FP）。第四张图片未检出，Lobu类别被错误检测为背景类（FN）。
+
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}{0.24\linewidth}
+		\centering
+		\includegraphics[width=0.95\linewidth, height=0.95\linewidth]{det1.jpg}
+    \caption{检测正确TP}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.24\linewidth}
+		\centering
+		\includegraphics[width=0.95\linewidth, height=0.95\linewidth]{det2.jpg}
+    \caption{分类错误FP}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.24\linewidth}
+		\centering
+		\includegraphics[width=0.95\linewidth, height=0.95\linewidth]{det3.jpg}
+    \caption{IOU小于阈值BG}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.24\linewidth}
+		\centering
+		\includegraphics[width=0.95\linewidth, height=0.95\linewidth]{det4.jpg}
+    \caption{未检出FN}
+	\end{subfigure}
+	\caption{检测类型判别}
+	\label{fig:confusion}
+\end{figure}
+
+目标检测常用的评价指标有精准率（precision）、召回率（recall）、PR曲线、平均精度（Average Precision，AP）与平均精度均值（Mean Average Precision，mAP）。
+
+精准率是指预测正确的正样本数量与所有预测为正样本数量的比值，如式~\ref{eq:precision}所示：
+\begin{equation}               
+  Precision = \frac{TP}{TP + FP}
+  \label{eq:precision}     
+\end{equation} 
+
+召回率是指预测正确正样本数量与所有正样本数量的比值，如式~\ref{eq:recall}所示
+\begin{equation}               
+  Precision = \frac{TP}{TP + FN}
+  \label{eq:recall}     
+\end{equation} 
+
+PR曲线是以召回率为横坐标，以精确率为纵坐标绘制的曲线。在绘制某一类别PR曲线时，将检测框按照置信度从高到低
+进行排序，设定多组置信度阈值，根据交并比会得到多组精确率与召回率，最后将这些点连接起来得到最终的PR曲线。
+随着召回率的提高，检测的精确率会降低，曲线越靠近右上角代表网络的检测性能越好
+平均精度是PR曲线下的面积，即在多组召回率下的平均检测精确率。AP值越大代表模型的性能越好。
+平均精度均值（mAP）是对所有类别的平均精度求均值，通常用来衡量网络的检测效果。
 
 \subsubsection{实验设置}
+我们在Linux操作系统下的NVIDIA TITAN V显卡上训练模型。训练使用的深度学习框架为Pytorch1.13.1，批量大小设置为16。
+优化器使用随机梯度下降算法（SGD），动量设置为0.9，权重衰减设置为5e-4。学习率初始化为0.001，网络总共训练36个轮次，
+在第16与第28个轮次，学习率变为原来的$1/10$。RetianNet中Focal Loss中正负样本平衡参数$\alpha=0.25$，难易调整参数$\gamma=2$。
+数据集原始图像大小为$363 \times 300$，为了更好的检测小目标，图像经过双线性插值与填充扩大到$832 \times 800$。
+我们基于迁移学习的方式进行训练，单双阶段网络参数初始化均使用在COCO数据集上预训练的模型，然后使用骨髓学习检测数据集进行微调。
 
-\subsection{实验结果}
+\subsection{实验结果与分析}
+\subsubsection{参数量、计算量与速度}
+
+Faster-RCNN、Cascade-RCNN、RetinaNet与YOLOV3四种网络在输入图像大小为$832 \times 800$的情况下的参数量与计算量
+如表~\ref{table:cell_Network}所示。我们比较了四种网络在NVIDIA TITAN V硬件环境下的每秒帧率（Frame Per Second，FPS），即每秒可以处理的
+图像数量，来评估网络是否可以满足在生产环境实时性的要求。
+
+\begin{table}
+  \caption{不同网络结构参数量、计算量与速度对比}   
+  \centering 
+  \label{table:cell_Network}
+  \begin{tabular}{ccccc}
+    \toprule[2pt]
+    方法 & 骨干网络  & 参数量(MB) & 计算量(GFLOPs) & FPS (TITAN V) \\
+    \midrule[1.5pt] 
+    Faster-RCNN & ResNet50 &  41.17 & 139.25 & 27.7 \\ 
+    Cascade-RCNN & ResNet50 & 69.17 & 167.24 & 21.9   \\ 
+    RetinaNet & ResNet50 & 36.31 & 135.73 & 29.5   \\ 
+    YOLOV3 & DarkNet53 & 61.95 & 127.11 & 32.3  \\ 
+    \bottomrule[2pt]      
+  \end{tabular} 
+\end{table}
+
+从表中可以看出，四种网络的FPS均大于20，可以满足骨髓血细胞检测速度实时性的要求。
+单阶段网络的速度高于双阶段的目标检测网络。RetinaNet网络参数量最小，计算消耗资源也相对较少，更适合在生产环境中进行部署。
+
+
+\subsubsection{检测算法精度对比}
 
 四种检测网络在骨髓血细胞测试集上的结果如表~\ref{table:cell_test}所示，其中$\text{AP}_{Prim}$表示原始细胞在$IOU=0.75$下的$\text{AP}$值，
 其他$\text{AP}_{*}$代表各类血细胞的$\text{AP}$值。$\text{mAP}$为所有类别$\text{AP}$的平均值，可以直观的衡量网络检测效果。
@@ -326,154 +421,68 @@ $(0.25, 0.75)$。
 
 骨髓血细胞检测是多类别检测问题，对于每一类血细胞都有自己的精确率与召回率关系。为了更加直观的比较不同网络的结果，
 对于某一召回率，我们计算所有类别的平均精确率来绘制PR曲线。四种网络在$\text{IOU}=0.75$的条件下PR曲线如图~\ref{fig:pr_net}所示。四种网络每类血细胞的PR曲线如图
-~\ref{fig:pr_curve}所示。
-\begin{figure}                     
+~\ref{fig:pr_curve}(a)-(d)所示。
+\begin{figure}[htbp]                     
   \centering                      
-  \includegraphics[width=0.60\linewidth]{PR_net.png}                      
+  \includegraphics[width=0.75\linewidth]{PR_net.png}                      
   \caption{四种检测网络的PR曲线（IOU=0.75）}                      
   \label{fig:pr_net}       
 \end{figure}   
 
 \begin{figure}[htbp]
 	\centering
-	\begin{subfigure}{0.4\linewidth}
+	\begin{subfigure}{0.48\linewidth}
 		\centering
-		\includegraphics[width=0.95\linewidth, height=0.72\linewidth]{PR_1.png}
-    \caption{}
+		\includegraphics[width=1.0\linewidth, height=0.75\linewidth]{PR_1.png}
+    \caption{Faster-RCNN网络PR曲线}
 	\end{subfigure}
 	\centering
-	\begin{subfigure}{0.4\linewidth}
+	\begin{subfigure}{0.48\linewidth}
 		\centering
-		\includegraphics[width=0.95\linewidth, height=0.72\linewidth]{PR_2.png}
-    \caption{}
-	\end{subfigure}
-  
-	\centering
-	\begin{subfigure}{0.4\linewidth}
-		\centering
-		\includegraphics[width=0.95\linewidth, height=0.72\linewidth]{PR_3.png}
-    \caption{}
+		\includegraphics[width=1.0\linewidth, height=0.75\linewidth]{PR_2.png}
+    \caption{Cascade-RCNN网络PR曲线}
 	\end{subfigure}
 	\centering
-	\begin{subfigure}{0.4\linewidth}
+	\begin{subfigure}{0.48\linewidth}
 		\centering
-		\includegraphics[width=0.95\linewidth, height=0.72\linewidth]{PR_4.png}
-    \caption{}
+		\includegraphics[width=1.0\linewidth, height=0.75\linewidth]{PR_3.png}
+    \caption{RetinaNet网络PR曲线}
 	\end{subfigure}
-	\caption{(a) Faster-RCNN网络PR曲线，(b)  Cascade-RCNN网络PR曲线， (c) RetinaNet网络PR曲线， (d) YOLOV3网络PR曲线}
+	\centering
+	\begin{subfigure}{0.48\linewidth}
+		\centering
+		\includegraphics[width=1.0\linewidth, height=0.75\linewidth]{PR_4.png}
+    \caption{YOLOV3网络PR曲线}
+	\end{subfigure}
+	\caption{四种检测网络的PR曲线}
 	\label{fig:pr_curve}
 \end{figure}
 
 综合考虑计算量，参数量与检测精度等因素，我们选择性能较为优异RetinaNet作为基线模型，并基于骨髓血细胞特性对RetinaNet进行改进。
 
-\subsection{实验分析}
-
-\subsubsection{参数量、计算量与速度}
-
-Faster-RCNN、Cascade-RCNN、RetinaNet与YOLOV3四种网络在输入图像大小为$832 \times 800$的情况下的参数量与计算量
-如表~\ref{table:cell_Network}所示。我们比较了四种网络在NVIDIA TITAN V硬件环境下的每秒帧率（Frame Per Second，FPS），即每秒可以处理的
-图像数量，来评估网络是否可以满足在生产环境实时性的要求。
-
-\begin{table}
-  \caption{不同网络结构参数量、计算量与速度对比}   
-  \centering 
-  \label{table:cell_Network}
-  \begin{tabular}{ccccc}
-    \toprule[2pt]
-    方法 & 骨干网络  & 参数量(MB) & 计算量(GFLOPs) & FPS (TITAN V) \\
-    \midrule[1.5pt] 
-    Faster-RCNN & ResNet50 &  41.17 & 139.25 & 27.7 \\ 
-    Cascade-RCNN & ResNet50 & 69.17 & 167.24 & 21.9   \\ 
-    RetinaNet & ResNet50 & 36.31 & 135.73 & 29.5   \\ 
-    YOLOV3 & DarkNet53 & 61.95 & 127.11 & 32.3  \\ 
-    \bottomrule[2pt]      
-  \end{tabular} 
-\end{table}
-
-从表中可以看出，四种网络的FPS均大于20，可以满足骨髓血细胞检测速度实时性的要求。
-单阶段网络的速度高于双阶段的目标检测网络。RetinaNet网络参数量最小，计算消耗资源也相对较少，更适合在生产环境中进行部署。
-
-\subsubsection{检测网络与检测识别网络对比}
+\subsubsection{检测网络与检测识别网络性能对比}
 
 骨髓血细胞检测识别网络需要给出骨髓血细胞的位置与类别，检测网络只需要进行前景检测输出血细胞的位置信息。
 我们以RetinaNet单阶段网络作为基线模型，对比了检测网络与检测识别网络在特征图与混淆矩阵上的差异。
 
 骨髓血细胞检测识别的混淆矩阵的定义如下，首先对网络输出的检测框
 按照分类置信度进行过滤，只有分类置信度大于阈值的检测框才参与混淆矩阵的计算，然后
-基于IOU与标签信息来衡量检测结果是否正确。以图~\ref{fig:confusion}为例，绿色框为真实框，红色框为网络检出框。
-第一张图中检测框与真实框IOU大于阈值，且类别正确，为真正例TP。第二张图中IOU大于阈值，但是类别检测错误，分叶核（Lobu）真实类别被错误检测为杆状核（Rods）类别。
-第三张图中，检测框与所有真实框IOU均小于阈值，背景类被错误检测为Lobu类。第四张图片未检出，Lobu类别被错误检测为背景类（FN）。
-
-\begin{figure}[htbp]
-	\centering
-	\begin{subfigure}{0.24\linewidth}
-		\centering
-		\includegraphics[width=0.95\linewidth, height=0.95\linewidth]{det1.jpg}
-    \caption{检测正确TP}
-	\end{subfigure}
-	\centering
-	\begin{subfigure}{0.24\linewidth}
-		\centering
-		\includegraphics[width=0.95\linewidth, height=0.95\linewidth]{det2.jpg}
-    \caption{分类错误FP}
-	\end{subfigure}
-	\centering
-	\begin{subfigure}{0.24\linewidth}
-		\centering
-		\includegraphics[width=0.95\linewidth, height=0.95\linewidth]{det3.jpg}
-    \caption{IOU小于阈值BG}
-	\end{subfigure}
-	\centering
-	\begin{subfigure}{0.24\linewidth}
-		\centering
-		\includegraphics[width=0.95\linewidth, height=0.95\linewidth]{det4.jpg}
-    \caption{未检出FN}
-	\end{subfigure}
-	\caption{检测类型判别}
-	\label{fig:confusion}
-\end{figure}
-
-
-RetinaNet检测识别网络在score（分类置信度） > 0.3、IOU=0.5条件下的混淆矩阵如图~\ref{fig:det_confusion}(a)所示。
+基于IOU与标签信息来衡量检测结果是否正确。RetinaNet检测识别网络在score（分类置信度） > 0.3、IOU=0.5条件下的混淆矩阵如图~\ref{fig:det_confusion}(a)所示。
 各个类别的召回率与精确率如表~\ref{table:cell_cls}所示。单核细胞(Mono)、杆状核细胞(Rods)与嗜酸性粒细胞(Eosl)
 存在比较严重的漏检的问题，召回率小于0.5。嗜中性中幼粒细胞(myelo)与嗜中性晚幼粒细胞(Late)的识准确正确率较差。
 检测识别网络平均的检测正确率只有0.581。
 RetinaNet检测网络在score（分类置信度） > 0.95、IOU=0.5条件下的混淆矩阵如图~\ref{fig:det_confusion}(b)所示, 骨髓血细胞的召回率0.964，正确率为0.934。
 实验结果表明，在仅做检测后，骨髓血细胞召回率与准确率极高，可以满足实际应用需求。
 
-
-我们认为在检测识别网络中，识别任务的难度要远高于坐标回归检测任务。识别任务需要提取精细、丰富的全局特征，
-坐标回归任务只需关注中心、边缘等局部特征。两类任务虽然在头部由不同的分支进行学习，但是共享骨干网络提取的特征，
-由于任务之间可能存在相互干扰，梯度更新方向不一致，导致骨干网络难以对精细分类特征进行学习，因此识别识别效果较差。
-
- 由于检测识别一体化的网络效果较差，不能满足实际应用的需求。因此，我们先用目标检测网络进行血细胞前景检测与坐标回归，再将血细胞裁剪为切片，
- 然后使用血细胞识别网络进行识别。通过将检测任务与识别任务解耦来提高血细胞分类计数任务的准确性。
- 
-\begin{figure}                  
-  \centering                   
-	\begin{subfigure}{0.48\linewidth}
-		\centering
-    \includegraphics[width=0.96\linewidth, height=0.77\linewidth]{det_confusion.png}                   
-    \caption{RetinaNet检测识别混淆矩阵}
-	\end{subfigure}
-	\begin{subfigure}{0.48\linewidth}
-		\centering
-		\includegraphics[width=0.96\linewidth, height=0.77\linewidth]{det_confusion1.png}
-    \caption{RetianNet检测混淆矩阵}
-	\end{subfigure}
-  \caption{RetinaNet检测识别与检测网络的混淆矩阵}                   
-  \label{fig:det_confusion}      
-\end{figure}   
-
 \begin{table}   
-  \caption{RetinaNet网络在置信度大于0.3，IOU=0.5条件下的准确率与召回率}      
+  \caption{RetinaNet网络各类别的准确率与召回率}      
   \centering    
   \label{table:cell_cls}
   \resizebox{0.8\linewidth}{!}{ 
   \begin{tabular}{ccccccc}     
     \hline    
      & prim & lym & mono &  plas & red & promy    \\ 
-    \midrule[1pt]      
+    \hline      
     Precision    & 0.644 & 0.621 & 0.553 & 0.783 & 0.787 & 0.512  \\      
     Recall       & 0.780 & 0.682 & 0.236 & 0.591 & 0.888 & 0.454 \\      
     \hline         
@@ -490,6 +499,30 @@ RetinaNet检测网络在score（分类置信度） > 0.95、IOU=0.5条件下的�
   \end{tabular} 
 }  
 \end{table}
+
+\begin{figure}[htbp]                  
+  \centering                   
+	\begin{subfigure}{0.48\linewidth}
+		\centering
+    \includegraphics[width=1.0\linewidth, height=0.8\linewidth]{det_confusion.png}                   
+    \caption{RetinaNet检测识别混淆矩阵}
+	\end{subfigure}
+	\begin{subfigure}{0.48\linewidth}
+		\centering
+		\includegraphics[width=1.0\linewidth, height=0.8\linewidth]{det_confusion1.png}
+    \caption{RetianNet检测混淆矩阵}
+	\end{subfigure}
+  \caption{RetinaNet检测识别与检测网络的混淆矩阵}                   
+  \label{fig:det_confusion}      
+\end{figure}   
+
+我们认为在检测识别网络中，识别任务的难度要远高于坐标回归检测任务。识别任务需要提取精细、丰富的全局特征，
+坐标回归任务只需关注中心、边缘等局部特征。两类任务虽然在头部由不同的分支进行学习，但是共享骨干网络提取的特征，
+由于任务之间可能存在相互干扰，梯度更新方向不一致，导致骨干网络难以对精细分类特征进行学习，因此识别识别效果较差。
+
+ 由于检测识别一体化的网络效果较差，不能满足实际应用的需求。因此，我们先用目标检测网络进行血细胞前景检测与坐标回归，再将血细胞裁剪为切片，
+ 然后使用血细胞识别网络进行识别。通过将检测任务与识别任务解耦来提高血细胞分类计数任务的准确性。
+ 
 
 \section{小结}
 
