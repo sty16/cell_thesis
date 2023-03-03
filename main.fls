@@ -1458,6 +1458,9 @@ INPUT figures//det_confusion.png
 INPUT ./figures//det_confusion1.png
 INPUT ./figures//det_confusion1.png
 INPUT figures//det_confusion1.png
+INPUT ./figures//features.jpg
+INPUT ./figures//features.jpg
+INPUT figures//features.jpg
 INPUT ./data/chap05.tex
 INPUT ./data/chap05.tex
 INPUT ./data/chap05.tex
