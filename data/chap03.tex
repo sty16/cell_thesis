@@ -459,6 +459,9 @@ Faster-RCNN、Cascade-RCNN、RetinaNet与YOLOV3四种网络在输入图像大小
 \end{figure}
 
 为了进一步直观了解网络的检测性能，我们将检测框进行可视化绘制，如图$~\ref{fig:detect_result}$所示，图中仅展示置信度大于0.6的检测框结果。
+图中(a)为血细胞人工标注的结果，(b)-(e)为网络检测的结果。从中我们可以看出原始细胞与嗜中性中幼粒细胞易发生混淆，在第二列图像中，只有Cascade-RCNN网络检测正确，Faster-RCNN与RetianNet
+均出现了虚警框。对于第四列图像中的破碎细胞，只有RetinaNet将其识别为背景，而其他网络均出现了虚警。实验结果表明，四种目标检测网络可以有效的检测并识别图像中的骨髓血细胞，
+但识别的准确率有待提升。
 
 \begin{figure}[htbp]
 	\centering

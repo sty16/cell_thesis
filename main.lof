@@ -23,7 +23,7 @@
 \contentsline {figure}{\numberline {3.11}{\ignorespaces 四种检测网络的PR曲线（IOU=0.75）\relax }}{36}{figure.caption.46}%
 \contentsline {figure}{\numberline {3.12}{\ignorespaces 四种检测网络的PR曲线\relax }}{37}{figure.caption.47}%
 \contentsline {figure}{\numberline {3.13}{\ignorespaces 四种检测网络的可视化检测结果\relax }}{38}{figure.caption.48}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces RetinaNet检测识别与检测网络的混淆矩阵\relax }}{39}{figure.caption.50}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces RetinaNet检测识别与检测网络的混淆矩阵\relax }}{40}{figure.caption.50}%
 \let \contentsline \ttl@gobblecontents 
 \contentsline {figure}{\numberline {A.1}{\ignorespaces 附录中的图片示例\relax }}{47}{figure.caption.53}%
 \contentsfinish 

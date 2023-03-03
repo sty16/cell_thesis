@@ -40,7 +40,7 @@
 \contentsline {subsection}{\numberline {3.4.2}实验结果与分析}{35}{subsection.3.4.2}%
 \contentsline {subsubsection}{\numberline {3.4.2.1}参数量、计算量与速度}{35}{subsubsection.3.4.2.1}%
 \contentsline {subsubsection}{\numberline {3.4.2.2}检测算法精度对比}{35}{subsubsection.3.4.2.2}%
-\contentsline {subsubsection}{\numberline {3.4.2.3}检测网络与检测识别网络性能对比}{37}{subsubsection.3.4.2.3}%
+\contentsline {subsubsection}{\numberline {3.4.2.3}检测网络与检测识别网络性能对比}{39}{subsubsection.3.4.2.3}%
 \contentsline {section}{\numberline {3.5}小结}{40}{section.3.5}%
 \contentsline {chapter}{\numberline {第4章}基于改进Vision Transformer骨髓血细胞检测算法设计与实现}{41}{chapter.4}%
 \contentsline {section}{\numberline {4.1}引言}{41}{section.4.1}%
