@@ -20,10 +20,11 @@
 \contentsline {figure}{\numberline {3.8}{\ignorespaces 分类与回归网络结构示意图\relax }}{31}{figure.caption.40}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces IOU计算示意图\relax }}{33}{figure.caption.42}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces 检测类型判别\relax }}{34}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces 四种检测网络的PR曲线（IOU=0.75）\relax }}{37}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces 四种检测网络的PR曲线（IOU=0.75）\relax }}{36}{figure.caption.46}%
 \contentsline {figure}{\numberline {3.12}{\ignorespaces 四种检测网络的PR曲线\relax }}{37}{figure.caption.47}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces RetinaNet检测识别与检测网络的混淆矩阵\relax }}{38}{figure.caption.49}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces 四种检测网络的可视化检测结果\relax }}{38}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces RetinaNet检测识别与检测网络的混淆矩阵\relax }}{39}{figure.caption.50}%
 \let \contentsline \ttl@gobblecontents 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces 附录中的图片示例\relax }}{46}{figure.caption.52}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces 附录中的图片示例\relax }}{47}{figure.caption.53}%
 \contentsfinish 
 \contentsfinish 

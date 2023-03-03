@@ -297,11 +297,11 @@ TN（True Negative）表示被正确检测为负类的负样本。FN（False Neg
 
 \begin{figure}[htbp]
 	\centering
-	\begin{subfigure}{0.24\linewidth}
-		\centering
-		\includegraphics[width=0.95\linewidth, height=0.95\linewidth]{det1.jpg}
+  \begin{subfigure}{0.24\linewidth}
+    \centering
+    \includegraphics[width=0.95\linewidth, height=0.95\linewidth]{det1.jpg}
     \caption{检测正确TP}
-	\end{subfigure}
+  \end{subfigure}
 	\centering
 	\begin{subfigure}{0.24\linewidth}
 		\centering
@@ -419,43 +419,80 @@ Faster-RCNN、Cascade-RCNN、RetinaNet与YOLOV3四种网络在输入图像大小
 平均检测精度（mAP）最高的网络为双阶段网络Cascade-RCNN，单阶网络RetinaNet次之，Faster-RCNN检测精度最差。RetinaNet在多类血细胞如原始细胞、浆细胞、
 红细胞等平均检测精度最高，虽然平均检测精度稍低于Cascade-RCNN，但相比于Cascade-RCNN的计算量更少与速度更快，具有更高的性价比。
 
-骨髓血细胞检测是多类别检测问题，对于每一类血细胞都有自己的精确率与召回率关系。为了更加直观的比较不同网络的结果，
-对于某一召回率，我们计算所有类别的平均精确率来绘制PR曲线。四种网络在$\text{IOU}=0.75$的条件下PR曲线如图~\ref{fig:pr_net}所示。四种网络每类血细胞的PR曲线如图
-~\ref{fig:pr_curve}(a)-(d)所示。
 \begin{figure}[htbp]                     
   \centering                      
-  \includegraphics[width=0.75\linewidth]{PR_net.png}                      
+  \includegraphics[width=0.6\linewidth]{PR_net.png}                      
   \caption{四种检测网络的PR曲线（IOU=0.75）}                      
   \label{fig:pr_net}       
 \end{figure}   
 
+骨髓血细胞检测是多类别检测问题，对于每一类血细胞都有自己的精确率与召回率关系。为了更加直观的比较不同网络的结果，
+对于某一召回率，我们计算所有类别的平均精确率来绘制PR曲线。四种网络在$\text{IOU}=0.75$的条件下PR曲线如图~\ref{fig:pr_net}所示。
+四种网络每类血细胞的PR曲线如图~\ref{fig:pr_curve}(a)-(d)所示。
+
 \begin{figure}[htbp]
 	\centering
-	\begin{subfigure}{0.48\linewidth}
-		\centering
-		\includegraphics[width=1.0\linewidth, height=0.75\linewidth]{PR_1.png}
+  \begin{subfigure}{0.48\linewidth}
+    \centering
+    \includegraphics[width=1.0\linewidth, height=0.75\linewidth]{PR_1.png}
     \caption{Faster-RCNN网络PR曲线}
-	\end{subfigure}
-	\centering
-	\begin{subfigure}{0.48\linewidth}
-		\centering
-		\includegraphics[width=1.0\linewidth, height=0.75\linewidth]{PR_2.png}
+  \end{subfigure}
+  \begin{subfigure}{0.48\linewidth}
+    \centering
+    \includegraphics[width=1.0\linewidth, height=0.75\linewidth]{PR_2.png}
     \caption{Cascade-RCNN网络PR曲线}
-	\end{subfigure}
+  \end{subfigure}
 	\centering
-	\begin{subfigure}{0.48\linewidth}
-		\centering
-		\includegraphics[width=1.0\linewidth, height=0.75\linewidth]{PR_3.png}
+  \begin{subfigure}{0.48\linewidth}
+    \centering
+    \includegraphics[width=1.0\linewidth, height=0.75\linewidth]{PR_3.png}
     \caption{RetinaNet网络PR曲线}
-	\end{subfigure}
-	\centering
-	\begin{subfigure}{0.48\linewidth}
-		\centering
-		\includegraphics[width=1.0\linewidth, height=0.75\linewidth]{PR_4.png}
+  \end{subfigure}
+  \centering
+  \begin{subfigure}{0.48\linewidth}
+    \centering
+    \includegraphics[width=1.0\linewidth, height=0.75\linewidth]{PR_4.png}
     \caption{YOLOV3网络PR曲线}
-	\end{subfigure}
+  \end{subfigure}
 	\caption{四种检测网络的PR曲线}
 	\label{fig:pr_curve}
+\end{figure}
+
+为了进一步直观了解网络的检测性能，我们将检测框进行可视化绘制，如图$~\ref{fig:detect_result}$所示，图中仅展示置信度大于0.6的检测框结果。
+
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}{0.9\linewidth}
+		\centering
+		\includegraphics[width=1.0\linewidth, height=0.25\linewidth]{detect_result/gt.jpg}
+    \caption{真实标注}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.9\linewidth}
+		\centering
+		\includegraphics[width=1.0\linewidth, height=0.25\linewidth]{detect_result/faster_rcnn.jpg}
+    \caption{Faster-RCNN检测结果}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.9\linewidth}
+		\centering
+		\includegraphics[width=1.0\linewidth, height=0.25\linewidth]{detect_result/cascade.jpg}
+    \caption{Cascade-RCNN检测结果}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.9\linewidth}
+		\centering
+		\includegraphics[width=1.0\linewidth, height=0.25\linewidth]{detect_result/retinanet.jpg}
+    \caption{RetinaNet检测结果}
+	\end{subfigure}
+	\centering
+  \begin{subfigure}{0.9\linewidth}
+		\centering
+		\includegraphics[width=1.0\linewidth, height=0.25\linewidth]{detect_result/YOLOV3.jpg}
+    \caption{YOLOV3检测结果}
+	\end{subfigure}
+	\caption{四种检测网络的可视化检测结果}
+	\label{fig:detect_result}
 \end{figure}
 
 综合考虑计算量，参数量与检测精度等因素，我们选择性能较为优异RetinaNet作为基线模型，并基于骨髓血细胞特性对RetinaNet进行改进。

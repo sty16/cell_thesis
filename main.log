@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  3 MAR 2023 01:06
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  3 MAR 2023 16:59
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1565,6 +1565,7 @@ File: det4.jpg Graphic file (type bmp)
  [34] [35]
 File: figures//PR_net.png Graphic file (type bmp)
 <figures//PR_net.png>
+ [36]
 File: figures//PR_1.png Graphic file (type bmp)
 <figures//PR_1.png>
 File: figures//PR_2.png Graphic file (type bmp)
@@ -1573,58 +1574,68 @@ File: figures//PR_3.png Graphic file (type bmp)
 <figures//PR_3.png>
 File: figures//PR_4.png Graphic file (type bmp)
 <figures//PR_4.png>
- [36] [37]
+File: figures//detect_result/gt.jpg Graphic file (type bmp)
+<figures//detect_result/gt.jpg>
+File: figures//detect_result/faster_rcnn.jpg Graphic file (type bmp)
+<figures//detect_result/faster_rcnn.jpg>
+File: figures//detect_result/cascade.jpg Graphic file (type bmp)
+<figures//detect_result/cascade.jpg>
+File: figures//detect_result/retinanet.jpg Graphic file (type bmp)
+<figures//detect_result/retinanet.jpg>
+File: figures//detect_result/YOLOV3.jpg Graphic file (type bmp)
+<figures//detect_result/YOLOV3.jpg>
+ [37] [38]
 File: figures//det_confusion.png Graphic file (type bmp)
 <figures//det_confusion.png>
 File: figures//det_confusion1.png Graphic file (type bmp)
 <figures//det_confusion1.png>
- [38]) (./data/chap05.tex [39]
+ [39]) (./data/chap05.tex [40]
 第4章
-) (./data/chap06.tex [40
+) (./data/chap06.tex [41
 
 ]
 第5章
-) (./data/chap07.tex [41
+) (./data/chap07.tex [42
 
-] [42]
+] [43]
 第6章
-) [43
+) [44
 
-] (./main.bbl [44
+] (./main.bbl [45
 
 
 
-]) (./data/appendix.tex [45]
+]) (./data/appendix.tex [46]
 附录 A
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-[46
+[47
 
-]) (./data/acknowledgements.tex [47]) [48
-
-
-] (./data/resume.tex [49
+]) (./data/acknowledgements.tex [48]) [49
 
 
-]) (./data/comments.tex [50
+] (./data/resume.tex [50
 
 
-] [51
+]) (./data/comments.tex [51
 
-]) (./data/resolution.tex [52
+
+] [52
+
+]) (./data/resolution.tex [53
 
 
 ]) (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0169C3B1374E50DE6AF7492653CB0C81;12784.
+(rerunfilecheck)             Checksum: E7BF06FBC6225724B2B211E6445C0ABB;12784.
  ) 
 Here is how much of TeX's memory you used:
- 31576 strings out of 476179
- 678659 string characters out of 5813073
- 1084800 words of memory out of 5000000
- 51717 multiletter control sequences out of 15000+600000
+ 31622 strings out of 476179
+ 680317 string characters out of 5813073
+ 1084861 words of memory out of 5000000
+ 51758 multiletter control sequences out of 15000+600000
  478611 words of font info for 182 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  102i,16n,129p,1451b,2766s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (70 pages, 1166808 bytes).
+Output written on main.xdv (71 pages, 1174568 bytes).
