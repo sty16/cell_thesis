@@ -26,7 +26,15 @@
 \contentsline {figure}{\numberline {3.14}{\ignorespaces RetinaNet检测识别与检测网络的混淆矩阵\relax }}{40}{figure.caption.50}%
 \contentsline {figure}{\numberline {3.15}{\ignorespaces 检测网络与检测识别网络特征图对比\relax }}{40}{figure.caption.51}%
 \contentsline {figure}{\numberline {5.1}{\ignorespaces 基于改进Vision Transformer骨髓血细胞识别网络结构\relax }}{47}{figure.caption.53}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Vision Transformer编码模块结构\relax }}{48}{figure.caption.54}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces 不同类别血细胞的辨识性区域\relax }}{49}{figure.caption.55}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces 稀疏注意力模块结构示意图\relax }}{50}{figure.caption.56}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces 改进Vision Transformer的识别混淆矩阵\relax }}{53}{figure.caption.58}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces 可视化自注意力图\relax }}{54}{figure.caption.60}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces 稀疏注意力模块选择的图像块\relax }}{55}{figure.caption.61}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces 图像块划分方式对模型性能的影响\relax }}{56}{figure.caption.64}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces t-SNE降维可视化结果\relax }}{58}{figure.caption.66}%
 \let \contentsline \ttl@gobblecontents 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces 附录中的图片示例\relax }}{54}{figure.caption.56}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces 附录中的图片示例\relax }}{65}{figure.caption.69}%
 \contentsfinish 
 \contentsfinish 
