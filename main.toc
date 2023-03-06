@@ -61,47 +61,45 @@
 \contentsline {chapter}{\numberline {第5章}基于改进Vision Transformer骨髓血细胞检测算法设计与实现}{45}{chapter.5}%
 \contentsline {section}{\numberline {5.1}引言}{45}{section.5.1}%
 \contentsline {section}{\numberline {5.2}改进的Vision Transformer骨髓血细胞识别网络}{46}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}重叠图像块划分}{46}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}编码层}{47}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.1}重叠图像块划分}{47}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}编码层}{48}{subsection.5.2.2}%
 \contentsline {subsection}{\numberline {5.2.3}稀疏注意力模块}{49}{subsection.5.2.3}%
 \contentsline {subsection}{\numberline {5.2.4}损失函数}{51}{subsection.5.2.4}%
-\contentsline {section}{\numberline {5.3}基于分级网络的骨髓血细胞识别方法}{51}{section.5.3}%
-\contentsline {section}{\numberline {5.4}实验结果分析}{51}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}数据集介绍}{51}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}实验环境与评价指标}{51}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}实验结果}{52}{subsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.4.4}消融实验}{55}{subsection.5.4.4}%
-\contentsline {subsubsection}{\numberline {5.4.4.1}图像块划分方法}{56}{subsubsection.5.4.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.4.2}稀疏注意力模块}{56}{subsubsection.5.4.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.4.3}对比损失}{57}{subsubsection.5.4.4.3}%
-\contentsline {subsection}{\numberline {5.4.5}分级网络性能分析}{57}{subsection.5.4.5}%
-\contentsline {section}{\numberline {5.5}小结}{57}{section.5.5}%
-\contentsline {chapter}{\numberline {第6章}骨髓血细胞检测与识别软件设计}{59}{chapter.6}%
-\contentsline {section}{\numberline {6.1}需求分析}{59}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}功能需求分析}{59}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}非功能需求分析}{59}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}软件设计}{59}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}软件架构设计}{59}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}软件数据库设计}{59}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}各个模块设计}{59}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}骨髓血细胞检测模块}{59}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}骨髓血细胞识别模块}{59}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}患者信息录入与核查模块}{59}{subsection.6.3.3}%
-\contentsline {subsection}{\numberline {6.3.4}患者数据分析模块}{59}{subsection.6.3.4}%
-\contentsline {section}{\numberline {6.4}软件实现与测试}{60}{section.6.4}%
-\contentsline {section}{\numberline {6.5}小结}{60}{section.6.5}%
-\contentsline {chapter}{\numberline {第7章}总结与展望}{61}{chapter.7}%
+\contentsline {section}{\numberline {5.3}实验结果分析}{52}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}数据集介绍}{52}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}实验环境与评价指标}{52}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}实验结果}{53}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}消融实验}{57}{subsection.5.3.4}%
+\contentsline {subsubsection}{\numberline {5.3.4.1}图像块划分方法}{57}{subsubsection.5.3.4.1}%
+\contentsline {subsubsection}{\numberline {5.3.4.2}稀疏注意力模块}{58}{subsubsection.5.3.4.2}%
+\contentsline {subsubsection}{\numberline {5.3.4.3}对比损失}{58}{subsubsection.5.3.4.3}%
+\contentsline {section}{\numberline {5.4}小结}{59}{section.5.4}%
+\contentsline {chapter}{\numberline {第6章}骨髓血细胞检测与识别软件设计}{61}{chapter.6}%
+\contentsline {section}{\numberline {6.1}需求分析}{61}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}功能需求分析}{61}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}非功能需求分析}{61}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}软件设计}{61}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}软件架构设计}{61}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}软件数据库设计}{61}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}各个模块设计}{61}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}骨髓血细胞检测模块}{61}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}骨髓血细胞识别模块}{61}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}患者信息录入与核查模块}{61}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}患者数据分析模块}{61}{subsection.6.3.4}%
+\contentsline {section}{\numberline {6.4}软件实现与测试}{62}{section.6.4}%
+\contentsline {section}{\numberline {6.5}小结}{62}{section.6.5}%
+\contentsline {chapter}{\numberline {第7章}总结与展望}{63}{chapter.7}%
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{参考文献}{62}{section*.67}%
+\contentsline {chapter}{参考文献}{64}{section*.69}%
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{\numberline {附录 A}补充内容}{65}{appendix.A}%
-\contentsline {section}{\numberline {A.1}图表示例}{65}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}图}{65}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}表格}{65}{subsection.A.1.2}%
-\contentsline {section}{\numberline {A.2}数学公式}{66}{section.A.2}%
-\contentsline {chapter}{致\hskip 1em\relax 谢}{67}{section*.71}%
-\contentsline {chapter}{声\hspace {1em}明}{68}{section*.73}%
-\contentsline {chapter}{个人简历、在学期间完成的相关学术成果}{69}{section*.75}%
-\contentsline {chapter}{指导教师评语}{70}{appendix*.81}%
-\contentsline {chapter}{答辩委员会决议书}{71}{appendix*.82}%
+\contentsline {chapter}{\numberline {附录 A}补充内容}{67}{appendix.A}%
+\contentsline {section}{\numberline {A.1}图表示例}{67}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}图}{67}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}表格}{67}{subsection.A.1.2}%
+\contentsline {section}{\numberline {A.2}数学公式}{68}{section.A.2}%
+\contentsline {chapter}{致\hskip 1em\relax 谢}{69}{section*.73}%
+\contentsline {chapter}{声\hspace {1em}明}{70}{section*.75}%
+\contentsline {chapter}{个人简历、在学期间完成的相关学术成果}{71}{section*.77}%
+\contentsline {chapter}{指导教师评语}{72}{appendix*.83}%
+\contentsline {chapter}{答辩委员会决议书}{73}{appendix*.84}%
 \contentsfinish 

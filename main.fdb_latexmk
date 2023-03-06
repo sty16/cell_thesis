@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex main"] 1678008379 "main.aux" "main.bbl" "main" 1678008399
+["bibtex main"] 1678089269 "main.aux" "main.bbl" "main" 1678089290
   "./thuthesis-numeric.bst" 1664959156 46116 cd3bc71ff82c01699bd493d2be7a78bd ""
-  "main.aux" 1678008386 35798 1fc58ea7c80ad3ea7e1a809c4ba65e52 "xelatex"
-  "ref/refs.bib" 1678008009 12048 086fc4820d84ff7f7277af9fc99f4fbe ""
+  "main.aux" 1678089276 36288 57be53237914c53f8d63c3e36f6d16dd "xelatex"
+  "ref/refs.bib" 1678025004 12315 5bb44f3d5074beaa5c3253921eb6c5df ""
   (generated)
   "main.bbl"
   "main.blg"
-["xdvipdfmx"] 1678008387 "main.xdv" "main.pdf" "main" 1678008399
-  "main.xdv" 1678008386 1499596 50905c36d89e1ddaff422e8ba22b0017 "xelatex"
+["xdvipdfmx"] 1678089277 "main.xdv" "main.pdf" "main" 1678089290
+  "main.xdv" 1678089276 1523268 045c7242fa992fcb2a0e666b5c30f348 "xelatex"
   (generated)
   "main.pdf"
-["xelatex"] 1678008379 "e:/sty/thu_study/硕士/毕业/毕业论文/thuthesis-v7.3.1/main.tex" "main.xdv" "main" 1678008399
+["xelatex"] 1678089270 "e:/sty/thu_study/硕士/毕业/毕业论文/thuthesis-v7.3.1/main.tex" "main.xdv" "main" 1678089290
   "bottleneck.jpg" 1677470204 46653 fab758c960dbb0e1d1d60592284292bf ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1675950911 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1675952387 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
@@ -148,9 +148,9 @@
   "data/appendix.tex" 1622465812 1478 f680cdb2534540f690fe9bd00d21f0df ""
   "data/chap01.tex" 1677378092 24752 f808c68eb3e3164db72d2329a1b886ee ""
   "data/chap02.tex" 1677684746 39928 457bb858aabe2b831a9316629fb5a8b4 ""
-  "data/chap03.tex" 1677982830 38483 d3b0fc8329d32b9edc41c1f3521e758a ""
+  "data/chap03.tex" 1678028787 38508 c94bcfe8c5a9014463d13438eea536d6 ""
   "data/chap04.tex" 1677983499 4906 c625a56941c8b4118d539201ac040adf ""
-  "data/chap05.tex" 1678008358 29954 9cbd56bcc9504585cf2cdd885b9e47d4 ""
+  "data/chap05.tex" 1678088941 33949 fdcbabcd1b1b796d997b7e11bb6555db ""
   "data/chap06.tex" 1677339103 1758 fc39a1876aa788856c9c54fef0e6f516 ""
   "data/chap07.tex" 1677230924 26 8f773e9d8bbff2947092d25fda226f8b ""
   "data/comments.tex" 1664959156 279 87fd759317b7dbbf3ab78980223cea5b ""
@@ -210,6 +210,7 @@
   "figures//neuron.jpg" 1676954721 46829 9ba3207ed464a54551239aaf308a7946 ""
   "figures//perceptron.jpg" 1676966892 71963 a9d6bc88da4172350e2fab16c9014cea ""
   "figures//pool.jpg" 1677140681 56575 ee2516be014c7244c6e6a6f6a1186982 ""
+  "figures//pos_emb.png" 1678088626 301244 f649d4d1d93b3d510b3348ce1a16d436 ""
   "figures//resnet50.jpg" 1677468670 95780 f5ad46dfe34d084b9deb11941cbf5eaa ""
   "figures//retinanet.jpg" 1677552957 153204 0d65c2a4dae081558c23a66e58e24054 ""
   "figures//rpn.jpg" 1677488605 44991 0dffcfa567924c7c6759818143e491b8 ""
@@ -223,15 +224,15 @@
   "figures//tsne1.png" 1664888293 112568 28d6888cdd7eade7984985445f3edd09 ""
   "figures//tsne2.png" 1664888399 71204 296cdda8e0903abe10bdce54a0b059cf ""
   "figures//tsne3.png" 1664888498 72414 ef1c240dd4d1977649714b66b87ba7f8 ""
-  "main.aux" 1678008386 35798 1fc58ea7c80ad3ea7e1a809c4ba65e52 "xelatex"
-  "main.bbl" 1678008379 11618 5cea80f8babf3e6caded9839837e7f26 "bibtex main"
-  "main.lof" 1678008386 4816 00cc572078b11d3166e22503d1de5739 "xelatex"
-  "main.lot" 1678008386 1573 98ff07cca17a5044aa8ab5399eddc923 "xelatex"
-  "main.out" 1678008386 15667 ef475b073bcbdad99bdb4a62cb643018 "xelatex"
+  "main.aux" 1678089276 36288 57be53237914c53f8d63c3e36f6d16dd "xelatex"
+  "main.bbl" 1678089270 11849 aaa7b853c7e64aa47af9a8b5e4d80dd7 "bibtex main"
+  "main.lof" 1678089276 4927 8c5bc23ff785d1f59e3bd587db04909c "xelatex"
+  "main.lot" 1678089276 1701 5d7cd08556c8345125264f99e20960ed "xelatex"
+  "main.out" 1678089276 15300 46c4925066cdf68832ad6aa9fcd6f5fa "xelatex"
   "main.tex" 1677982830 2744 7a2b88e478b1ce21093323b985d7ff8e ""
-  "main.toc" 1678008386 9120 5d902df81aec3e744c93b4edfc2a40a9 "xelatex"
-  "thusetup.tex" 1677832808 4844 0bf28c8b375c9202405e9776f86afb2f ""
-  "thuthesis.cls" 1678008362 112463 72705b84252c4f64a294fb60487d981d ""
+  "main.toc" 1678089276 8916 4d8af7770a345bf2320f20dcf89669b3 "xelatex"
+  "thusetup.tex" 1678089144 4800 b52cfb15fa62eab1b0993818cec807b7 ""
+  "thuthesis.cls" 1678089253 112463 72705b84252c4f64a294fb60487d981d ""
   (generated)
   "main.aux"
   "main.lof"

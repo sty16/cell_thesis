@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{40}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -227,6 +227,12 @@ Rosenblatt F.
 Lin T~Y, Dollar P, Girshick R, et~al.
 \newblock Feature pyramid networks for object detection\allowbreak[J].
 \newblock IEEE Computer Society, 2017.
+
+\bibitem[Van~Dyk et~al.(2001)Van~Dyk and Meng]{van2001art}
+Van~Dyk D~A, Meng X~L.
+\newblock The art of data augmentation\allowbreak[J].
+\newblock Journal of Computational and Graphical Statistics, 2001,
+  10\allowbreak (1): 1-50.
 
 \bibitem[Simonyan et~al.(2014)Simonyan and Zisserman]{2014Very}
 Simonyan K, Zisserman A.

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  5 MAR 2023 17:26
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  6 MAR 2023 15:54
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1537,19 +1537,19 @@ File: figures//subnets.jpg Graphic file (type bmp)
 File: figures//retinanet.jpg Graphic file (type bmp)
 <figures//retinanet.jpg>
  [30] [31] [32]
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 259.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 260.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 11.04242pt on input line 259.
+(Font)              scaled to size 11.04242pt on input line 260.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 7.72966pt on input line 259.
+(Font)              scaled to size 7.72966pt on input line 260.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 5.5212pt on input line 259.
+(Font)              scaled to size 5.5212pt on input line 260.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 11.04005pt on input line 259.
+(Font)              scaled to size 11.04005pt on input line 260.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 7.728pt on input line 259.
+(Font)              scaled to size 7.728pt on input line 260.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 5.52002pt on input line 259.
+(Font)              scaled to size 5.52002pt on input line 260.
 File: figures//iou.jpg Graphic file (type bmp)
 <figures//iou.jpg>
  [33]
@@ -1602,77 +1602,78 @@ File: figures//features.jpg Graphic file (type bmp)
 File: figures//transFG.png Graphic file (type bmp)
 <figures//transFG.png>
  [46]
+File: figures//pos_emb.png Graphic file (type bmp)
+<figures//pos_emb.png>
 File: figures//encoder.png Graphic file (type bmp)
 <figures//encoder.png>
  [47] [48]
 File: figures//discriminate.png Graphic file (type bmp)
 <figures//discriminate.png>
-
+ [49]
 Missing character: There is no 𝛼 (U+1D6FC) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
-[49]
 File: figures//sparse_attn.png Graphic file (type bmp)
 <figures//sparse_attn.png>
- [50] [51]
+[50] [51] [52]
 File: figures//cls_confuse.png Graphic file (type bmp)
 <figures//cls_confuse.png>
- [52]
+ [53] [54]
 File: figures//self_attn.png Graphic file (type bmp)
 <figures//self_attn.png>
 File: figures//sparse_select.png Graphic file (type bmp)
 <figures//sparse_select.png>
- [53] [54] [55]
+ [55] [56]
 File: figures//split_method.png Graphic file (type bmp)
 <figures//split_method.png>
- [56]
+ [57] [58]
 File: figures//tsne1.png Graphic file (type bmp)
 <figures//tsne1.png>
 File: figures//tsne2.png Graphic file (type bmp)
 <figures//tsne2.png>
 File: figures//tsne3.png Graphic file (type bmp)
 <figures//tsne3.png>
-) (./data/chap06.tex [57] [58]
+) (./data/chap06.tex [59] [60]
 第6章
-) (./data/chap07.tex [59
+) (./data/chap07.tex [61
 
-] [60]
+] [62]
 第7章
-) [61
+) [63
 
-] (./main.bbl [62
+] (./main.bbl [64
 
 
 
-] [63]) (./data/appendix.tex [64]
+] [65]) (./data/appendix.tex [66]
 附录 A
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-[65
+[67
 
-]) (./data/acknowledgements.tex [66]) [67
-
-
-] (./data/resume.tex [68
+]) (./data/acknowledgements.tex [68]) [69
 
 
-]) (./data/comments.tex [69
+] (./data/resume.tex [70
 
 
-] [70
+]) (./data/comments.tex [71
 
-]) (./data/resolution.tex [71
+
+] [72
+
+]) (./data/resolution.tex [73
 
 
 ]) (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EF475B073BCBDAD99BDB4A62CB643018;15667.
+(rerunfilecheck)             Checksum: 46C4925066CDF68832AD6AA9FCD6F5FA;15300.
  ) 
 Here is how much of TeX's memory you used:
- 31813 strings out of 476179
- 685356 string characters out of 5813073
- 1089773 words of memory out of 5000000
- 51934 multiletter control sequences out of 15000+600000
+ 31829 strings out of 476179
+ 685686 string characters out of 5813073
+ 1089608 words of memory out of 5000000
+ 51949 multiletter control sequences out of 15000+600000
  478611 words of font info for 182 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  102i,16n,129p,1451b,2766s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (89 pages, 1499596 bytes).
+Output written on main.xdv (91 pages, 1523268 bytes).

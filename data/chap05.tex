@@ -27,9 +27,10 @@
 然后，嵌入向量经过多个编码层进行特征提取。本章基于多头自注意机制提出了稀疏注意力模块，
 该模块可以捕捉图像中的辨识性区域，提取图像中的细粒度特征，并将筛选后的特征输入到编码层。
 最后，网络输出的分类特征用于骨髓血细胞的识别。在训练过程中，本章采用对比损失进一步增加分类特征的类内一致性与类间差异性。
-为了进一步解决骨髓血细胞类内差异性小的问题，本章提出了了一种分级的骨髓血细胞识别算法，先由第一级网络识别大类血细胞，
-再由二级网络对子类进行识别。最后，在邃蓝智能骨髓血细胞数据集与开源的慕尼黑血细胞形态学数据集实验结果表明，
+最后，在邃蓝智能骨髓血细胞数据集与开源的慕尼黑血细胞形态学数据集实验结果表明，
 我们提出的方法具有良好的精细分类性能，相比于其他识别方法具有更高的识别准确率
+% 为了进一步解决骨髓血细胞类内差异性小的问题，本章提出了了一种分级的骨髓血细胞识别算法，先由第一级网络识别大类血细胞，
+% 再由二级网络对子类进行识别。
 
 \section{改进的Vision Transformer骨髓血细胞识别网络}
 
@@ -47,7 +48,7 @@
 \end{figure}  
 
 \subsection{重叠图像块划分}
-Vision Transformer模型接收的输入为序列化数据，因此需要将图像划分为图像块并线性映射为序列化向量。
+Vision Transformer模型接收的输入为序列化数据，因此需要将图像划分为图像块并线性映射为序列化向量（token）。
 Vision Transformer模型将图像划分成大小为$P \times P$且互不重叠的像素块，但这样划分会破坏图像的局部结构，
 例如辨识性区域被划分到两个相邻的图像块中。为避免该问题，本文采用滑动窗的方法来生成有重叠的图像块。
 当输入图像的尺寸为$H \times W \times C$、图像块大小为$P$、滑动窗的步长为$S$时，图像将会被划分为$N$个像素块，
@@ -71,11 +72,33 @@ Vision Transformer模型将图像划分成大小为$P \times P$且互不重叠�
     \label{eq:embed1}
 \end{equation}
 
+图片序列化之为一组向量后，网络需要知道每一个token在序列中的绝对位置，并且不同token之间的相对位置也需要保持一致。因此引入位置编码（Positional Embedding，PE）来
+表示token的位置关系。位置编码采用连续有界的正弦、余弦函数来表示位置信息，受到二进制编码的启发，位置编码向量的低位角频率较大，模拟二进制低位0、1的高频交互,
+位置编码高位角频率小，对位置$t$的变动不敏感，模拟二进制的高位变化较小。为了可以用线性变换表示相对位置变动，采用正弦与余弦一组的方式对位置编码进行表示。
+定义$t$为这个token在序列中的实际位置，$P E_{t} \in \mathbb{R}^{d}$表示这个token的位置编码向量，$P E_{t}^{(i)}$表示位置编码向量中的第i个
+元素，$d_{model}$为位置编码的维度，则位置编码$P E_{t} \in \mathbb{R}^{d}$如式~\ref{eq:pos_embed}所示:
+\begin{equation}
+  P E_{t}^{(i)}=\left\{\begin{array}{l}
+  \sin \left(w_{i} t\right), \quad \text { if } k=2 i \\
+  \cos \left(w_{i} t\right), \quad \text { if } k=2 i+1
+  \end{array}\right.
+  \label{eq:pos_embed}
+\end{equation}
+
+其中$w_{i}=\frac{1}{10000^{2 i / d_{\text {model }}}}$，$i=0,1,2,3, \ldots, \frac{d_{\text {model }}}{2}-1$。
+token序列长度为50，向量维度为128的位置编码可视化结果如图~\ref{fig:pos_embed}所示。
+\begin{figure} 
+   \centering   
+   \includegraphics[width=0.80\linewidth]{pos_emb.png}   
+   \caption{位置编码可视化}   
+   \label{fig:pos_embed} 
+\end{figure}  
+
 \subsection{编码层}
 Vision Transformer的编码器由$L$个结构相同的编码模块堆叠而成，编码模块结构如图~\ref{fig:encoder}所示：
 \begin{figure} 
    \centering   
-   \includegraphics[width=0.75\linewidth]{encoder.png}   
+   \includegraphics[width=0.65\linewidth]{encoder.png}   
    \caption{Vision Transformer编码模块结构}   
    \label{fig:encoder} 
 \end{figure}  
@@ -201,12 +224,50 @@ $\boldsymbol{A}_{\mathrm{attn}}$包含了低层特征与高层特征全部的注
 
 
 
-\section{基于分级网络的骨髓血细胞识别方法}
+% \section{基于分级网络的骨髓血细胞识别方法}
 
 \section{实验结果分析}
 \subsection{数据集介绍}
+实验数据由自邃蓝智能科技 (上海) 公式提供，单细胞图像通过骨髓血细胞检测网络从原图像中裁剪出来，
+随后将单细胞图像大小调整为$224 \times 224$。数据集总共包含了11个类别的血细胞，数据集的分布见~\ref{section:dataset}节。
+
+此外我们采用了The Cancer Imaging Archive平台上开源的血细胞形态学数据集（The Munich AML Morphology Dataset, TMAMD）
+该数据来自慕尼黑医院2014年至2017年间100位被诊断为急性白血病的患者与100位无血液恶性肿瘤的患者。
+数据集包含了15类由专家标记的18635张单细胞图像。由于数据集存在较严重的类别不平衡问题，部分类别的数量小于30使得网络难以有效的进行特征学习。本文只关注了样本数量大于30的十个类别。
+在选择的十个类别中，对于数量较多的类别采用随机欠采样减少样本数量，对于数量较少的类别，采用水平、垂直翻转与旋转90°、180°的方式进行数据扩充，
+表~\ref{table:tmamd_dataset}为TMAMD数据集的分布情况与数据增强\cite{van2001art}后的样本分布情况。
+
+\begin{table}
+  \caption{TMAMD血细胞数据集数据分布情况}   
+  \centering 
+  \label{table:tmamd_dataset}
+  \begin{tabular}{ccccc}
+    \toprule[2pt]
+    序号 & 血细胞类别名  &  图像数量 & 是否选择 & 数据增强 \\
+    \midrule[1.5pt] 
+        1 & 分页核嗜中性粒细胞（NGS） & 8484 & √ & 1000  \\ 
+        2 & 杆状核嗜中性粒细胞（NGB）  & 109 & √ & 545  \\ 
+        3 & 典型淋巴细胞（LYT） & 3937 & √ & 1000  \\ 
+        4 & 非典型淋巴细胞（LYA） & 11 & × &   \\ 
+        5 & 单核细胞（MON） & 1789 & √ & 1000  \\ 
+        6 & 嗜酸性粒细胞（EOS）  & 424 & √ & 848  \\ 
+        7 & 嗜碱性粒细胞（BAS） & 79 & √ & 395  \\ 
+        8 & 原始粒细胞（MYO） & 3268 & √ & 1000  \\ 
+        9 & 早幼粒细胞（PMO） & 70 & √ & 350  \\ 
+        10 & 二分裂早幼粒细胞（PMB） & 18 & × &   \\ 
+        11 & 中幼粒细胞（MYB） & 42 & √ & 210  \\ 
+        12 & 晚幼粒细胞（MMZ） & 15 & × &   \\ 
+        13 & 原始单核细胞（MOB） & 26 & × &   \\ 
+        14 & 有核红细胞（EBO） & 78 & √ & 390  \\ 
+        15 & 破碎细胞（KSC） & 15 & × &   \\ 
+        ~ & 总计 & 18365 & ~ & 6738  \\ 
+    \bottomrule[2pt]      
+  \end{tabular} 
+\end{table}
+
+
 \subsection{实验环境与评价指标}
-单细胞图像通过第四章的目标检测网络从原图像中裁剪出来，随后将单细胞图像大小调整为$224 \times 224$。实验中图像块的大小设置为$16 \times 16$，
+实验中图像块的大小设置为$16 \times 16$，
 滑动窗步长大小为12，式~\ref{eq:loss_con}中的阈值$t_{\text {con }}$大小为$0.4$，批尺寸大小设置为$32$。
 我们在Linux操作系统下的NVIDIA GeForce RTX 3090显卡上训练模型。训练使用的深度学习框架为Pytorch 1.10.1，
 优化器使用随机梯度下降算法（SGD），动量设置为0.9，权重衰减设置为5e-4，学习率初始化为0.001，在第40、70、90个epoch时变为原来的1/10。
@@ -428,7 +489,7 @@ Vision Transformer与本文模型在有无对比损失情况下的识别性能�
 	\label{fig:tsne}
 \end{figure}
 
-\subsection{分级网络性能分析}
+% \subsection{分级网络性能分析}
 
 \section{小结}
 目前血细胞识别研究主要侧重于五类血细胞的粗分类，很少有研究关注血细胞大类中子类的识别。

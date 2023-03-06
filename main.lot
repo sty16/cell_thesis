@@ -4,12 +4,13 @@
 \contentsline {table}{\numberline {3.3}{\ignorespaces 不同目标检测方法在骨髓血细胞测试集上的检测结果\relax }}{36}{table.caption.45}%
 \contentsline {table}{\numberline {3.4}{\ignorespaces RetinaNet网络各类别的准确率与召回率\relax }}{39}{table.caption.49}%
 \contentsline {table}{\numberline {4.1}{\ignorespaces 骨髓血细胞检测数据集分布\relax }}{43}{table.caption.52}%
-\contentsline {table}{\numberline {5.1}{\ignorespaces 改进Vision Transformer方法的识别精确率与召回率\relax }}{52}{table.caption.57}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces 不同识别方法性能对比\relax }}{54}{table.caption.59}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces 不同识别方法性能对比\relax }}{55}{table.caption.62}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces 不同图像块划分方式的消融研究\relax }}{56}{table.caption.63}%
-\contentsline {table}{\numberline {5.5}{\ignorespaces 对比损失的消融研究\relax }}{57}{table.caption.65}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces TMAMD血细胞数据集数据分布情况\relax }}{53}{table.caption.58}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces 改进Vision Transformer方法的识别精确率与召回率\relax }}{54}{table.caption.59}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces 不同识别方法性能对比\relax }}{55}{table.caption.61}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces 不同识别方法性能对比\relax }}{57}{table.caption.64}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces 不同图像块划分方式的消融研究\relax }}{58}{table.caption.65}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces 对比损失的消融研究\relax }}{59}{table.caption.67}%
 \let \contentsline \ttl@gobblecontents 
-\contentsline {table}{\numberline {A.1}{\ignorespaces 附录中的表格示例\relax }}{65}{table.caption.70}%
+\contentsline {table}{\numberline {A.1}{\ignorespaces 附录中的表格示例\relax }}{67}{table.caption.72}%
 \contentsfinish 
 \contentsfinish 
