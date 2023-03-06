@@ -1274,6 +1274,9 @@ INPUT data/chap04.tex
 INPUT ./figures//detect_problem.jpg
 INPUT ./figures//detect_problem.jpg
 INPUT figures//detect_problem.jpg
+INPUT ./figures//improved_retinanet.png
+INPUT ./figures//improved_retinanet.png
+INPUT figures//improved_retinanet.png
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm

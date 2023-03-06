@@ -26,9 +26,22 @@
 \end{figure}  
 
 \section{改进的RetinaNet骨髓血细胞检测网络}
+本章提出的改进RetinaNet网络结构如图~\ref{fig:improved_retinanet}所示，网络的输入是多张骨髓血细胞图像，大小为
+$B \times 3 \times H \times W$。整个网络结构在第三章的RetinaNet基线模型进行改进。骨干网络为
+ResNet50用于图像特征提取，特征金字塔结构用于多尺度特征提取。锚框的尺寸、数量与分类回归网络结果与基线模型相同。
+为了提高网络检测的精度，我们在特征金字塔后引入了自底向上的路径聚合模块，该模块基于全局注意力将更浅层的特征与FPN深层的进行融合，
+提升网络定位特征的表达能力，此外我们引入了可变形卷积、空洞卷积等卷积模块。在训练过程中，我们使用基于最优输运的策略进行标签分配。
+下面各个小节将详细介绍我们的改进点。
+\begin{figure}[htbp]                     
+  \centering                      
+  \includegraphics[width=0.95\linewidth]{improved_retinanet.png}                      
+  \caption{RetinaNet基线模型检测错误示例}                      
+  \label{fig:improved_retinanet}       
+\end{figure}  
+
 \subsection{基于全局注意的路径聚合网络}
-\subsection{训练标签分配策略}
 \subsection{卷积模块}
+\subsection{训练标签分配策略}
 
 \section{算法实现与实验结果分析}
 \subsection{实验环境}
@@ -37,7 +50,7 @@
 骨髓血细胞图像来自邃蓝智能科技(上海)有限公司合作医院提供，首先采用第2.1小节阐述的主动学习标注策略进行边界框的标注。
 我们总共标记了6821张血细胞图像，训练集与测试集按照4:1的比例进行随机划分，训练集包含了5456张图像，测试集包含了1365张图像。
 通常每个图像中包含1到10个有核血细胞，数据集总共标记了11352个血细胞，训练集有9065个血细胞，测试集有2287个血细胞。数据集的分布如
-表~\ref{table:cell_detect}所示：
+表~\ref{table:cell_detect1}所示：
 
 \begin{table}
   \caption{骨髓血细胞检测数据集分布}   

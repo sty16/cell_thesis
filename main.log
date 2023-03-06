@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  6 MAR 2023 17:57
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  7 MAR 2023 01:01
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1274,31 +1274,30 @@ LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
 第1章
 File: figures//detect_problem.jpg Graphic file (type bmp)
 <figures//detect_problem.jpg>
-
-LaTeX Warning: Reference `table:cell_detect' on page 1 undefined on input line 40.
-
+File: figures//improved_retinanet.png Graphic file (type bmp)
+<figures//improved_retinanet.png>
 [1
 
 
-]
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 46.
+] [2]
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 59.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 11.04242pt on input line 46.
+(Font)              scaled to size 11.04242pt on input line 59.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 7.72966pt on input line 46.
+(Font)              scaled to size 7.72966pt on input line 59.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 5.5212pt on input line 46.
+(Font)              scaled to size 5.5212pt on input line 59.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 11.04005pt on input line 46.
+(Font)              scaled to size 11.04005pt on input line 59.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 7.728pt on input line 46.
+(Font)              scaled to size 7.728pt on input line 59.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 5.52002pt on input line 46.
-) [2] [3] (./main.bbl
+(Font)              scaled to size 5.52002pt on input line 59.
+) [3] [4] (./main.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 14.
 
-) (./data/appendix.tex [4
+) (./data/appendix.tex [5
 
 
 
@@ -1306,36 +1305,33 @@ Package natbib Warning: Empty `thebibliography' environment on input line 14.
 附录 A
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-[5
+[6
 
-]) (./data/acknowledgements.tex [6]) [7
-
-
-] (./data/resume.tex [8
+]) (./data/acknowledgements.tex [7]) [8
 
 
-]) (./data/comments.tex [9
+] (./data/resume.tex [9
 
 
-] [10
+]) (./data/comments.tex [10
 
-]) (./data/resolution.tex [11
+
+] [11
+
+]) (./data/resolution.tex [12
 
 
 ]) (./main.aux)
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 327CE6FC120C15E91CDA433CC28344F2;4994.
+(rerunfilecheck)             Checksum: 69238880D56D5780054E66C2B82DEB20;4994.
  ) 
 Here is how much of TeX's memory you used:
- 30809 strings out of 476179
- 655962 string characters out of 5813073
- 1051205 words of memory out of 5000000
- 51029 multiletter control sequences out of 15000+600000
+ 30819 strings out of 476179
+ 656279 string characters out of 5813073
+ 1051258 words of memory out of 5000000
+ 51037 multiletter control sequences out of 15000+600000
  478515 words of font info for 170 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  102i,12n,129p,1451b,2766s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (21 pages, 221372 bytes).
+Output written on main.xdv (22 pages, 231488 bytes).
