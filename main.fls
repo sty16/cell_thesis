@@ -1277,6 +1277,12 @@ INPUT figures//detect_problem.jpg
 INPUT ./figures//improved_retinanet.png
 INPUT ./figures//improved_retinanet.png
 INPUT figures//improved_retinanet.png
+INPUT ./figures//panet.jpg
+INPUT ./figures//panet.jpg
+INPUT figures//panet.jpg
+INPUT ./figures//gau.jpg
+INPUT ./figures//gau.jpg
+INPUT figures//gau.jpg
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm

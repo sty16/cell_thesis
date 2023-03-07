@@ -1,6 +1,8 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces RetinaNet基线模型检测错误示例\relax }}{1}{figure.caption.21}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces RetinaNet基线模型检测错误示例\relax }}{2}{figure.caption.22}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces 改进的RetinaNet网络结构示意图\relax }}{2}{figure.caption.22}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces 路径聚合网络结构示意图\relax }}{3}{figure.caption.23}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces 全局注意力模块\relax }}{3}{figure.caption.24}%
 \let \contentsline \ttl@gobblecontents 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces 附录中的图片示例\relax }}{6}{figure.caption.26}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces 附录中的图片示例\relax }}{8}{figure.caption.28}%
 \contentsfinish 
 \contentsfinish 

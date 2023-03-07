@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex main"] 1678121969 "main.aux" "main.bbl" "main" 1678122115
+["bibtex main"] 1678182676 "main.aux" "main.bbl" "main" 1678183882
   "./thuthesis-numeric.bst" 1664959156 46116 cd3bc71ff82c01699bd493d2be7a78bd ""
-  "main.aux" 1678122112 6537 eab8023a770fce356d52f93e1bd6bb92 "xelatex"
+  "main.aux" 1678183880 7460 5153181085976dc739d5410aa4195b9f "xelatex"
   "ref/refs.bib" 1678025004 12315 5bb44f3d5074beaa5c3253921eb6c5df ""
   (generated)
   "main.bbl"
   "main.blg"
-["xdvipdfmx"] 1678122113 "main.xdv" "main.pdf" "main" 1678122115
-  "main.xdv" 1678122112 231488 1790ff979a79657207c20d9802d0ccea "xelatex"
+["xdvipdfmx"] 1678183881 "main.xdv" "main.pdf" "main" 1678183882
+  "main.xdv" 1678183880 267120 07d6cc81b5696f3421e3881f1b25a9b3 "xelatex"
   (generated)
   "main.pdf"
-["xelatex"] 1678122107 "e:/sty/thu_study/硕士/毕业/毕业论文/thuthesis-v7.3.1/main.tex" "main.xdv" "main" 1678122115
+["xelatex"] 1678183874 "e:/sty/thu_study/硕士/毕业/毕业论文/thuthesis-v7.3.1/main.tex" "main.xdv" "main" 1678183882
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1675950911 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1675952387 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1675950572 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -145,7 +145,7 @@
   "data/abstract.tex" 1622465812 2280 fcecaabb914cdd15503f3b5ed305e7dc ""
   "data/acknowledgements.tex" 1602688786 548 acb072c9b5b159b9d806e9f0b9778dac ""
   "data/appendix.tex" 1622465812 1478 f680cdb2534540f690fe9bd00d21f0df ""
-  "data/chap04.tex" 1678122089 5648 470bf3e7943daf33cfb685ab02d7c54d ""
+  "data/chap04.tex" 1678183871 11131 91eb76bd42b77ad3f2792b006fb18fe8 ""
   "data/comments.tex" 1664959156 279 87fd759317b7dbbf3ab78980223cea5b ""
   "data/committee.tex" 1599666344 1664 0d574adba7b8512ff5de022aece8d857 ""
   "data/denotation.tex" 1678092911 787 6ae29fa21ff956ede797080d62e1e39b ""
@@ -153,16 +153,18 @@
   "data/resume.tex" 1602688786 1452 adb5962b9f197190e202e5ddf022af6b ""
   "e:/sty/thu_study/硕士/毕业/毕业论文/thuthesis-v7.3.1/main.tex" 1678096625 2756 a932ec854bf8026ced36ca9d75c8cf6c ""
   "figures//detect_problem.jpg" 1678096412 37431 5661bc1c379d4566c47965cbc6bc8003 ""
+  "figures//gau.jpg" 1678177957 143434 cc341387bad529448745aafde5bf1d89 ""
   "figures//improved_retinanet.png" 1678120114 345255 8d26c5ed1cc5e02099fb9cb2b804fe08 ""
-  "main.aux" 1678122112 6537 eab8023a770fce356d52f93e1bd6bb92 "xelatex"
-  "main.bbl" 1678121970 380 df8c4f4f41d6dc077f9019104a98461e "bibtex main"
-  "main.lof" 1678122112 440 01aa76f1331d064907bdf2f37126bb29 "xelatex"
-  "main.lot" 1678122112 306 3858ab7f27d0bbf533f8a36b156d017a "xelatex"
-  "main.out" 1678122112 4994 69238880d56d5780054e66c2b82deb20 "xelatex"
+  "figures//panet.jpg" 1678157680 186628 e7a01d62313b87b2e1d200458695695d ""
+  "main.aux" 1678183880 7460 5153181085976dc739d5410aa4195b9f "xelatex"
+  "main.bbl" 1678182676 380 df8c4f4f41d6dc077f9019104a98461e "bibtex main"
+  "main.lof" 1678183880 670 631cd7dd3a63c13723bbb084b7a4656a "xelatex"
+  "main.lot" 1678183880 306 93c278abf4c6e24780f540eb437e1985 "xelatex"
+  "main.out" 1678183880 5209 9e415bf1502ac01abba7cf381fa1b55b "xelatex"
   "main.tex" 1678096625 2756 a932ec854bf8026ced36ca9d75c8cf6c ""
-  "main.toc" 1678122112 2710 7956fe3561b8a627cdc8b4fd42e98c85 "xelatex"
+  "main.toc" 1678183880 2832 91b0d55ae0a975cc23e82ace7a8450cf "xelatex"
   "thusetup.tex" 1678089614 4825 0c71eadbd900cd20b6cfb519c39d4bc2 ""
-  "thuthesis.cls" 1678122106 112463 72705b84252c4f64a294fb60487d981d ""
+  "thuthesis.cls" 1678183873 112463 72705b84252c4f64a294fb60487d981d ""
   (generated)
   "main.aux"
   "main.lof"
