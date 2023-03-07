@@ -1283,6 +1283,12 @@ INPUT figures//panet.jpg
 INPUT ./figures//gau.jpg
 INPUT ./figures//gau.jpg
 INPUT figures//gau.jpg
+INPUT ./figures//atss1.jpg
+INPUT ./figures//atss1.jpg
+INPUT figures//atss1.jpg
+INPUT ./figures//atss2.jpg
+INPUT ./figures//atss2.jpg
+INPUT figures//atss2.jpg
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
