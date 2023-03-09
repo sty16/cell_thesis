@@ -20,7 +20,7 @@
 
 \begin{figure}[htbp]                     
   \centering                      
-  \includegraphics[width=0.65\linewidth]{detect_problem.jpg}                      
+  \includegraphics[width=0.7\linewidth]{detect_problem.jpg}                      
   \caption{RetinaNet基线模型检测错误示例}                      
   \label{fig:detect_problem}       
 \end{figure}  
@@ -90,7 +90,59 @@ $\mathbf{w}(1 \times 1 \times {C_2})$，如式~\ref{eq:excitation}所示。
 不断迭代上述过程，直到生成$N_5$特征图为止。最终在融合后新的特征图$N_2, N_3, N_4, N_5$上进行区域提取与坐标回归。
 anchor生成与分类回归结构与RetianNet相同，在第三章已进行详细解释。
 
-% \subsection{卷积模块}
+\subsection{IOU预测分支}
+RetinaNet在预测阶段会生成密集的检测框，这些检测框会按照置信度高低进行非极大值抑制（NMS），去除重复的检测框。上述NMS方式默认了一种假设，就是
+置信度高的锚框定位也会更加精确。
+\begin{figure}[htbp]
+	\centering
+  \begin{subfigure}{0.35\linewidth}
+    \centering
+    \includegraphics[width=0.95\linewidth, height=0.95\linewidth]{cell1.jpg}
+    \caption{}
+  \end{subfigure}
+	\centering
+	\begin{subfigure}{0.35\linewidth}
+		\centering
+		\includegraphics[width=0.95\linewidth, height=0.95\linewidth]{cell2.jpg}
+    \caption{}
+	\end{subfigure}
+  \caption{置信度高但交并比低的错误检测示例}
+	\label{fig:detect_err}
+\end{figure}
+但是部分细胞例如杆状核细胞不服从中心分布，因此分类与归回这两种任务不一定严格正相关\cite{he2019bounding}，如图~\ref{fig:detect_err}所示,
+图中（a）无论置信度分数高低，血细胞检测框的坐标都不准确，（b）中置信度分数更高的检测框右侧与上侧的边界都是不准确的，而置信度较低的检测框边界正确。
+
+
+我们认为需要将检测框的定位质量也纳入到非极大值抑制的考量当中，在挑选分数最大的检测框时同时考虑置信度与交并比。但是在预测阶段，
+没有目标真实的坐标信息，因此无法使用交并比来判断每个检测框定位质量的好坏。我们在网络的定位部分额外扩展出了一个子分支来预测每一个锚框
+可能对应真实框的交并比。该分支与定位分支共享特征图信息，使用一个卷积层对于每个锚框输出一个标量值，然后使用Sigmoid激活函数进行激活去得到
+一个零一之间的交并比信息，修改后的网络结构如图~\ref{fig:cls_reg}所示。图中（a）为RetinaNet的分类回归分支网络结构。图（b）中在回归分支
+加入了一个额外的卷积层，去预测交并比信息。
+\begin{figure}[htbp]
+  \centering
+	\begin{subfigure}{0.45\linewidth}
+		\centering
+		\includegraphics[width=0.95\linewidth, height=0.85\linewidth]{cls_reg1.jpg}
+    \caption{}
+	\end{subfigure}
+  \centering
+	\begin{subfigure}{0.45\linewidth}
+		\centering
+		\includegraphics[width=0.95\linewidth, height=0.85\linewidth]{cls_reg2.jpg}
+    \caption{}
+	\end{subfigure}
+  \caption{交并比预测分支结构}
+	\label{fig:cls_reg}
+\end{figure}
+
+在训练过程，我们优化的目标有分类，坐标回归与交并比，损失函数如式~\ref{eq:loss_all}所示，其中${{L_{IoU}}(io{u_i},io{u_i}^*)}$定义为预测IoU和真实IoU之间的二元交叉熵损失。
+\begin{equation}   
+  Loss = \sum\limits_i {{L_{cls}}} \left( {{p_i},p_i^*} \right) + {\lambda _1}\sum\limits_i {p_i^*} {L_{reg}}\left( {{t_i},t_i^*} \right) + {\lambda _2}\sum\limits_i {{L_{IoU}}(io{u_i},io{u_i}^*)} 
+  \label{eq:loss_all} 
+\end{equation}
+
+
+
 
 \subsection{训练标签分配策略}
   在目标检测网络训练过程中，标签分配（Label Assignment）是非常重要的一个流程。其目的是将训练样本划分为正负样本，并分配分类与回归的目标，
@@ -115,7 +167,7 @@ RetinaNet与Faster-RCNN等网络采用的是最常用的基于交并比最大化
 \subsubsection{自适应样本选择}
 自适应样本选择（Adaptive Training Sample Selection，ATSS）方法基于L2距离与交并比动态计算分割阈值，是一种自适应划分
 目标正负样本的标签分配策略。具体步骤如下：（1）对于网络输出的多个不同尺度特征图，在每个特征图上计算锚框中心坐标与目标中心
-坐标的$L_2$距离，选取$K$个$L_2$距离最小的锚框作为候选的正样本，如果有$L$个层级的特征图，那么可以得到$K \times L$个候选正样本。
+坐标的$L_2$距离，选取$K$个$L_2$距离最小的锚框作为候选的正样本，如果有$L$个层级的特征图，那么可以得到$K \times L$个候选正样本
 。（2）计算每个候选正样本与目标真实框的交并比，得到一组交并比的数据。计算这组交并比的均值$m_g$与标准差$v_g$，将均值与标准差
 相加，得到交并比的分割阈值$t_g = m_g + v_g$（3）在每个层级的特征图的候选正样本中根据阈值，选择真正的正样本加入正样本集合中进行训练。
 
@@ -142,6 +194,46 @@ RetinaNet与Faster-RCNN等网络采用的是最常用的基于交并比最大化
 可以设置一个比较低的阈值广泛的从多个层级的特征图中选取。
 
 \subsubsection{概率标签分配}
+概率标签分配（Probabilistic Anchor Assignment，PAA）将锚框的得分数视为概率分布，并通过最大似然来估计分布参数，然后自适应的计算分割
+阈值，来选取正负样本。锚框的分数用来衡量其与真实框的相似性，包括了分类得分与定位得分。分类得分是分类分支输出的置信度${P_i}(cls|\theta )$，定位得分为
+预测框与真实框之间的交并比${\rm{IOU}}(f(a|\theta ),g)$，为平衡这两种得分的权重，引入$\lambda$参数。锚框得分如式~\ref{eq:score}所示:
+\begin{equation}   
+  S = {P_i}(cls|\theta ) \times {\rm{IOU}}{(f(a|\theta ),g)^\lambda } 
+  \label{eq:score} 
+\end{equation}
+
+锚框可以分为正样本、负样本两组，因此可以使用双峰混合高斯分布来建模锚框的分数分布，如式~\ref{eq:gmm}所示。
+\begin{equation}   
+  P(a|g,\theta ) = {\phi _1}{\cal N}(a;{\mu _1},{\sigma _1}) + {\phi _2}{\cal N}(a;{\mu _2},{\sigma _2})
+  \label{eq:gmm} 
+\end{equation}
+
+然后根据最大期望算法（Expectation-Maximization，EM）使得似然最大化。首先对参数$\phi_i, \mu_i, \sigma_i$进行随机初始化，
+在E步中计算Q函数如式~\ref{eq:e_step}所示，式中$x_{1}, x_{2}, \ldots, x_{n}$为锚框的得分。
+\begin{equation}   
+  Q_{i}\left(z^{(i)}=k\right)=\frac{\phi_{k} \cdot \frac{1}{\sqrt{2 \pi} \sigma_{k}} \exp \left[-\frac{\left(x^{(i)}-\mu_{k}\right)^{2}}{2 \sigma_{k}^{2}}\right]}{\sum_{k=1}^{K} \phi_{k} \cdot \frac{1}{\sqrt{2 \pi} \sigma_{k}} \exp \left[-\frac{\left(x^{(i)}-\mu_{k}\right)^{2}}{2 \sigma_{k}^{2}}\right]}
+  \label{eq:e_step} 
+\end{equation}
+
+在M步中根据式~\ref{eq:m_step}计算混合高斯分布的参数$\phi_1,\phi_2,\mu_1,\sigma_1,\mu_2,\sigma_2$。
+
+概率标签分配的具体步骤如下：对于每个真实框，根据网络输出的置信度与坐标计算每个锚框的得分，在每个尺度的特征度选择K个得分最高的锚框。
+采用最大期望算法去估计这组锚框的双峰高斯分布参数，找到两个最高峰对应横坐标的分数$s_1,s_2$，其中$s_1 < s_2$。（3）将得分低于$s_1$的锚框
+作为负样本。得分位于$s_1$与$s_2$之间的锚框划分为忽略样本，得分大于$s_2$的锚框作为正样本。最后那些没有参与分配的锚框均视为负样本。
+
+\begin{equation}   
+  \begin{aligned} \mu_{k} & =\frac{\sum_{i=1}^{N} Q_{k}^{(i)} x^{(i)}}{N_{k}} \\ 
+    \sigma_{k} & =\frac{\sum_{i=1}^{N} Q_{k}^{(i)}\left(x^{(i)}-\mu_{(k)}\right)\left(x^{(i)}-\mu_{k}\right)^{T}}{N_{k}} \\ 
+    \phi_{k} & =\frac{\sum_{i=1}^{N} Q_{k}^{(i)}}{N} \\ 
+    N_{k} & =\sum Q_{k}^{N} Q_{k}^{(i)} 
+  \end{aligned}
+  \label{eq:m_step} 
+\end{equation}
+
+
+
+
+
 
 \subsubsection{最优输运标签分配}
 
