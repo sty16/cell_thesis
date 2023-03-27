@@ -467,7 +467,7 @@ CNN引入了卷积层与池化层，通过稀疏连接与权值共享，可以�
 
 \section{软件开发相关技术}
 本节主要介绍骨髓血细胞检测与识别软件开发使用的技术框架。首先介绍前端核心技术，Vue框架与Element UI组件库。
-然后介绍后端使用的框架Django与深度学习模型部署工具ONNX。最后介绍了软件使用的数据库Mysql。
+然后介绍后端使用的框架Django与深度学习模型部署工具ONNX。
 
 \subsection{前端技术}
 
@@ -550,5 +550,3 @@ Django框架具有如下的优势，（1）高度可扩展，框架的每个组�
 标准数据类型，内置运算算子与可扩展的计算图模型。ONNX目前支持多种深度学习框架如Pytorch、Tensorflow、Caffe2、Mxnet等。在Pytorch中可以使用$torch.onnx.export()$函数将Pytorch模型
 转为ONNX格式的静态计算图模型。ONNX Runtime是由微软开发的一个跨平台、高性能的机器学习推理引擎，它是ONNX文件的运行环境，在该环境下可以读取并运行.onnx 文件。
 目前ONNX Runtime支持多种硬件环境，包括了CPU、GPU、地平线的BPU、华为海思等国产推理芯片。完成上述流程实现了深度学习算法的落地与部署
-
-\textbf{3）Mysql数据库}

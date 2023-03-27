@@ -1,48 +1,4 @@
-\contentsline {figure}{\numberline {1.1}{\ignorespaces 论文组织结构\relax }}{8}{figure.caption.21}%
-\contentsline {figure}{\numberline {2.1}{\ignorespaces 骨髓血细胞发育成熟过程示意图\relax }}{10}{figure.caption.22}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces 骨髓血细胞检验技术流程：(a)骨髓穿刺抽取骨髓液，(b)制备骨髓涂片，(c)瑞特-吉姆萨染色，(d)清洗晾干，(e)人工镜检判读，(f)骨髓形态学图片\relax }}{13}{figure.caption.23}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces labelme标注软件工具\relax }}{14}{figure.caption.24}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces 主动学习标注框架示意图\relax }}{14}{figure.caption.25}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces 神经元结构示意图\relax }}{15}{figure.caption.26}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces 感知机网络模型示意图\relax }}{16}{figure.caption.27}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces 典型卷积神经网络结构示意图\relax }}{19}{figure.caption.28}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces CNN卷积层示意图\relax }}{20}{figure.caption.29}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces CNN池化层示意图\relax }}{20}{figure.caption.30}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces MVVM框架示意图\relax }}{22}{figure.caption.31}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Django框架示意图\relax }}{23}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.1}{\ignorespaces 快速区域卷积神经网络结构示意图\relax }}{26}{figure.caption.33}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces ResNet50网络结构示意图\relax }}{26}{figure.caption.34}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces BottleNeck模块结构示意图\relax }}{27}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces 特征金字塔网络结构示意图\relax }}{28}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces 特征金字塔网络结构示意图\relax }}{28}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces (a) Anchor在图像中的示意图， (b) Anchor、预测框与真值框之间的关系\relax }}{29}{figure.caption.38}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces 分类与回归网络结构示意图\relax }}{30}{figure.caption.39}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces 分类与回归网络结构示意图\relax }}{31}{figure.caption.40}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces IOU计算示意图\relax }}{33}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces 检测类型判别\relax }}{34}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces 四种检测网络的PR曲线（IOU=0.75）\relax }}{36}{figure.caption.46}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces 四种检测网络的PR曲线\relax }}{37}{figure.caption.47}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces 四种检测网络的可视化检测结果\relax }}{38}{figure.caption.48}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces RetinaNet检测识别与检测网络的混淆矩阵\relax }}{40}{figure.caption.50}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces 检测网络与检测识别网络特征图对比\relax }}{40}{figure.caption.51}%
-\contentsline {figure}{\numberline {4.1}{\ignorespaces RetinaNet基线模型检测错误示例\relax }}{42}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces 改进的RetinaNet网络结构示意图\relax }}{43}{figure.caption.53}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces 路径聚合网络结构示意图\relax }}{44}{figure.caption.54}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces 全局注意力模块\relax }}{44}{figure.caption.55}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces 置信度高但交并比低的错误检测示例\relax }}{45}{figure.caption.56}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces 交并比预测分支结构\relax }}{46}{figure.caption.57}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces 自适应样本选择阈值计算示意图\relax }}{48}{figure.caption.58}%
-\contentsline {figure}{\numberline {5.1}{\ignorespaces 基于改进Vision Transformer骨髓血细胞识别网络结构\relax }}{53}{figure.caption.60}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces 位置编码可视化\relax }}{54}{figure.caption.61}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Vision Transformer编码模块结构\relax }}{55}{figure.caption.62}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces 不同类别血细胞的辨识性区域\relax }}{56}{figure.caption.63}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces 稀疏注意力模块结构示意图\relax }}{57}{figure.caption.64}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces 改进Vision Transformer的识别混淆矩阵\relax }}{60}{figure.caption.67}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces 可视化自注意力图\relax }}{62}{figure.caption.69}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces 稀疏注意力模块选择的图像块\relax }}{62}{figure.caption.70}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces 图像块划分方式对模型性能的影响\relax }}{64}{figure.caption.73}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces t-SNE降维可视化结果\relax }}{65}{figure.caption.75}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces 骨髓血细胞检测识别软件架构图\relax }}{3}{figure.caption.21}%
 \let \contentsline \ttl@gobblecontents 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces 附录中的图片示例\relax }}{73}{figure.caption.78}%
 \contentsfinish 
 \contentsfinish 

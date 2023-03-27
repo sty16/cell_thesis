@@ -230,12 +230,125 @@ RetinaNet与Faster-RCNN等网络采用的是最常用的基于交并比最大化
   \label{eq:m_step} 
 \end{equation}
 
-
-
-
-
-
 \subsubsection{最优输运标签分配}
+最优输运标签分配将目标检测中的标签分配问题建模为
+将标签从真实框输运到锚框代价最小的最优输运策略（Optimal Transport）问题，如图~\ref{fig:ota}所示。
+
+最优输运问题的定义如下：假设有m个供应商与n个需求方，其中第$i$
+个供应商有$a_i$单元的货物，第$j$个需求方需要$b_j$个单元的货物。每个单元的货物从第$i$个供应商运输到第$j$个的需求方的输运代价是$C_{ij}$。
+最优输运的目标是找到一种输运计划$\mathbf{P}^{*}=\left\{P_{i, j} \mid i=1,2, \ldots m, j=1,2, \ldots n\right\}$将供应商的货物全部运输到需求方，
+并使得运输的代价最小，其中$P_{i, j}$表示第$i$个供应商运输到第$j$个的需求方单元货物的数量。
+
+\begin{figure}[htbp]                     
+  \centering                      
+  \includegraphics[width=0.95\linewidth]{ota.jpg}                      
+  \caption{基于最优输运的标签分配策略}                      
+  \label{fig:ota}       
+\end{figure}  
+
+最优输运的优化目标如式~\ref{eq:ota}所示：
+\begin{equation}   
+  \min _{\mathbf{P}} \sum_{i=1}^{m} \sum_{j=1}^{n} C_{i j} P_{i j} \quad P_{i j} \geq 0,i=1,2, \ldots m, j=1,2, \ldots n .
+  \label{eq:ota} 
+\end{equation}
+
+其中第i的供应商输出的数量等于$s_i$，即$ \sum_{j=1}^{n} P_{i j}=a_{i}$。第j个需求方接收的数量等于$b_j$，即$\sum_{i=1}^{m} P_{i j}=b_{j}$。
+供应商供应的数量等于需求方接收的数量$\sum_{i=1}^{m} a_{i}=\sum_{j=1}^{n} b_{j}$。
+
+最优输运问题可以在多项式的时间复杂度内，通过Sinkhorn快速迭代的方法进行求解。该方法的思想源于交叉熵与对偶问题，定义$\mathbf{H}(\mathbf{P}) \stackrel{\text { def. }}{=} -\sum_{i, j} \mathbf{P}_{i, j}\left(\log \left(\mathbf{P}_{i, j}\right)-1\right)$
+上述问题添加了拉格朗日算子和扰动项的形式如式~\ref{eq:ota_1}所示:
+\begin{equation}   
+  {\cal E}({\bf{P}},{\bf{f}},{\bf{g}}) = \sum\limits_{i = 1}^m {\sum\limits_{j = 1}^n {{{C}_{ij}}} } {{P}_{ij}} - \varepsilon {\bf{H}}({\bf{P}}) + {f_j}\left( {\sum\limits_{i = 1}^m {P_{ij}}  - {b_j}} \right) + {g_i}\left( {\sum\limits_{j = 1}^n {P_{ij}}  - {a_i}} \right)
+  \label{eq:ota_1} 
+\end{equation}
+
+其中$\varepsilon$是一个常量超参数，控制熵正则化项的强度，实验中设置为0.1，$f_{j}(j=1,2, \ldots n)$与$g_{i}(i=1,2, \ldots, m)$是拉格朗日乘子。
+通过使得目标函数导数等于零求得最优的输运策略如式~\ref{eq:ota_2}所示：
+\begin{equation}   
+  \frac{\partial \mathcal{E}(\mathbf{P}, \mathbf{f}, \mathbf{g})}{\partial P_{i, j}}=C_{i, j}+\varepsilon \log \left(P_{i, j}\right)-f_{j}-g_{i}=0
+  \label{eq:ota_2} 
+\end{equation}
+
+因此最优输运策略为$\mathbf{P}^{*}$如式~\ref{eq:ota_3}所示：
+\begin{equation}   
+  P_{ij}^* = \exp \left( { - \frac{{{f_j}}}{\varepsilon }} \right)\exp \left( { - \frac{{{C_{ij}}}}{\varepsilon }} \right) \exp \left( { - \frac{{{g_i}}}{\varepsilon }} \right)
+  \label{eq:ota_3} 
+\end{equation}
+
+令$s_j=\exp \left( { - \frac{{{f_j}}}{\varepsilon }} \right)$， $U_{ij}=\exp \left( { - \frac{{{C_{ij}}}}{\varepsilon }} \right)$，$t_i=\exp \left( { - \frac{{{g_i}}}{\varepsilon }} \right)$
+上述变量满足如式~\ref{eq:ota_4}的约束关系：
+\begin{equation}   
+  \begin{array}{l}
+  \sum_{i} P_{i j}=s_{j}\left(\sum_{i} U_{i j} t_{i}\right)=b_{j} \\
+  \sum_{j} P_{i j}=\left(s_{j} \sum_{i} U_{i j}\right) t_{i}=a_{i}
+  \end{array}
+  \label{eq:ota_4} 
+\end{equation}
+
+上式的约束关系需要同时满足，因此$t_i$与$s_j$的交替迭代公式如下：
+\begin{equation}   
+  s_j^{l + 1} = \frac{{{b_j}}}{{\sum\limits_i {{U_{ij}}} t_i^l}},\quad t_i^{l + 1} = \frac{{{a_i}}}{{\sum\limits_j {{U_{ij}}} s_j^{l + 1}}}
+  \label{eq:ota_5} 
+\end{equation}
+
+在目标检测的背景下，假设一张图片中有$m$个真实框，检测网络所有的FPN层总共输出了$n$个锚框。将真实框
+视为供应商，可以为$k$个锚框提供正样本的标签，等价于有$k$个单元的货物$\text { i.e., } a_{i}=k, i=1,2, \ldots, m$。
+每个锚框视为需求方，需要一个标签$\text { i.e., } b_{j}=1, j=1,2, \ldots, n$。此外引入一个背景供应商，来为锚框提供
+负样本标签，数量为$n - m \times k$。
+
+将正样本标签从某一个真实框$gt_{i}$输运到一个锚框$anchor_j$的代价定义为分类与回归的加权损失，如式~\ref{eq:ota_cost_fg}所示：
+\begin{equation}   
+  C_{ij}^{fg} = {L_{cls}}\left( {p_i^*,p_j^{cls}(\theta )} \right) + \lambda {L_{reg}}\left( {t_i^*,t_j^{box}(\theta )} \right)
+  \label{eq:ota_cost_fg} 
+\end{equation}
+
+其中$\theta$代表模型参数，$p_j^{cls}(\theta )$与$t_j^{box}(\theta )$分别代表模型预测的分类得分与坐标回归值。
+$p_i^*$与$t_i^*$代表了真实类别与坐标。$L_{cls}$与$L_{reg}$为交叉熵损失函数与GIOU损失函数。
+
+背景供应商将一个负样本标签传递到锚框的花费为分类损失，如下式所示：
+\begin{equation}   
+  C_j^{bg} = {L_{cls}}\left( {\Phi ,p_j^{cls}(\theta )} \right)
+  \label{eq:ota_cost_bg} 
+\end{equation}
+
+在定义好花费矩阵后，最优输运的策略$\mathbf{P^*}$可以可以通过Sinkhorn-Knopp迭代算法进行求解。每个anchor的标签
+为最大的标签所对应的供应商类别。算法流程如算法~\ref{alg:alg_ota}所示。
+
+\renewcommand{\algorithmicrequire}{\textbf{输入：}\unskip}
+\renewcommand{\algorithmicensure}{\textbf{输出：}\unskip}
+
+\begin{algorithm}[h]
+  \caption{最优输运标签分配} % 名称
+  \label{alg:alg_ota}
+  \begin{algorithmic}[1]
+    \REQUIRE
+      ~\\
+      $I$: 输入图像            \\
+      $A$: 网络输出的一组锚框   \\
+      $G$: 图像中目标真实框标注 \\
+      $\varepsilon$: Sinkhorn-Knopp迭代熵正则化项 \\
+      $T$: Sinkhorn-Knopp迭代次数 \\
+      $\lambda$: 式~\ref{eq:ota_cost_fg}中的平衡因子 
+    \ENSURE
+      ~\\
+      $\mathbf{P^*}$标签最优输运策略
+      \STATE set $m = |G|$, $n = |A|$;
+      \STATE 网络前向计算每个锚框的分数与坐标$P^{cls}, P^{box}$
+      \STATE 动态计算每个GT框的$a_i$
+      \STATE 计算得到背景供应商的标签数量$a_{m + 1} = n-\sum_{i=1}^{m} a_{i}$
+      \STATE $b_j(j = 1, 2 \dots n)$使用1初始化
+      \STATE 前景分类损失$C_{ij}^{cls} = FocalLoss(P_{j}^{cls}, G_{i}^{cls})$
+      \STATE 前景回归损失$C_{ij}^{reg} = IoULoss{P_{j}^{box}, G_{i}^{box}}$
+      \STATE 背景花费$C_{bg}^{cls} = FocalLoss(P_{j}^{cls}, \Phi)$
+      \STATE 前景花费$C_{fg} = C^{cls} + \lambda C^{reg}$
+      \STATE 计算最终的花费矩阵将$C_{bg}$拼接到$C_{fg}$的最后一行
+      \STATE 对$s^0, t^0$进行随机初始化
+      \FOR {$i = 1$; $i < T$; $i++$ }
+        \STATE 计算$s^{l+1}, t^{l+1} \leftarrow \operatorname{SinkhornIter}\left(C, s^{l}, t^{l}, a, b\right)$
+     \ENDFOR
+      \STATE 根据式~\ref{eq:ota_3}, 计算并返回最优的标签分配策略$\mathbf{P}^*$
+  \end{algorithmic}
+\end{algorithm}
 
 % \subsubsection{软标签分配策略}
 % \subsection{完全动态标签分配}
