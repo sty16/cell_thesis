@@ -78,7 +78,7 @@
 \contentsline {subsubsection}{\numberline {5.3.4.1}图像块划分方法}{66}{subsubsection.5.3.4.1}%
 \contentsline {subsubsection}{\numberline {5.3.4.2}稀疏注意力模块}{67}{subsubsection.5.3.4.2}%
 \contentsline {subsubsection}{\numberline {5.3.4.3}对比损失}{67}{subsubsection.5.3.4.3}%
-\contentsline {section}{\numberline {5.4}小结}{69}{section.5.4}%
+\contentsline {section}{\numberline {5.4}小结}{68}{section.5.4}%
 \contentsline {chapter}{\numberline {第6章}骨髓血细胞检测与识别软件设计}{70}{chapter.6}%
 \contentsline {section}{\numberline {6.1}需求分析}{70}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}功能需求分析}{70}{subsection.6.1.1}%
@@ -94,12 +94,14 @@
 \contentsline {section}{\numberline {6.4}软件实现与测试}{75}{section.6.4}%
 \contentsline {section}{\numberline {6.5}小结}{75}{section.6.5}%
 \contentsline {chapter}{\numberline {第7章}总结与展望}{76}{chapter.7}%
+\contentsline {section}{\numberline {7.1}全文总结}{76}{section.7.1}%
+\contentsline {section}{\numberline {7.2}工作展望}{78}{section.7.2}%
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{参考文献}{77}{section*.81}%
+\contentsline {chapter}{参考文献}{79}{section*.81}%
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{致\hskip 1em\relax 谢}{80}{section*.83}%
-\contentsline {chapter}{声\hspace {1em}明}{81}{section*.85}%
-\contentsline {chapter}{个人简历、在学期间完成的相关学术成果}{82}{section*.87}%
-\contentsline {chapter}{指导教师评语}{83}{appendix*.94}%
-\contentsline {chapter}{答辩委员会决议书}{84}{appendix*.95}%
+\contentsline {chapter}{致\hskip 1em\relax 谢}{82}{section*.83}%
+\contentsline {chapter}{声\hspace {1em}明}{83}{section*.85}%
+\contentsline {chapter}{个人简历、在学期间完成的相关学术成果}{84}{section*.87}%
+\contentsline {chapter}{指导教师评语}{85}{appendix*.94}%
+\contentsline {chapter}{答辩委员会决议书}{86}{appendix*.95}%
 \contentsfinish 
