@@ -75,40 +75,93 @@ MySQL是一个开源且功能强大的关系型数据库管理系统，支持并
 1）用户信息表
 
 用户信息表如表~\ref{table:user_table}所示，其记录了用户基本信息如用户名、密码、头像、邮箱、手机等。用户密码通过MD5加密算法生成一个长度为128位的哈希值存储在数据库中，
-在登录时，通过比较用户密码的哈希值是否相同对用户进行校验。用户登录后可以对自己的个人信息进行修改。
+在登录时，通过比较用户密码的哈希值是否相同对用户进行校验。用户登录后可以对自己的个人信息进行修改。超级用户如医生可以对骨髓血细胞检测与识别的结果进行人工核对与修改。
 \begin{table}
     \caption{用户信息表}   
     \centering 
     \label{table:user_table}
-    \begin{tabular}{cccc}
-      \toprule[2pt]
-      字段名称  &  数据类型 & 约束 & 字段说明 \\
-      \midrule[1.5pt] 
-      原始细胞 & Prim & 1856 & 467 \\ 
-    %   2 & 淋巴细胞 & Lym & 996 & 226   \\ 
-    %   3 & 单核细胞 & Mono & 206 & 52   \\ 
-    %   4 & 浆细胞 & Plas & 272 & 70   \\ 
-    %   5 & 红细胞 & Red & 1880 & 503   \\ 
-    %   6 & 早幼粒细胞 & Promy & 357 & 107   \\ 
-    %   7 & 嗜中性中幼粒细胞 & Myelo & 701 & 150   \\ 
-    %   8 & 嗜中性晚幼粒细胞 & Late & 503 & 144   \\ 
-    %   9 & 嗜中性杆状核细胞 & Rods & 998 & 241   \\  
-    %   10 & 嗜中分叶核细胞 & Lobu & 821 & 195   \\  
-    %   11 & 嗜酸性粒细胞 & Eosl & 475 & 132   \\  
-      \hline
-      \bottomrule[2pt]      
-    \end{tabular} 
+    % \begin{tabular}{cccc}
+    \begin{tabular*}{0.9\hsize}{@{}@{\extracolsep{\fill}}cccc@{}}
+      \toprule[1pt]
+      字段名称  &  数据类型 & 约束条件 & 字段说明 \\
+      \midrule[1pt] 
+      id & INTEGER & 主键/自增 & 唯一用户ID   \\ 
+      username & varchar(150) & 非空 & 用户名(登录)   \\ 
+      password & varchar(128) & 非空 & 用户登录密码   \\ 
+      email    & varchar(255) & 非空 & 用户邮箱 \\
+      nickname & varchar(40)  &  -   & 用户昵称  \\ 
+      mobile   & varchar(255) &  -   & 用户电话  \\
+      avatar   & varchar(255) &  -   & 用户头像  \\
+      gender   & INTEGER      &  -   & 用户性别   \\
+      dept\_id  & bigint       &  外键   &  部门ID  \\ 
+      create\_datetime & datetime & -    & 用户创建时间 \\
+      update\_datetime & datetime & -    & 最近一次修改时间 \\
+      last\_login & datetime & -           & 最近一次登录时间 \\
+      is\_superuser & bool   &  -         & 是否超级用户 \\
+      \bottomrule[1pt]      
+    \end{tabular*} 
   \end{table}
-
 
 2）检测文件表
 
+表~\ref{table:detect_table}为检测文件表，该表用于存储医生上传的患者骨髓血细胞图像以及检测算法检测到的血细胞的坐标。
+首先根据上传的文件内容根据MD5算法计算出文件的128位哈希值，并将该名称作为文件名称落入到数据库中。血细胞检测结果坐标以
+json字符串的形式进行存储。
+
+\begin{table}
+    \caption{检测文件表}   
+    \centering 
+    \label{table:detect_table}
+    % \begin{tabular}{cccc}
+    \begin{tabular*}{0.9\hsize}{@{}@{\extracolsep{\fill}}cccc@{}}
+      \toprule[1pt]
+      字段名称  &  数据类型 & 约束条件 & 字段说明 \\
+      \midrule[1pt] 
+      id           & INTEGER      & 主键/自增    & 唯一文件ID   \\ 
+      filename     & varchar(200) & 非空         & 上传图像名称   \\ 
+      url          & varchar(100) & 非空         & 文件存储路径   \\ 
+      md5sum       & varchar(36)  & 非空         & 文件MD5哈希值 \\
+      patien\_id   & bigint       & 非空         & 患者ID  \\ 
+      creator\_id  & bigint       & 外键         & 上传者ID  \\ 
+      create\_datetime & datetime & -    & 上传时间 \\
+      update\_datetime & datetime & -    & 最近一次修改时间 \\
+      description      & varchar(1024) & - & 检测结果json描述 \\
+      \bottomrule[1pt]      
+    \end{tabular*} 
+  \end{table}
+
 3）识别文件表
 
-4）用户日志表
+表~\ref{table:recog_table}为识别文件表，该表用于存储医生上传的患者骨髓血细胞切片图像与识别的血细胞类别信息。
+根据上传的文件内容根据MD5算法计算出文件的128位哈希值，并将该名称作为文件名称落入到数据库中。is\_confirmed字段
+表示该条识别结果是否被医生工人核对。
 
+\begin{table}
+    \caption{识别文件表}   
+    \centering 
+    \label{table:recog_table}
+    % \begin{tabular}{cccc}
+    \begin{tabular*}{0.9\hsize}{@{}@{\extracolsep{\fill}}cccc@{}}
+      \toprule[1pt]
+      字段名称  &  数据类型 & 约束条件 & 字段说明 \\
+      \midrule[1pt] 
+      id           & INTEGER      & 主键/自增    & 唯一文件ID   \\ 
+      filename     & varchar(200) & 非空         & 上传图像名称   \\ 
+      url          & varchar(100) & 非空         & 文件存储路径   \\ 
+      md5sum       & varchar(36)  & 非空         & 文件MD5哈希值 \\
+      cell\_id      & INTEGER      & -            & 骨髓血细胞类别ID  \\
+      cell\_name    & varchar(200) & -            & 骨髓血细胞名称  \\
+      patien\_id   & bigint       & 非空         & 患者ID  \\ 
+      creator\_id  & bigint       & 外键         & 上传者ID  \\ 
+      create\_datetime & datetime & -    & 上传时间 \\
+      update\_datetime & datetime & -    & 最近一次修改时间 \\
+      is\_confirmed    & bool     & -    & 是否人工核对 \\
+      \bottomrule[1pt]      
+    \end{tabular*} 
+  \end{table}
 
 \section{各个模块设计}
+本节将详细介绍四大模块的计算流程设计与UI界面设计。用户主界面如图~\ref{}所示，
 \subsection{用户模块}
 \subsection{骨髓血细胞检测模块}
 \subsection{骨髓血细胞识别模块}

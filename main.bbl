@@ -1,4 +1,4 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{42}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -10,5 +10,292 @@
   \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
   \let\eprint\href
 \fi
+
+\bibitem[黄治虎\ 等(2009)黄治虎, 陈宝安, 欧阳建, 沈志祥,
+  王彦艳, and
+  余小金]{黄治虎2009我国白血病流行病学调查的现状和对策}
+黄治虎, 陈宝安, 欧阳建, 等.
+\newblock 我国白血病流行病学调查的现状和对策\allowbreak[J].
+\newblock 临床血液学杂志, 2009, 22\allowbreak (2): 166-167.
+
+\bibitem[Heimpel(1979)]{heimpel1979conventional}
+Heimpel H.
+\newblock Conventional morphological examination of blood and bone marrow cells
+  in the diagnosis of preleukemic syndromes\allowbreak[C]//\allowbreak
+Preleukemia.
+\newblock Springer, 1979: 4-11.
+
+\bibitem[Parmar et~al.(2018)Parmar, Barry, Hosny, Quackenbush, and
+  Aerts]{2018Data}
+Parmar C, Barry J~D, Hosny A, et~al.
+\newblock Data analysis strategies in medical imaging\allowbreak[J].
+\newblock Clinical Cancer Research, 2018, 24\allowbreak (15): 3492-3499.
+
+\bibitem[Cseke(1992)]{1992A}
+Cseke I.
+\newblock A fast segmentation scheme for white blood cell
+  images\allowbreak[C]//\allowbreak
+Iapr International Conference on Pattern Recognition.
+\newblock 1992.
+
+\bibitem[Jiang et~al.(2003)Jiang, Liao, and Dai]{2003A}
+Jiang K, Liao Q~M, Dai S~Y.
+\newblock A novel white blood cell segmentation scheme using scale-space
+  filtering and watershed clustering\allowbreak[C]//\allowbreak
+Proceedings of the 2003 International Conference on Machine Learning and
+  Cybernetics (IEEE Cat. No.03EX693).
+\newblock 2003.
+
+\bibitem[Wu et~al.(2006)Wu, Zeng, Zhou, and Olivier]{Wu2006}
+Wu J, Zeng P, Zhou Y, et~al.
+\newblock A novel color image segmentation method and its application to white
+  blood cell image analysis\allowbreak[C]//\allowbreak
+2006 8th international Conference on Signal Processing: volume~2.
+\newblock IEEE, 2006.
+
+\bibitem[马建林\ 等(2008)马建林, 崔志明, 吴健, and
+  张娜敏]{Ma2008Novel}
+马建林, 崔志明, 吴健, 等.
+\newblock 一种新的基于区域增长的 ROI 分割算法\allowbreak[J].
+\newblock 计算机应用研究, 2008, 25\allowbreak (5): 1582-1585.
+
+\bibitem[Sadeghian et~al.(2009)Sadeghian, Seman, Ramli, Kahar, and
+  Saripan]{Sadeghian2009A}
+Sadeghian F, Seman Z, Ramli A~R, et~al.
+\newblock A framework for white blood cell segmentation in microscopic blood
+  images using digital image processing\allowbreak[J].
+\newblock Biological Procedures Online, 2009, 11\allowbreak (1): 196-206.
+
+\bibitem[Theera-Umpon(2005)]{theera2005white}
+Theera-Umpon N.
+\newblock White blood cell segmentation and classification in microscopic bone
+  marrow images\allowbreak[C]//\allowbreak
+Fuzzy Systems and Knowledge Discovery: Second International Conference, FSKD
+  2005, Changsha, China, August 27-29, 2005, Proceedings, Part II 2.
+\newblock Springer, 2005: 787-796.
+
+\bibitem[Ramoser et~al.(2006)Ramoser, Laurain, Bischof, and
+  Ecker]{ramoser2006leukocyte}
+Ramoser H, Laurain V, Bischof H, et~al.
+\newblock Leukocyte segmentation and classification in blood-smear
+  images\allowbreak[C]//\allowbreak
+2005 IEEE Engineering in Medicine and Biology 27th Annual Conference.
+\newblock IEEE, 2006: 3371-3374.
+
+\bibitem[Xia et~al.(2019)Xia, Jiang, Fu, and Jin]{xia2019automated}
+Xia T, Jiang R, Fu Y~Q, et~al.
+\newblock Automated blood cell detection and counting via deep learning for
+  microfluidic point-of-care medical devices\allowbreak[C]//\allowbreak
+IOP conference series: materials science and engineering: volume 646.
+\newblock IOP Publishing, 2019: 012048.
+
+\bibitem[Dhieb et~al.(2019)Dhieb, Ghazzai, Besbes, and
+  Massoud]{dhieb2019automated}
+Dhieb N, Ghazzai H, Besbes H, et~al.
+\newblock An automated blood cells counting and classification framework using
+  mask r-cnn deep learning model\allowbreak[C]//\allowbreak
+2019 31st international conference on microelectronics (ICM).
+\newblock IEEE, 2019: 300-303.
+
+\bibitem[Shakarami et~al.(2021)Shakarami, Menhaj, Mahdavi-Hormat, and
+  Tarrah]{shakarami2021fast}
+Shakarami A, Menhaj M~B, Mahdavi-Hormat A, et~al.
+\newblock A fast and yet efficient yolov3 for blood cell
+  detection\allowbreak[J].
+\newblock Biomedical Signal Processing and Control, 2021, 66: 102495.
+
+\bibitem[Lu et~al.(2021)Lu, Qin, Fan, Lai, and Li]{lu2021wbc}
+Lu Y, Qin X, Fan H, et~al.
+\newblock Wbc-net: A white blood cell segmentation network based on unet++ and
+  resnet\allowbreak[J].
+\newblock Applied Soft Computing, 2021, 101: 107006.
+
+\bibitem[Girshick et~al.(2014)Girshick, Donahue, Darrell, and
+  Malik]{girshick2014rich}
+Girshick R, Donahue J, Darrell T, et~al.
+\newblock Rich feature hierarchies for accurate object detection and semantic
+  segmentation\allowbreak[C]//\allowbreak
+Proceedings of the IEEE conference on computer vision and pattern recognition.
+\newblock 2014: 580-587.
+
+\bibitem[He et~al.(2015)He, Zhang, Ren, and Sun]{he2015spatial}
+He K, Zhang X, Ren S, et~al.
+\newblock Spatial pyramid pooling in deep convolutional networks for visual
+  recognition\allowbreak[J].
+\newblock IEEE transactions on pattern analysis and machine intelligence, 2015,
+  37\allowbreak (9): 1904-1916.
+
+\bibitem[Girshick(2015)]{girshick2015fast}
+Girshick R.
+\newblock Fast r-cnn\allowbreak[C]//\allowbreak
+Proceedings of the IEEE international conference on computer vision.
+\newblock 2015: 1440-1448.
+
+\bibitem[Ren et~al.(2015)Ren, He, Girshick, and Sun]{ren2015faster}
+Ren S, He K, Girshick R, et~al.
+\newblock Faster r-cnn: Towards real-time object detection with region proposal
+  networks\allowbreak[J].
+\newblock Advances in neural information processing systems, 2015, 28.
+
+\bibitem[Redmon et~al.(2016)Redmon, Divvala, Girshick, and
+  Farhadi]{redmon2016you}
+Redmon J, Divvala S, Girshick R, et~al.
+\newblock You only look once: Unified, real-time object
+  detection\allowbreak[C]//\allowbreak
+Proceedings of the IEEE conference on computer vision and pattern recognition.
+\newblock 2016: 779-788.
+
+\bibitem[Lin et~al.(2017)Lin, Goyal, Girshick, He, and
+  Doll{\'a}r]{lin2017focal}
+Lin T~Y, Goyal P, Girshick R, et~al.
+\newblock Focal loss for dense object detection\allowbreak[C]//\allowbreak
+Proceedings of the IEEE international conference on computer vision.
+\newblock 2017: 2980-2988.
+
+\bibitem[Zhu et~al.(2020)Zhu, Su, Lu, Li, Wang, and Dai]{zhu2020deformable}
+Zhu X, Su W, Lu L, et~al.
+\newblock Deformable detr: Deformable transformers for end-to-end object
+  detection\allowbreak[A].
+\newblock 2020.
+
+\bibitem[Long et~al.(2015)Long, Shelhamer, and Darrell]{long2015fully}
+Long J, Shelhamer E, Darrell T.
+\newblock Fully convolutional networks for semantic
+  segmentation\allowbreak[C]//\allowbreak
+Proceedings of the IEEE conference on computer vision and pattern recognition.
+\newblock 2015: 3431-3440.
+
+\bibitem[伍柏青\ 等(2011)伍柏青 and 傅新文]{wubai2011}
+伍柏青, 傅新文.
+\newblock 当代五分类血细胞分析仪技术原理分析\allowbreak[J].
+\newblock 实验与检验医学, 2011, 29\allowbreak (4): 391-394.
+
+\bibitem[Ghosh et~al.(2010)Ghosh, Das, Mandal, Chakraborty, Pala, Maity, Pal,
+  and Ray]{ghosh2010statistical}
+Ghosh M, Das D, Mandal S, et~al.
+\newblock Statistical pattern analysis of white blood cell nuclei
+  morphometry\allowbreak[C]//\allowbreak
+2010 IEEE Students Technology Symposium (TechSym).
+\newblock IEEE, 2010: 59-66.
+
+\bibitem[孙凯\ 等(2020)孙凯, 姚旭峰, and 黄钢]{sunkai2020}
+孙凯, 姚旭峰, 黄钢.
+\newblock 基于机器学习的白细胞六分类研究\allowbreak[J].
+\newblock 软件, 2020, 41\allowbreak (10): 5.
+
+\bibitem[袁满(2017)]{yuan2017}
+袁满.
+\newblock 血细胞图像白细胞的自动检测与识别\allowbreak[D].
+\newblock 东南大学, 2017.
+
+\bibitem[Matek et~al.(2019)Matek, Schwarz, Spiekermann, and
+  Marr]{matek2019human}
+Matek C, Schwarz S, Spiekermann K, et~al.
+\newblock Human-level recognition of blast cells in acute myeloid leukaemia
+  with convolutional neural networks\allowbreak[J].
+\newblock Nature Machine Intelligence, 2019, 1\allowbreak (11): 538-544.
+
+\bibitem[Mori et~al.(2020)Mori, Kaji, Kawai, Kida, Tsubokura, Fukatsu, Harada,
+  Noji, Ikezoe, Maeda, et~al.]{mori2020assessment}
+Mori J, Kaji S, Kawai H, et~al.
+\newblock Assessment of dysplasia in bone marrow smear with convolutional
+  neural network\allowbreak[J].
+\newblock Scientific reports, 2020, 10\allowbreak (1): 1-8.
+
+\bibitem[Fu et~al.(2020)Fu, Fu, Li, Peng, Lu, Fang, and Chen]{fu2020morphogo}
+Fu X, Fu M, Li Q, et~al.
+\newblock Morphogo: an automatic bone marrow cell classification system on
+  digital images analyzed by artificial intelligence\allowbreak[J].
+\newblock Acta Cytologica, 2020, 64\allowbreak (6): 588-596.
+
+\bibitem[Huang et~al.(2020)Huang, Wang, Zhang, Shen, Liu, Song, Wu, Zuo, Lu,
+  and Li]{huang2020attention}
+Huang P, Wang J, Zhang J, et~al.
+\newblock Attention-aware residual network based manifold learning for white
+  blood cells classification\allowbreak[J].
+\newblock IEEE Journal of Biomedical and Health Informatics, 2020,
+  25\allowbreak (4): 1206-1214.
+
+\bibitem[Rosenblatt(1958)]{1958perceptron}
+Rosenblatt F.
+\newblock The perceptron: a probabilistic model for information storage and
+  organization in the brain.\allowbreak[J].
+\newblock Psychological review, 1958, 65\allowbreak (6): 386.
+
+\bibitem[Lin et~al.(2017)Lin, Dollar, Girshick, He, Hariharan, and
+  Belongie]{2017Feature}
+Lin T~Y, Dollar P, Girshick R, et~al.
+\newblock Feature pyramid networks for object detection\allowbreak[J].
+\newblock IEEE Computer Society, 2017.
+
+\bibitem[He et~al.(2019)He, Zhu, Wang, Savvides, and Zhang]{he2019bounding}
+He Y, Zhu C, Wang J, et~al.
+\newblock Bounding box regression with uncertainty for accurate object
+  detection\allowbreak[C]//\allowbreak
+Proceedings of the ieee/cvf conference on computer vision and pattern
+  recognition.
+\newblock 2019: 2888-2897.
+
+\bibitem[孙天宇\ 等(2022)孙天宇, 朱庆涛, 杨健, and
+  曾亮]{SWGC202206005}
+孙天宇, 朱庆涛, 杨健, 等.
+\newblock 基于改进Vision
+  Transformer的血细胞图像识别方法研究\allowbreak[J/OL].
+\newblock 生物医学工程学杂志, 2022, 39\allowbreak (6): 1097-1107.
+\newblock DOI: \doi{10.7507/1001-5515.202203008}.
+
+\bibitem[Van~Dyk et~al.(2001)Van~Dyk and Meng]{van2001art}
+Van~Dyk D~A, Meng X~L.
+\newblock The art of data augmentation\allowbreak[J].
+\newblock Journal of Computational and Graphical Statistics, 2001,
+  10\allowbreak (1): 1-50.
+
+\bibitem[Simonyan et~al.(2014)Simonyan and Zisserman]{2014Very}
+Simonyan K, Zisserman A.
+\newblock Very deep convolutional networks for large-scale image
+  recognition\allowbreak[A].
+\newblock 2014.
+
+\bibitem[He et~al.(2016)He, Zhang, Ren, and Sun]{he2016deep}
+He K, Zhang X, Ren S, et~al.
+\newblock Deep residual learning for image
+  recognition\allowbreak[C]//\allowbreak
+Proceedings of the IEEE conference on computer vision and pattern recognition.
+\newblock 2016: 770-778.
+
+\bibitem[Hu et~al.(2018)Hu, Shen, and Sun]{hu2018squeeze}
+Hu J, Shen L, Sun G.
+\newblock Squeeze-and-excitation networks\allowbreak[C]//\allowbreak
+Proceedings of the IEEE conference on computer vision and pattern recognition.
+\newblock 2018: 7132-7141.
+
+\bibitem[Xie et~al.(2017)Xie, Girshick, Doll{\'a}r, Tu, and
+  He]{xie2017aggregated}
+Xie S, Girshick R, Doll{\'a}r P, et~al.
+\newblock Aggregated residual transformations for deep neural
+  networks\allowbreak[C]//\allowbreak
+Proceedings of the IEEE conference on computer vision and pattern recognition.
+\newblock 2017: 1492-1500.
+
+\bibitem[Tan et~al.(2019)Tan and Le]{tan2019efficientnet}
+Tan M, Le Q.
+\newblock Efficientnet: Rethinking model scaling for convolutional neural
+  networks\allowbreak[C]//\allowbreak
+International conference on machine learning.
+\newblock PMLR, 2019: 6105-6114.
+
+\bibitem[Dosovitskiy et~al.(2020)Dosovitskiy, Beyer, Kolesnikov, Weissenborn,
+  Zhai, Unterthiner, Dehghani, Minderer, Heigold, Gelly,
+  et~al.]{dosovitskiy2020image}
+Dosovitskiy A, Beyer L, Kolesnikov A, et~al.
+\newblock An image is worth 16x16 words: Transformers for image recognition at
+  scale\allowbreak[A].
+\newblock 2020.
+
+\bibitem[Van~der Maaten et~al.(2008)Van~der Maaten and
+  Hinton]{van2008visualizing}
+Van~der Maaten L, Hinton G.
+\newblock Visualizing data using t-sne.\allowbreak[J].
+\newblock Journal of machine learning research, 2008, 9\allowbreak (11).
 
 \end{thebibliography}
