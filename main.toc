@@ -97,11 +97,11 @@
 \contentsline {section}{\numberline {7.1}全文总结}{76}{section.7.1}%
 \contentsline {section}{\numberline {7.2}工作展望}{78}{section.7.2}%
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{参考文献}{79}{section*.81}%
+\contentsline {chapter}{参考文献}{79}{section*.82}%
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{致\hskip 1em\relax 谢}{82}{section*.83}%
-\contentsline {chapter}{声\hspace {1em}明}{83}{section*.85}%
-\contentsline {chapter}{个人简历、在学期间完成的相关学术成果}{84}{section*.87}%
-\contentsline {chapter}{指导教师评语}{85}{appendix*.94}%
-\contentsline {chapter}{答辩委员会决议书}{86}{appendix*.95}%
+\contentsline {chapter}{致\hskip 1em\relax 谢}{82}{section*.84}%
+\contentsline {chapter}{声\hspace {1em}明}{83}{section*.86}%
+\contentsline {chapter}{个人简历、在学期间完成的相关学术成果}{84}{section*.88}%
+\contentsline {chapter}{指导教师评语}{85}{appendix*.95}%
+\contentsline {chapter}{答辩委员会决议书}{86}{appendix*.96}%
 \contentsfinish 

@@ -1549,9 +1549,12 @@ INPUT data/chap06.tex
 INPUT ./data/chap06.tex
 INPUT ./data/chap06.tex
 INPUT data/chap06.tex
-INPUT ./figures//software.jpg
-INPUT ./figures//software.jpg
-INPUT figures//software.jpg
+INPUT ./software_structure.jpg
+INPUT ./software_structure.jpg
+INPUT software_structure.jpg
+INPUT ./software.jpg
+INPUT ./software.jpg
+INPUT software.jpg
 INPUT ./data/chap07.tex
 INPUT ./data/chap07.tex
 INPUT ./data/chap07.tex
