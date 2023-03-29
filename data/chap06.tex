@@ -164,7 +164,7 @@ json字符串的形式进行存储。
 系统通知消息也在此部分进行展示。
 \begin{figure}[htbp]                     
   \centering                      
-  \includegraphics[width=0.99\linewidth]{software.jpg}                      
+  \includegraphics[width=0.99\linewidth]{console.png}                      
   \caption{骨髓血细胞检测识别软件界面}                      
   \label{fig:interface}       
 \end{figure}
@@ -190,13 +190,16 @@ json字符串的形式进行存储。
 \end{figure}
 
 \subsection{骨髓血细胞检测模块}
+骨髓血细胞检测界面如图~\ref{fig:interface_detect}所示，首先需要填写患者ID，然后点击“+”号，上传患者骨髓血细胞图像，
+该过程调用后端$/api/system/detect\_file$接口，将细胞图像写入到数据库中，调用成功后将文件的url列表返回前端。然后点击检测按钮
+调用后端$/api/recognition/save\_detect$接口，传输参数为待检测的url文件列表，后端调用基于ONNX部署的改进的RetinaNet骨髓血细胞
+检测模型，然后将检测得到的坐标信息返回给前端，在检测结果区域以红色框进行标出。最后可以点击下载切片按钮，获得剪切后的血细胞图像切片文件。
 \begin{figure}[htbp]                     
   \centering                      
   \includegraphics[width=0.99\linewidth]{software/detect.png}                      
   \caption{骨髓血细胞检测界面}                      
   \label{fig:interface_detect}       
 \end{figure}
-\
 \subsection{骨髓血细胞识别模块}
 \begin{figure}[htbp]                     
   \centering                      

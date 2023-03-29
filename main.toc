@@ -91,16 +91,16 @@
 \contentsline {subsection}{\numberline {6.3.2}骨髓血细胞检测模块}{76}{subsection.6.3.2}%
 \contentsline {subsection}{\numberline {6.3.3}骨髓血细胞识别模块}{76}{subsection.6.3.3}%
 \contentsline {subsection}{\numberline {6.3.4}患者数据管理模块}{76}{subsection.6.3.4}%
-\contentsline {section}{\numberline {6.4}小结}{78}{section.6.4}%
-\contentsline {chapter}{\numberline {第7章}总结与展望}{79}{chapter.7}%
-\contentsline {section}{\numberline {7.1}全文总结}{79}{section.7.1}%
-\contentsline {section}{\numberline {7.2}工作展望}{81}{section.7.2}%
+\contentsline {section}{\numberline {6.4}小结}{76}{section.6.4}%
+\contentsline {chapter}{\numberline {第7章}总结与展望}{80}{chapter.7}%
+\contentsline {section}{\numberline {7.1}全文总结}{80}{section.7.1}%
+\contentsline {section}{\numberline {7.2}工作展望}{82}{section.7.2}%
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{参考文献}{82}{section*.88}%
+\contentsline {chapter}{参考文献}{83}{section*.88}%
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{致\hskip 1em\relax 谢}{85}{section*.90}%
-\contentsline {chapter}{声\hspace {1em}明}{86}{section*.92}%
-\contentsline {chapter}{个人简历、在学期间完成的相关学术成果}{87}{section*.94}%
-\contentsline {chapter}{指导教师评语}{88}{appendix*.101}%
-\contentsline {chapter}{答辩委员会决议书}{89}{appendix*.102}%
+\contentsline {chapter}{致\hskip 1em\relax 谢}{86}{section*.90}%
+\contentsline {chapter}{声\hspace {1em}明}{87}{section*.92}%
+\contentsline {chapter}{个人简历、在学期间完成的相关学术成果}{88}{section*.94}%
+\contentsline {chapter}{指导教师评语}{89}{appendix*.101}%
+\contentsline {chapter}{答辩委员会决议书}{90}{appendix*.102}%
 \contentsfinish 

@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex main"] 1680088980 "main.aux" "main.bbl" "main" 1680089011
+["bibtex main"] 1680095124 "main.aux" "main.bbl" "main" 1680095194
   "./thuthesis-numeric.bst" 1677840164 48567 cd3bc71ff82c01699bd493d2be7a78bd ""
-  "main.aux" 1680088992 42519 4ebb4bc9c2e3be724d1fa22568b1e3e2 "xelatex"
+  "main.aux" 1680095174 42519 21b2a9b70cccc7af8eb87a5256cf1c12 "xelatex"
   "ref/refs.bib" 1680082188 13384 f165732fe0451cf4ad961c4a1a3d5a4e ""
   (generated)
   "main.bbl"
   "main.blg"
-["xdvipdfmx"] 1680088993 "main.xdv" "main.pdf" "main" 1680089011
-  "main.xdv" 1680088992 1835068 629f185e14b72dc30aab9b0d03e9ca1d "xelatex"
+["xdvipdfmx"] 1680095175 "main.xdv" "main.pdf" "main" 1680095194
+  "main.xdv" 1680095174 1840512 c2e8d66b05deda8000ece2134fcb1828 "xelatex"
   (generated)
   "main.pdf"
-["xelatex"] 1680088981 "e:/thu_study/硕士/毕业/毕业论文/cell_thesis/main.tex" "main.xdv" "main" 1680089011
+["xelatex"] 1680095163 "e:/thu_study/硕士/毕业/毕业论文/cell_thesis/main.tex" "main.xdv" "main" 1680095194
   "bottleneck.jpg" 1677840164 46653 fab758c960dbb0e1d1d60592284292bf ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1677841556 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1677843957 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
@@ -142,6 +142,7 @@
   "c:/texlive/2022/texmf-dist/web2c/texmf.cnf" 1677840429 40171 cdab547de63d26590bebb3baff566530 ""
   "c:/texlive/2022/texmf-var/web2c/xetex/xelatex.fmt" 1677844232 5419763 5cb9888dbd21787abbe55e2235b93e42 ""
   "c:/texlive/2022/texmf.cnf" 1677843983 713 e69b156964470283e0530f5060668171 ""
+  "console.png" 1680093452 289521 d3344ae92c6bad833b335ef3f28b0cd0 ""
   "data/abstract.tex" 1677840164 2319 fcecaabb914cdd15503f3b5ed305e7dc ""
   "data/acknowledgements.tex" 1677840164 559 acb072c9b5b159b9d806e9f0b9778dac ""
   "data/chap01.tex" 1680082188 24734 99cc6fe934f20e5b742fae51710f377f ""
@@ -149,7 +150,7 @@
   "data/chap03.tex" 1680082188 38508 c94bcfe8c5a9014463d13438eea536d6 ""
   "data/chap04.tex" 1680082188 27105 a83c88d1f02c009fe581654a8d011c3d ""
   "data/chap05.tex" 1680082188 33870 95a183ff6c60e89a8754f886960284a0 ""
-  "data/chap06.tex" 1680088964 15450 6524cbde65fb12db33d734fdb6c59c04 ""
+  "data/chap06.tex" 1680095159 16145 2ebccc7ed1ad8ca4ee101c1d4bf57400 ""
   "data/chap07.tex" 1680082188 8461 ab7c7a9af3d78b9f88aaa4b9dab83d7d ""
   "data/comments.tex" 1677840164 289 87fd759317b7dbbf3ab78980223cea5b ""
   "data/committee.tex" 1677840164 1713 0d574adba7b8512ff5de022aece8d857 ""
@@ -240,17 +241,16 @@
   "figures//tsne1.png" 1678008203 112568 28d6888cdd7eade7984985445f3edd09 ""
   "figures//tsne2.png" 1678008203 71204 296cdda8e0903abe10bdce54a0b059cf ""
   "figures//tsne3.png" 1678008203 72414 ef1c240dd4d1977649714b66b87ba7f8 ""
-  "main.aux" 1680088992 42519 4ebb4bc9c2e3be724d1fa22568b1e3e2 "xelatex"
-  "main.bbl" 1680088980 12522 b36ecc45d451d17556de79ecf1d69331 "bibtex main"
-  "main.lof" 1680088992 6754 279f43547287c1921eb992c07f86e31a "xelatex"
-  "main.lot" 1680088992 1913 2213629e1738e77a7e1b45f197e8f670 "xelatex"
-  "main.out" 1680088992 15587 efd429273d8e879c573cecaeb5153a29 "xelatex"
+  "main.aux" 1680095174 42519 21b2a9b70cccc7af8eb87a5256cf1c12 "xelatex"
+  "main.bbl" 1680095124 12522 b36ecc45d451d17556de79ecf1d69331 "bibtex main"
+  "main.lof" 1680095174 6754 a61e890afd2c67536249d7ac626729cf "xelatex"
+  "main.lot" 1680095174 1913 2213629e1738e77a7e1b45f197e8f670 "xelatex"
+  "main.out" 1680095174 15587 efd429273d8e879c573cecaeb5153a29 "xelatex"
   "main.tex" 1680082188 2746 b4da546167a3479d86fb526898e8b9fe ""
-  "main.toc" 1680088992 9078 07f8d41c7c535ebfbc240ebb3c6e869d "xelatex"
-  "software.jpg" 1680082188 142266 0e9b3635632c4e73d70fa5becd9d0c3e ""
+  "main.toc" 1680095174 9078 b8ab874c9e4d5dd9b5a7a0b022516c0f "xelatex"
   "software_structure.jpg" 1680082188 146959 d9794d8f3b623ea419e43fe2ddbd32e6 ""
   "thusetup.tex" 1680082188 5008 0c71eadbd900cd20b6cfb519c39d4bc2 ""
-  "thuthesis.cls" 1680088967 112463 72705b84252c4f64a294fb60487d981d ""
+  "thuthesis.cls" 1680095162 112463 72705b84252c4f64a294fb60487d981d ""
   (generated)
   "main.aux"
   "main.lof"

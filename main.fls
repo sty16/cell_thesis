@@ -1552,9 +1552,9 @@ INPUT data/chap06.tex
 INPUT ./software_structure.jpg
 INPUT ./software_structure.jpg
 INPUT software_structure.jpg
-INPUT ./software.jpg
-INPUT ./software.jpg
-INPUT software.jpg
+INPUT ./console.png
+INPUT ./console.png
+INPUT console.png
 INPUT ./figures//software/login.png
 INPUT ./figures//software/login.png
 INPUT figures//software/login.png
