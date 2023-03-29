@@ -103,8 +103,8 @@ Vision Transformer的编码器由$L$个结构相同的编码模块堆叠而成�
    \label{fig:encoder} 
 \end{figure}  
 
-编码模块包含了多头自注意（Multi-head Self-attention，MSA）与多层感知机（Multi-Layer Perceptron, MLP）。
-多头自注意模块由$N_h$个单头自注意单元（Self-attention，SA）组成。
+编码模块包含了多头自注意（Multi-head Self-Attention，MSA）与多层感知机（Multi-Layer Perceptron, MLP）。
+多头自注意模块由$N_h$个单头自注意单元（Self-Attention，SA）组成。
 对于单头自注意单元，首先将输入$\mathbf{z}_{p} \in \mathbb{R}^{(N+1) \times \mathrm{D}}$，输入经过线性变换得到
 查询矩阵$\boldsymbol{Q}$、键矩阵$\boldsymbol{K}$、值矩阵$\boldsymbol{V}$。线性变换如式~\ref{eq:linear}所示:
 \begin{equation}
