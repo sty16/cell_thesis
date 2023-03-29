@@ -101,13 +101,11 @@ MySQL是一个开源且功能强大的关系型数据库管理系统，支持并
       \bottomrule[1pt]      
     \end{tabular*} 
   \end{table}
-
 2）检测文件表
 
 表~\ref{table:detect_table}为检测文件表，该表用于存储医生上传的患者骨髓血细胞图像以及检测算法检测到的血细胞的坐标。
 首先根据上传的文件内容根据MD5算法计算出文件的128位哈希值，并将该名称作为文件名称落入到数据库中。血细胞检测结果坐标以
 json字符串的形式进行存储。
-
 \begin{table}
     \caption{检测文件表}   
     \centering 
@@ -129,13 +127,11 @@ json字符串的形式进行存储。
       \bottomrule[1pt]      
     \end{tabular*} 
   \end{table}
-
 3）识别文件表
 
 表~\ref{table:recog_table}为识别文件表，该表用于存储医生上传的患者骨髓血细胞切片图像与识别的血细胞类别信息。
 根据上传的文件内容根据MD5算法计算出文件的128位哈希值，并将该名称作为文件名称落入到数据库中。is\_confirmed字段
 表示该条识别结果是否被医生工人核对。
-
 \begin{table}
     \caption{识别文件表}   
     \centering 
@@ -159,7 +155,6 @@ json字符串的形式进行存储。
       \bottomrule[1pt]      
     \end{tabular*} 
   \end{table}
-
 \section{各个模块设计}
 本节将详细介绍四大模块的计算流程设计与UI界面设计。用户主界面如图~\ref{fig:interface}所示，
 界面左侧为工具栏，功能选项有控制台、骨髓血细胞检测、骨髓血细胞识别、患者数据管理与日志管理。患者数据管理菜单下
@@ -173,16 +168,66 @@ json字符串的形式进行存储。
   \caption{骨髓血细胞检测识别软件界面}                      
   \label{fig:interface}       
 \end{figure}
-
 \subsection{用户模块}
-用户登录与修改个人信息界面如图~\ref{}所示，用户模块是网站最基础的模块，用户在注册后，用户信息会写入数据库的用户信息表中，
+用户登录与修改个人信息界面如图~\ref{fig:software_user}所示，用户模块是网站最基础的模块，用户在注册后，用户信息会写入数据库的用户信息表中，
 在登录时需要填写注册时的用户名、密码与验证码信息，用户在点击登录按钮后，后端会对用户名与密码在数据库中进行核验，如果正确则会跳转到
-软件的首页的控制台页面，否则会提示用户输入的用户名或密码错误。用户在登陆后，可以点击右上角的头像去修改完善个人信息，如电话、邮箱与昵称等，
-并更改登录密码。
+软件的首页的控制台页面，否则会提示用户输入的用户名或密码错误。用户在登陆后，可以点击右上角的头像去修改并完善个人信息，如密码、电话、邮箱与昵称等。
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}{0.45\linewidth}
+		\centering
+		\includegraphics[width=0.95\linewidth, height=1.20\linewidth]{software/login.png}
+    \caption{用户登录页}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.45\linewidth}
+		\centering
+		\includegraphics[width=0.95\linewidth, height=1.20\linewidth]{software/update.png}
+    \caption{用户信息修改页}
+	\end{subfigure}
+  \caption{用户模块界面示意图}
+	\label{fig:software_user}
+\end{figure}
 
 \subsection{骨髓血细胞检测模块}
+\begin{figure}[htbp]                     
+  \centering                      
+  \includegraphics[width=0.99\linewidth]{software/detect.png}                      
+  \caption{骨髓血细胞检测界面}                      
+  \label{fig:interface_detect}       
+\end{figure}
+\
 \subsection{骨髓血细胞识别模块}
+\begin{figure}[htbp]                     
+  \centering                      
+  \includegraphics[width=0.99\linewidth]{software/recognition.png}                      
+  \caption{骨髓血细胞识别界面}                      
+  \label{fig:interface_recog}       
+\end{figure}
+
 \subsection{患者数据管理模块}
+\begin{figure}[htbp]                     
+  \centering                      
+  \includegraphics[width=0.99\linewidth]{software/result.png}                      
+  \caption{医生核查界面}                      
+  \label{fig:interface_result}       
+\end{figure}
+
+\begin{figure}[htbp]                     
+  \centering                      
+  \includegraphics[width=0.99\linewidth]{software/info.png}                      
+  \caption{患者数据分析界面}                      
+  \label{fig:interface_info}       
+\end{figure}
+
+\begin{figure}[htbp]                     
+  \centering                      
+  \includegraphics[width=0.99\linewidth]{software/patient.png}                      
+  \caption{患者信息录入页面}                      
+  \label{fig:interface_patient}       
+\end{figure}
+\
+
 FAB分类标准，给出文字诊断说明
 
 \section{小结}

@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  29 MAR 2023 17:12
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.3.3)  29 MAR 2023 19:19
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**e:/sty/thu_study/硕士/毕业/毕业论文/thuthesis-v7.3.1/main.tex
-(e:/sty/thu_study/硕士/毕业/毕业论文/thuthesis-v7.3.1/main.tex
+**e:/thu_study/硕士/毕业/毕业论文/cell_thesis/main.tex
+(e:/thu_study/硕士/毕业/毕业论文/cell_thesis/main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (./thuthesis.cls
 Document Class: thuthesis 2022/10/05 7.3.1 Tsinghua University Thesis Template
@@ -1687,15 +1687,30 @@ File: software_structure.jpg Graphic file (type bmp)
  [71] [72]
 File: software.jpg Graphic file (type bmp)
 <software.jpg>
- [73] [74]) (./data/chap07.tex [75]
+File: figures//software/login.png Graphic file (type bmp)
+<figures//software/login.png>
+File: figures//software/update.png Graphic file (type bmp)
+<figures//software/update.png>
+ [73] [74]
+File: figures//software/detect.png Graphic file (type bmp)
+<figures//software/detect.png>
+File: figures//software/recognition.png Graphic file (type bmp)
+<figures//software/recognition.png>
+File: figures//software/result.png Graphic file (type bmp)
+<figures//software/result.png>
+File: figures//software/info.png Graphic file (type bmp)
+<figures//software/info.png>
+File: figures//software/patient.png Graphic file (type bmp)
+<figures//software/patient.png>
+) (./data/chap07.tex [75] [76] [77] [78] [79]
 第7章
-[76
+[80
 
-] [77]) [78] (./main.bbl [79
+] [81]) [82] (./main.bbl [83
 
 
 
-] [80]
+] [84]
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
 (Font)              scaled to size 7.00075pt on input line 245.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
@@ -1704,31 +1719,31 @@ LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
 (Font)              scaled to size 6.99925pt on input line 245.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 245.
-) (./data/acknowledgements.tex [81]) [82
+) (./data/acknowledgements.tex [85]) [86
 
 
-] (./data/resume.tex [83
+] (./data/resume.tex [87
 
 
-]) (./data/comments.tex [84
+]) (./data/comments.tex [88
 
 
-] [85
+] [89
 
-]) (./data/resolution.tex [86
+]) (./data/resolution.tex [90
 
 
 ]) (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CCB9354E278D490DCD0F7D046DC66F86;15720.
+(rerunfilecheck)             Checksum: EFD429273D8E879C573CECAEB5153A29;15587.
  ) 
 Here is how much of TeX's memory you used:
- 32061 strings out of 476179
- 692213 string characters out of 5813073
- 1091295 words of memory out of 5000000
- 52159 multiletter control sequences out of 15000+600000
+ 32132 strings out of 476179
+ 694288 string characters out of 5813073
+ 1091411 words of memory out of 5000000
+ 52221 multiletter control sequences out of 15000+600000
  479171 words of font info for 195 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
- 102i,16n,129p,1451b,2766s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,16n,129p,1442b,2766s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (99 pages, 1800120 bytes).
+Output written on main.xdv (103 pages, 1835772 bytes).
