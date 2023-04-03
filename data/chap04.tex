@@ -368,14 +368,14 @@ $p_i^*$与$t_i^*$代表了真实类别与坐标。$L_{cls}$与$L_{reg}$为交叉
 通常每个图像中包含1到10个有核血细胞，数据集总共标记了11352个血细胞，训练集有9065个血细胞，测试集有2287个血细胞。数据集的分布如
 表~\ref{table:cell_detect1}所示：
 
-\begin{table}
+\begin{table}[h]
   \caption{骨髓血细胞检测数据集分布}   
   \centering 
   \label{table:cell_detect1}
   \begin{tabular}{ccccc}
-    \toprule[2pt]
+    \toprule[1pt]
     序号 & 类别名  &  类别简写 & 训练集数量 & 测试集数量 \\
-    \midrule[1.5pt] 
+    \midrule[1pt] 
     1 & 原始细胞 & Prim & 1856 & 467 \\ 
     2 & 淋巴细胞 & Lym & 996 & 226   \\ 
     3 & 单核细胞 & Mono & 206 & 52   \\ 
@@ -389,7 +389,7 @@ $p_i^*$与$t_i^*$代表了真实类别与坐标。$L_{cls}$与$L_{reg}$为交叉
     11 & 嗜酸性粒细胞 & Eosl & 475 & 132   \\  
     \hline
     总计 &   &   & 9065 & 2287 \\
-    \bottomrule[2pt]      
+    \bottomrule[1pt]      
   \end{tabular} 
 \end{table}
 
@@ -445,7 +445,6 @@ RetinaNet\cite{lin2017focal}、YOLOV3\cite{redmon2018yolov3}与DETR\cite{zhu2020
     YOLOV3      & DarkNet53 & 0.9794 & 0.9508 & 0.4646 & 61.95 & 127.11  \\ 
     DETR        & ResNet50 & 0.9888 &  0.9559 & 0.5844 &  41.30 & 59.82  \\ 
     本节提出的网络 & ResNet50 & 0.9864 & 0.9668 &  0.6305 & 37.89 & 140.94\\
-    \hline
     \bottomrule[1pt]      
   \end{tabular*} 
 \end{table}
@@ -509,7 +508,24 @@ RetinaNet\cite{lin2017focal}、YOLOV3\cite{redmon2018yolov3}与DETR\cite{zhu2020
 
 \subsubsection{改进网络结构}
 为了验证本节提出了全局注意力路径聚合网络模块与IOU预测分支网络模块的有效性，我们分别在基线模型上添加单一模块来验证这两种模块的有效性。
-不同模型在骨髓血细胞测试集的结果如表~\ref{}所示，$AP_{50}$、$AP_{75}$与$AP_{90}$，分别表示
+不同模型在骨髓血细胞测试集的结果如表~\ref{table:net_ablation}所示，$AP_{50}$、$AP_{75}$与$AP_{90}$分别表示交并比为0.5、0.75与0.9条件下的平均检测精度。
+√代表网络添加该模块， ×代表网络不包含该模块。
+\begin{table}
+  \caption{骨髓血细胞检测网络模块消融实验}   
+  \centering 
+  \label{table:net_ablation}
+  \begin{tabular*}{0.90\hsize}{@{}@{\extracolsep{\fill}}cccccc@{}}
+    \toprule[1pt]
+    主干网络  & 全局注意力路径聚合模块 & IOU预测模块 &$AP_{50}$ & $AP_{75}$ & $AP_{90}$ \\
+    \midrule[1pt] 
+    RetinaNet    & × & × & 0.9178 & 0.3234 &  36.04  \\
+    RetinaNet    & √ & × & 0.9458 & 0.4965 &  41.17  \\ 
+    RetinaNet    & × & √ & 0.9556 & 0.5896 & 69.17     \\ 
+    RetinaNet    & √ & √ & 0.9542 & 0.5215 &  36.31  \\ 
+    \bottomrule[1pt]      
+  \end{tabular*} 
+\end{table}
+
 \subsubsection{标签分配策略}
 \section{小结}
 

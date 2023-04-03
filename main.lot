@@ -1,6 +1,7 @@
 \contentsline {table}{\numberline {1.1}{\ignorespaces 骨髓血细胞检测数据集分布\relax }}{12}{table.caption.29}%
 \contentsline {table}{\numberline {1.2}{\ignorespaces 改进RetinaNet骨髓血细胞检测结果\relax }}{13}{table.caption.30}%
 \contentsline {table}{\numberline {1.3}{\ignorespaces 不同目标检测方法在骨髓血细胞测试集上的性能对比\relax }}{13}{table.caption.31}%
+\contentsline {table}{\numberline {1.4}{\ignorespaces 骨髓血细胞检测网络模块消融实验\relax }}{15}{table.caption.33}%
 \let \contentsline \ttl@gobblecontents 
 \contentsfinish 
 \contentsfinish 
