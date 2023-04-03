@@ -1,5 +1,5 @@
 
-\chapter{基于改进的RetianNet骨髓血细胞检测网络}
+\chapter{基于改进的RetianNet骨髓血细胞检测算法设计与实现}
 \section{引言}
 
 第三章中，我们对比了多个单阶段与双阶段检测网络在骨髓血细胞数据上的性能，综合考虑计算量，参数量与检测精度等因素，
@@ -29,7 +29,8 @@
 本章提出的改进RetinaNet网络结构如图~\ref{fig:improved_retinanet}所示，整体网络结构基于第三章的RetinaNet基线模型进行改进。骨干网络为
 ResNet50用于图像特征提取，特征金字塔结构用于多尺度特征提取。锚框的尺寸、数量与分类回归网络结果与基线模型相同。
 为了提高网络检测的精度，我们在特征金字塔后引入了自底向上的路径聚合模块，该模块基于全局注意力将更浅层的特征与FPN深层的进行融合，
-提升网络定位特征的表达能力，此外我们引入了可变形卷积、空洞卷积等卷积模块。在训练过程中，我们使用基于最优输运的策略进行标签分配。
+提升网络定位特征的表达能力，此外我们引入了IOU预测分支，将检测框的定位质量也纳入到候选框的筛选中。
+在训练过程中，我们使用基于最优输运的策略进行标签分配。
 下面各个小节将详细介绍我们的改进点。
 \begin{figure}[htbp]                     
   \centering                      
@@ -54,7 +55,7 @@ ResNet50骨干网络提取了不同层级与尺度的特征图，高层次的特
 
 图中${C_2, C_3, C_4, C_5}$为ResNet50骨干网络不同阶段生成的特征图，${P_2, P_3, P_4, P_5}$为特征金字塔生成的不同级别的特征图。
 自底向上的路径聚合网络从最底层的P2特征图开始，通过步长为2的卷积进行下采样并与高层的特征融合后生成新的特征图${N_2, N_3, N_4, N_5}$。
-路径构建模块中使用了全局通道注意力机制，使用全局上下文信息的高层次特征指导浅层特征的筛选，该结构如图~\ref{fig:gau}所示。
+路径构建模块中使用了全局通道注意力机制\cite{li2018pyramid}，使用全局上下文信息的高层次特征指导浅层特征的筛选，该结构如图~\ref{fig:gau}所示。
 
 \begin{figure}[htbp]                     
   \centering                      
@@ -165,7 +166,7 @@ RetinaNet与Faster-RCNN等网络采用的是最常用的基于交并比最大化
 通常为背景，并不能代表这个目标，而按照最大交并比的方式会被判定为正样本，导致网络的性能较差。
 
 \subsubsection{自适应样本选择}
-自适应样本选择（Adaptive Training Sample Selection，ATSS）方法基于L2距离与交并比动态计算分割阈值，是一种自适应划分
+自适应样本选择（Adaptive Training Sample Selection，ATSS）方法\cite{zhang2020bridging}基于L2距离与交并比动态计算分割阈值，是一种自适应划分
 目标正负样本的标签分配策略。具体步骤如下：（1）对于网络输出的多个不同尺度特征图，在每个特征图上计算锚框中心坐标与目标中心
 坐标的$L_2$距离，选取$K$个$L_2$距离最小的锚框作为候选的正样本，如果有$L$个层级的特征图，那么可以得到$K \times L$个候选正样本
 。（2）计算每个候选正样本与目标真实框的交并比，得到一组交并比的数据。计算这组交并比的均值$m_g$与标准差$v_g$，将均值与标准差
@@ -194,7 +195,7 @@ RetinaNet与Faster-RCNN等网络采用的是最常用的基于交并比最大化
 可以设置一个比较低的阈值广泛的从多个层级的特征图中选取。
 
 \subsubsection{概率标签分配}
-概率标签分配（Probabilistic Anchor Assignment，PAA）将锚框的得分数视为概率分布，并通过最大似然来估计分布参数，然后自适应的计算分割
+概率标签分配（Probabilistic Anchor Assignment，PAA）\cite{kim2020probabilistic}锚框的得分数视为概率分布，并通过最大似然来估计分布参数，然后自适应的计算分割
 阈值，来选取正负样本。锚框的分数用来衡量其与真实框的相似性，包括了分类得分与定位得分。分类得分是分类分支输出的置信度${P_i}(cls|\theta )$，定位得分为
 预测框与真实框之间的交并比${\rm{IOU}}(f(a|\theta ),g)$，为平衡这两种得分的权重，引入$\lambda$参数。锚框得分如式~\ref{eq:score}所示:
 \begin{equation}   
@@ -231,7 +232,7 @@ RetinaNet与Faster-RCNN等网络采用的是最常用的基于交并比最大化
 \end{equation}
 
 \subsubsection{最优输运标签分配}
-最优输运标签分配将目标检测中的标签分配问题建模为
+最优输运\cite{villani2009optimal}标签分配将目标检测中的标签分配问题建模为
 将标签从真实框输运到锚框代价最小的最优输运策略（Optimal Transport）问题，如图~\ref{fig:ota}所示。
 
 最优输运问题的定义如下：假设有m个供应商与n个需求方，其中第$i$
@@ -356,6 +357,10 @@ $p_i^*$与$t_i^*$代表了真实类别与坐标。$L_{cls}$与$L_{reg}$为交叉
 
 \section{算法实现与实验结果分析}
 \subsection{实验环境}
+训练平台使用linux，操作系统为ubuntu20.04，GPU为NVIDIA$\enspace$RTX3090，CPU为Intel(R)$\enspace$Core(TM)$\enspace$i9-10940X。深度学习框架为Pytorch1.13.1，
+训练的批量大小设置为16。使用SGD随机梯度下降优化器对网络参数进行更新，动量设置为0.9，权重衰减设置为5e-4。初始化的学习率为0.001。
+网络总共训练36个轮次，在第16与第28个轮次，学习率变为原来的$1/10$。RetianNet中Focal Loss中正负样本平衡参数$\alpha=0.25$，难易调整参数$\gamma=2$。
+主干网络使用在coco数据集上预训练的ResNet50网络。
 \subsubsection{数据集介绍}
 
 骨髓血细胞图像来自邃蓝智能科技(上海)有限公司合作医院提供，首先采用第2.1小节阐述的主动学习标注策略进行边界框的标注。
@@ -390,8 +395,121 @@ $p_i^*$与$t_i^*$代表了真实类别与坐标。$L_{cls}$与$L_{reg}$为交叉
 
 \subsection{实验结果与分析}
 \subsubsection{评价指标} 
+在\ref{section:detect}节中，我们提出了先检测、再识别的骨髓血细胞计算处理流程。在本节中，我们只关注血细胞检测的准确性，网络性能评估指标采用准确率、召回率、
+平均精度均值（mAP）与PR曲线，具体定义见~\ref{section:metrics}节。
 \subsubsection{实验结果}
-\subsubsection{路径聚合网络}
+为了验证本节提出的改进RetinaNet方法在骨髓血细胞检测上的有效性，我们在上节所提的骨髓血细胞数据集上进行测试，在不同交并比阈值条件下，
+网络的准确率、召回率、f1-score、平均检测精度均值与FPS如表~\ref{table:cell_det}所示，其中准确率、召回率为f1-score最大条件下对应的数值，FPS是网络每秒可计算的图像帧数量。
+
+从表中我们可以看到，本节提出的改进模型效果较好，在交并比为0.75的条件下，f1-score为0.9474，召回率为0.950，准确率为0.9448。
+随着交并比的逐渐增大，网络的准确率与召回率均开始下降，在交并比为0.95时，下降最为明显，平均检测精度只有0.176。因此，对于高精度的定位（IOU>0.9），模型检测性能仍有待提升，我们认为
+未来可以在数据量上进行扩充，此外在标注上进行更加精细化的校对。
+\begin{table}
+  \caption{改进RetinaNet骨髓血细胞检测结果}   
+  \centering 
+  \label{table:cell_det}
+  \begin{tabular*}{0.90\hsize}{@{}@{\extracolsep{\fill}}cccccc@{}}
+    \toprule[1pt]
+    IOU & 准确率  &  召回率& f1-score & mAP & FPS \\
+    \midrule[1pt] 
+    0.5  & 0.9624 & 0.96 & 0.9612 & 0.9864 & 27.2 \\
+    0.55 & 0.9594 & 0.96 & 0.9597 & 0.9837 & 27.2 \\
+    0.6  & 0.9594 & 0.96 & 0.9597 & 0.9837 & 27.2 \\
+    0.65 & 0.9579 & 0.96 & 0.9589 & 0.9821 & 27.2 \\
+    0.7  & 0.9559 & 0.95 & 0.9529 & 0.9735 & 27.2 \\
+    0.75 & 0.9448 & 0.95 & 0.9474 & 0.9668 & 27.2 \\
+    0.8  & 0.931  & 0.92 & 0.9255 & 0.9328 & 27.2 \\
+    0.85 & 0.8738 & 0.86 & 0.8668 & 0.8463 & 27.2 \\
+    0.9  & 0.7256 & 0.72 & 0.7228 & 0.6305 & 27.2 \\
+    0.95 & 0.3537 & 0.33 & 0.3414 & 0.1766 & 27.2 \\
+    \bottomrule[1pt]      
+  \end{tabular*} 
+\end{table}
+
+此外，我们对比了SSD512\cite{liu2016ssd}、Faster-RCNN\cite{ren2015faster}、Cascade-RCNN\cite{cai2018cascade}、
+RetinaNet\cite{lin2017focal}、YOLOV3\cite{redmon2018yolov3}与DETR\cite{zhu2020deformable}等六种基于深度学习的主流目标检测网络，
+这些网络均使用在COCO数据集上预训练模型进行参数初始化，然后基于迁移学习在骨髓血细胞检测数据集上进行微调。表~\ref{table:cell_det_con}为不网络的平均检测精度对比，
+其中$AP_{50}$表示在交并比为0.5条件下的平均检测精度。
+\begin{table}
+  \caption{不同目标检测方法在骨髓血细胞测试集上的性能对比}   
+  \centering 
+  \label{table:cell_det_con}
+  \begin{tabular*}{0.90\hsize}{@{}@{\extracolsep{\fill}}ccccccc@{}}
+    \toprule[1pt]
+    方法 & 主干网络  &  $AP_{50}$ & $AP_{75}$ & $AP_{90}$ & \makecell{参数量大小\\（MB）} & \makecell{运算次数 \\（GFLOPs）} \\
+    \midrule[1pt] 
+    SSD512      & VGG16    & 0.9748 & 0.9178 & 0.3234 &  36.04 & 250.92 \\
+    Faster-RCNN & ResNet50 & 0.9819 & 0.9458 & 0.4965 &  41.17 & 139.25 \\ 
+    Cascade-RCNN & ResNet50 & 0.9806& 0.9556 & 0.5896 & 69.17 & 167.24   \\ 
+    RetinaNet   & ResNet50 & 0.9801 & 0.9542 & 0.5215 &  36.31 & 135.73  \\ 
+    YOLOV3      & DarkNet53 & 0.9794 & 0.9508 & 0.4646 & 61.95 & 127.11  \\ 
+    DETR        & ResNet50 & 0.9888 &  0.9559 & 0.5844 &  41.30 & 59.82  \\ 
+    本节提出的网络 & ResNet50 & 0.9864 & 0.9668 &  0.6305 & 37.89 & 140.94\\
+    \hline
+    \bottomrule[1pt]      
+  \end{tabular*} 
+\end{table}
+
+从表中我们可以看到，SSD512网络检测精度最差，这是由于VGG16骨干网络特征表达能力相比与ResNet等
+残差网络更差。在交并比为0.5的条件下，DERT网络的平均精度最高，本节提出的网络略低于DETR方法。
+在交并比为0.75与0.9的条件下，本节的方法均高于其他对比方法，特别是在交并比为0.9的条件下，本节方法 
+相比与次优的Cascade-RCNN方法提升了约6.93\%。该结果说明Cascade-RCNN通过级联RPN网络的方式，可以有效的
+提升候选框的定位质量，而本文提出的改进点将IOU交并比纳入到检测网络的推理阶段，也可以帮助网络找到定位精度更好
+的候选框。在网络的计算量与参数量方面，DETR的计算量最低，SSD512的参数量最少，本文提出的改进方法相比与基础RetinaNet
+方法计算量增加了3.8\%，参数量增加了1.58MB。总而言之，本节提出的改进RetinaNet方法可以有效提高骨髓血细胞的检测精度。
+
+本节提出的改进模型在骨髓血细胞数据集上检测的可视化结果如图~\ref{fig:detect_res}所示，图中将置信度阈值大于0.5的骨髓血细胞以红色检测框标出，左上角的
+数字为置信度阈值，从图中我们可以看到，该网络可以有效的对密集与黏连的血细胞区域进行检测。
+\begin{figure}[htbp]
+	\centering
+  \begin{subfigure}{0.24\linewidth}
+    \centering
+    \includegraphics[width=0.95\linewidth, height=0.95\linewidth]{detect_result/1.jpg}
+  \end{subfigure}
+	\centering
+  \begin{subfigure}{0.24\linewidth}
+    \centering
+    \includegraphics[width=0.95\linewidth, height=0.95\linewidth]{detect_result/2.jpg}
+  \end{subfigure}
+		\centering
+  \begin{subfigure}{0.24\linewidth}
+    \centering
+    \includegraphics[width=0.95\linewidth, height=0.95\linewidth]{detect_result/3.jpg}
+  \end{subfigure}
+		\centering
+  \begin{subfigure}{0.24\linewidth}
+    \centering
+    \includegraphics[width=0.95\linewidth, height=0.95\linewidth]{detect_result/4.jpg}
+  \end{subfigure}
+\\	
+\vspace{0.2cm}
+	\centering
+  \begin{subfigure}{0.24\linewidth}
+    \centering
+    \includegraphics[width=0.95\linewidth, height=0.95\linewidth]{detect_result/5.jpg}
+  \end{subfigure}
+		\centering
+  \begin{subfigure}{0.24\linewidth}
+    \centering
+    \includegraphics[width=0.95\linewidth, height=0.95\linewidth]{detect_result/6.jpg}
+  \end{subfigure}
+		\centering
+  \begin{subfigure}{0.24\linewidth}
+    \centering
+    \includegraphics[width=0.95\linewidth, height=0.95\linewidth]{detect_result/7.jpg}
+  \end{subfigure}
+		\centering
+  \begin{subfigure}{0.24\linewidth}
+    \centering
+    \includegraphics[width=0.95\linewidth, height=0.95\linewidth]{detect_result/8.jpg}
+  \end{subfigure}
+  \caption{骨髓血细胞数据集上的检测结果}
+	\label{fig:detect_res}
+\end{figure}
+
+
+
+\subsubsection{改进网络结构}
 \subsubsection{标签分配策略}
 \section{小结}
 

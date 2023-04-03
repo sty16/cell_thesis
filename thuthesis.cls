@@ -2395,7 +2395,15 @@
       \renewcommand\CJKglue{\hspace{1bp}}%
     \fi
     \ifthu@thesis@type@thesis
-      (申请清华大学\thu@degree@name
+      %(申请清华大学\thu@degree@name
+      (申请清华大学\thu@discipline
+      \ifthu@degree@doctor
+        博士%
+      \else
+        \ifthu@degree@master
+          硕士%
+        \fi
+      \fi
       \ifthu@degree@type@professional
         专业%
       \fi
@@ -2483,7 +2491,8 @@
 \newcommand\thu@titlepage@info@master@engineer{%
   \thu@titlepage@info@tabular{2.8cm}{2.8cm}{1.34cm}{%
     \thu@info@item{培养单位}{}{\thu@department}%
-    \thu@info@item{工程领域}{}{\thu@discipline}%
+    %\thu@info@item{工程领域}{}{\thu@discipline}%
+    \thu@info@item{专业领域}{}{\thu@discipline}%
     \thu@info@item{申请人}{\thu@name@title}{\thu@author}%
     \thu@info@item{学号}{}{\thu@student@id}%
     \thu@info@item{指导教师}{\thu@name@title}{\thu@supervisor}%
@@ -2603,7 +2612,16 @@
     professional
   \fi
   degree of\par
-  {\sffamily\bfseries\thu@degree@name@en\par}%
+  %{\sffamily\bfseries\thu@degree@name@en\par}%
+  {\sffamily\bfseries
+  \ifthu@degree@doctor
+        Doctor of
+      \else
+        \ifthu@degree@master
+          Master of
+        \fi
+      \fi
+  \thu@discipline@en\par}%
 }
 \newcommand\thu@titlepage@en@supervisor{%
   \begin{tabular}{r@{\makebox[0.71cm][l]{:}}l}%

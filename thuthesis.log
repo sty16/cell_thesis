@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xetex 2023.2.9)  30 MAR 2023 00:30
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xetex 2023.2.9)  3 APR 2023 23:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -62,10 +62,10 @@ Generating file(s) thuthesis.cls dtx-style.sty
 Processing file thuthesis.dtx (cls) -> thuthesis.cls
                               (dtx-style) -> dtx-style.sty
 File thuthesis.dtx ended by \endinput.
-Lines  processed: 6949
+Lines  processed: 6967
 Comments removed: 2637
 Comments  passed: 0
-Codelines passed: 4303
+Codelines passed: 4321
 
  )
 No pages of output.

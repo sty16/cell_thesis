@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  30 MAR 2023 00:31
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  3 APR 2023 23:10
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1220,13 +1220,13 @@ LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
 
 ] (./data/committee.tex
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 9.03471pt on input line 43.
+(Font)              scaled to size 9.03471pt on input line 40.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 7.22777pt on input line 43.
+(Font)              scaled to size 7.22777pt on input line 40.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 9.03278pt on input line 43.
+(Font)              scaled to size 9.03278pt on input line 40.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 7.22623pt on input line 43.
+(Font)              scaled to size 7.22623pt on input line 40.
  [3
 
 
@@ -1246,507 +1246,157 @@ LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
 ]) [2
 
 
-] (./main.toc [3
-
-
-] [4])
+] (./main.toc)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [5] (./main.lof [6
+ [3
 
 
-])
+] (./main.lof)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [7] (./main.lot)
+ [4
+
+
+] (./main.lot)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- (./data/denotation.tex [8
+ (./data/denotation.tex [5
 
 
-]) [9
+]) [6
 
 
-] (./data/chap01.tex
+] (./data/chap04.tex
 第1章
-[1
-
-
-] [2] [3] [4] [5] [6]
-File: figures//structure.png Graphic file (type bmp)
-<figures//structure.png>
- [7] [8]) (./data/chap02.tex [9]
-第2章
-File: figures//development.png Graphic file (type bmp)
-<figures//development.png>
-
-Overfull \hbox (9.24347pt too wide) in alignment at lines 33--41
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (9.24347pt too wide) in alignment at lines 41--49
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (9.24347pt too wide) in alignment at lines 49--52
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (9.24347pt too wide) in alignment at lines 52--53
- [] [] [] [] [] 
- []
-
-File: figures//cell_example/原始细胞.jpg Graphic file (type bmp)
-<figures//cell_example/原始细胞.jpg>
-
-Underfull \hbox (badness 1859) in paragraph at lines 61--61
-\TU/SimSun(0)/m/n/11.04124 有 多 个 小 而 清 晰
- []
-
-File: figures//cell_example/单核细胞.jpg Graphic file (type bmp)
-<figures//cell_example/单核细胞.jpg>
-
-Underfull \hbox (badness 8170) in paragraph at lines 70--70
-[]|\TU/SimSun(0)/m/n/11.04124 圆 形 或 椭 圆
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
-\TU/SimSun(0)/m/n/11.04124 形，|  直 径 在
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 72--72
-\TU/SimSun(0)/m/n/11.04124 可 见 空 泡 与 紫 红
- []
-
-File: figures//cell_example/淋巴细胞.jpg Graphic file (type bmp)
-<figures//cell_example/淋巴细胞.jpg>
-
-Underfull \hbox (badness 8170) in paragraph at lines 80--80
-[]|\TU/SimSun(0)/m/n/11.04124 类 圆 形 或 不
- []
-
-File: figures//cell_example/浆细胞.jpg Graphic file (type bmp)
-<figures//cell_example/浆细胞.jpg>
-
-Underfull \hbox (badness 8170) in paragraph at lines 90--90
-[]|\TU/SimSun(0)/m/n/11.04124 椭 圆 形 或 不
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 92--92
-[]|\TU/SimSun(0)/m/n/11.04124 细 胞 质 为 不 透 明
- []
-
-File: figures//cell_example/红细胞.jpg Graphic file (type bmp)
-<figures//cell_example/红细胞.jpg>
-
-Underfull \hbox (badness 2269) in paragraph at lines 100--100
-[]|\TU/SimSun(0)/m/n/11.04124 规 则 类 圆 形，|
- []
-
-
-Underfull \hbox (badness 1275) in paragraph at lines 100--100
-\TU/SimSun(0)/m/n/11.04124 直 径 在 \TU/TimesNewRoman(0)/m/n/11.04124 7~10
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 101--101
-[]|\TU/SimSun(0)/m/n/11.04124 圆 形 位 于 细 胞 中
- []
-
-File: figures//cell_example/早幼粒细胞.jpg Graphic file (type bmp)
-<figures//cell_example/早幼粒细胞.jpg>
-
-Underfull \hbox (badness 2772) in paragraph at lines 110--110
-\TU/SimSun(0)/m/n/11.04124 在 \TU/TimesNewRoman(0)/m/n/11.04124 12~25 \TU/SimSun(0)/m/n/11.04124 微
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 112--112
-\TU/SimSun(0)/m/n/11.04124 态 不 一 的 非 特 异
- []
-
-File: figures//cell_example/中幼粒细胞.jpg Graphic file (type bmp)
-<figures//cell_example/中幼粒细胞.jpg>
-
-Underfull \hbox (badness 2772) in paragraph at lines 120--120
-\TU/SimSun(0)/m/n/11.04124 在 \TU/TimesNewRoman(0)/m/n/11.04124 10~20 \TU/SimSun(0)/m/n/11.04124 微
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 122--122
-\TU/SimSun(0)/m/n/11.04124 其 中 存 在 大 小 均
- []
-
-File: figures//cell_example/中性晚幼粒.jpg Graphic file (type bmp)
-<figures//cell_example/中性晚幼粒.jpg>
-
-Underfull \hbox (badness 2269) in paragraph at lines 130--130
-[]|\TU/SimSun(0)/m/n/11.04124 胞 体 类 圆 形，|
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 132--132
-\TU/SimSun(0)/m/n/11.04124 存 在 较 多 中 性 颗
- []
-
-File: figures//cell_example/中性晚幼粒.jpg Graphic file (type bmp)
-<figures//cell_example/中性晚幼粒.jpg>
-
-Underfull \hbox (badness 2269) in paragraph at lines 140--140
-[]|\TU/SimSun(0)/m/n/11.04124 胞 体 类 圆 形，|
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 142--142
-\TU/SimSun(0)/m/n/11.04124 存 在 较 多 中 性 颗
- []
-
-File: figures//cell_example/中性晚幼粒.jpg Graphic file (type bmp)
-<figures//cell_example/中性晚幼粒.jpg>
-
-Underfull \hbox (badness 2269) in paragraph at lines 150--150
-[]|\TU/SimSun(0)/m/n/11.04124 胞 体 类 圆 形，|
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 152--152
-\TU/SimSun(0)/m/n/11.04124 存 在 较 多 中 性 颗
- []
-
-File: figures//cell_example/中性晚幼粒.jpg Graphic file (type bmp)
-<figures//cell_example/中性晚幼粒.jpg>
-
-Underfull \hbox (badness 2269) in paragraph at lines 160--160
-[]|\TU/SimSun(0)/m/n/11.04124 胞 体 类 圆 形，|
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 162--162
-\TU/SimSun(0)/m/n/11.04124 存 在 较 多 中 性 颗
- []
-
-File: figures//cell_example/嗜酸性.jpg Graphic file (type bmp)
-<figures//cell_example/嗜酸性.jpg>
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--170
-[]|\TU/SimSun(0)/m/n/11.04124 直 径 \TU/TimesNewRoman(0)/m/n/11.04124 15~20
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 172--172
-\TU/SimSun(0)/m/n/11.04124 红 色 的 嗜 酸 性 颗
- []
-
-File: figures//cell_example/嗜碱性.jpg Graphic file (type bmp)
-<figures//cell_example/嗜碱性.jpg>
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
-[]|\TU/SimSun(0)/m/n/11.04124 直 径 \TU/TimesNewRoman(0)/m/n/11.04124 10~15
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 182--182
-\TU/SimSun(0)/m/n/11.04124 态 不 一 深 紫 红 色
- []
-
-
-Overfull \hbox (9.24347pt too wide) in alignment at lines 53--184
- [] [] [] [] [] 
- []
-
-[10
-
-] [11]
-File: figures//cell_pre/step1.jpg Graphic file (type bmp)
-<figures//cell_pre/step1.jpg>
-File: figures//cell_pre/step2.jpg Graphic file (type bmp)
-<figures//cell_pre/step2.jpg>
-File: figures//cell_pre/step3.jpg Graphic file (type bmp)
-<figures//cell_pre/step3.jpg>
-File: figures//cell_pre/step4.jpg Graphic file (type bmp)
-<figures//cell_pre/step4.jpg>
-File: figures//cell_pre/step5.jpg Graphic file (type bmp)
-<figures//cell_pre/step5.jpg>
-File: figures//cell_pre/step6.jpg Graphic file (type bmp)
-<figures//cell_pre/step6.jpg>
- [12]
-File: figures//annotations.jpg Graphic file (type bmp)
-<figures//annotations.jpg>
- [13]
-File: figures//active.jpg Graphic file (type bmp)
-<figures//active.jpg>
- [14]
-File: figures//neuron.jpg Graphic file (type bmp)
-<figures//neuron.jpg>
- [15]
-File: figures//perceptron.jpg Graphic file (type bmp)
-<figures//perceptron.jpg>
- [16] [17]
-File: figures//cnn.jpg Graphic file (type bmp)
-<figures//cnn.jpg>
- [18]
-File: figures//conv.jpg Graphic file (type bmp)
-<figures//conv.jpg>
- [19]
-File: figures//pool.jpg Graphic file (type bmp)
-<figures//pool.jpg>
- [20] [21]
-File: figures//MVVM.jpg Graphic file (type bmp)
-<figures//MVVM.jpg>
- [22]
-File: figures//django.jpg Graphic file (type bmp)
-<figures//django.jpg>
- [23]) (./data/chap03.tex [24]
-第3章
-File: figures//faster_rcnn.jpg Graphic file (type bmp)
-<figures//faster_rcnn.jpg>
-[25
-
-]
-File: figures//resnet50.jpg Graphic file (type bmp)
-<figures//resnet50.jpg>
- [26]
-File: bottleneck.jpg Graphic file (type bmp)
-<bottleneck.jpg>
-File: figures//fpn.jpg Graphic file (type bmp)
-<figures//fpn.jpg>
- [27]
-File: figures//rpn.jpg Graphic file (type bmp)
-<figures//rpn.jpg>
-File: figures//anchor_a.jpg Graphic file (type bmp)
-<figures//anchor_a.jpg>
-File: figures//anchor_b.jpg Graphic file (type bmp)
-<figures//anchor_b.jpg>
- [28]
-File: figures//subnets.jpg Graphic file (type bmp)
-<figures//subnets.jpg>
- [29]
-File: figures//retinanet.jpg Graphic file (type bmp)
-<figures//retinanet.jpg>
- [30] [31] [32]
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 260.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 11.04242pt on input line 260.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 7.72966pt on input line 260.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 5.5212pt on input line 260.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 11.04005pt on input line 260.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 7.728pt on input line 260.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 5.52002pt on input line 260.
-File: figures//iou.jpg Graphic file (type bmp)
-<figures//iou.jpg>
- [33]
-File: figures//det1.jpg Graphic file (type bmp)
-<figures//det1.jpg>
-File: figures//det2.jpg Graphic file (type bmp)
-<figures//det2.jpg>
-File: figures//det3.jpg Graphic file (type bmp)
-<figures//det3.jpg>
-File: det4.jpg Graphic file (type bmp)
-<det4.jpg>
- [34] [35]
-File: figures//PR_net.png Graphic file (type bmp)
-<figures//PR_net.png>
- [36]
-File: figures//PR_1.png Graphic file (type bmp)
-<figures//PR_1.png>
-File: figures//PR_2.png Graphic file (type bmp)
-<figures//PR_2.png>
-File: figures//PR_3.png Graphic file (type bmp)
-<figures//PR_3.png>
-File: figures//PR_4.png Graphic file (type bmp)
-<figures//PR_4.png>
-File: figures//detect_result/gt.jpg Graphic file (type bmp)
-<figures//detect_result/gt.jpg>
-File: figures//detect_result/faster_rcnn.jpg Graphic file (type bmp)
-<figures//detect_result/faster_rcnn.jpg>
-File: figures//detect_result/cascade.jpg Graphic file (type bmp)
-<figures//detect_result/cascade.jpg>
-File: figures//detect_result/retinanet.jpg Graphic file (type bmp)
-<figures//detect_result/retinanet.jpg>
-File: figures//detect_result/YOLOV3.jpg Graphic file (type bmp)
-<figures//detect_result/YOLOV3.jpg>
- [37] [38]
-File: figures//det_confusion.png Graphic file (type bmp)
-<figures//det_confusion.png>
-File: figures//det_confusion1.png Graphic file (type bmp)
-<figures//det_confusion1.png>
-File: figures//features.jpg Graphic file (type bmp)
-<figures//features.jpg>
- [39] [40]) (./data/chap04.tex [41]
-第4章
 File: figures//detect_problem.jpg Graphic file (type bmp)
 <figures//detect_problem.jpg>
 File: figures//improved_retinanet.png Graphic file (type bmp)
 <figures//improved_retinanet.png>
-[42
+[1
+
 
 ]
 File: figures//panet.jpg Graphic file (type bmp)
 <figures//panet.jpg>
- [43]
+ [2]
 File: figures//gau.jpg Graphic file (type bmp)
 <figures//gau.jpg>
- [44]
+ [3]
 File: figures//cell1.jpg Graphic file (type bmp)
 <figures//cell1.jpg>
 File: figures//cell2.jpg Graphic file (type bmp)
 <figures//cell2.jpg>
- [45]
 File: figures//cls_reg1.jpg Graphic file (type bmp)
 <figures//cls_reg1.jpg>
 File: figures//cls_reg2.jpg Graphic file (type bmp)
 <figures//cls_reg2.jpg>
- [46]
+ [4] [5]
 File: figures//atss1.jpg Graphic file (type bmp)
 <figures//atss1.jpg>
 File: figures//atss2.jpg Graphic file (type bmp)
 <figures//atss2.jpg>
- [47] [48]
+ [6] [7]
 File: figures//ota.jpg Graphic file (type bmp)
 <figures//ota.jpg>
-
-Underfull \hbox (badness 1783) in paragraph at lines 258--260
+ [8]
+Underfull \hbox (badness 1783) in paragraph at lines 259--261
 []\TU/SimSun(0)/m/n/12.045 最 优 输 运 问 题 可 以 在 多 项 式 的 时 间 复 杂 度 内，|  通 过 \TU/TimesNewRoman(0)/m/n/12.045 Sinkhorn \TU/SimSun(0)/m/n/12.045 快 速 迭 代
  []
 
 
-Underfull \hbox (badness 2573) in paragraph at lines 258--260
+Underfull \hbox (badness 2573) in paragraph at lines 259--261
 \TU/SimSun(0)/m/n/12.045 的 方 法 进 行 求 解。|  该 方 法 的 思 想 源 于 交 叉 熵 与 对 偶 问 题，|  定 义 $[][][][] []
  []
 
 
-Underfull \hbox (badness 4441) in paragraph at lines 258--260
+Underfull \hbox (badness 4441) in paragraph at lines 259--261
 [] [][] [][] []$ \TU/SimSun(0)/m/n/12.045 上 述 问 题 添 加 了 拉 格 朗 日 算 子 和 扰 动 项 的 形 式 如
  []
 
-[49] [50]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 321.
+[9]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 322.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 327.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
+(Font)              scaled to size 11.04242pt on input line 327.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
+(Font)              scaled to size 7.72966pt on input line 327.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
+(Font)              scaled to size 5.5212pt on input line 327.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
+(Font)              scaled to size 11.04005pt on input line 327.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
+(Font)              scaled to size 7.728pt on input line 327.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
+(Font)              scaled to size 5.52002pt on input line 327.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./data/chap05.tex [51] [52] [53]
-第5章
-[54
+[10]
 
-]
-File: figures//transFG.png Graphic file (type bmp)
-<figures//transFG.png>
- [55]
-File: figures//pos_emb.png Graphic file (type bmp)
-<figures//pos_emb.png>
- [56]
-File: figures//encoder.png Graphic file (type bmp)
-<figures//encoder.png>
- [57]
-File: figures//discriminate.png Graphic file (type bmp)
-<figures//discriminate.png>
- [58]
-Missing character: There is no 𝛼 (U+1D6FC) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
-File: figures//sparse_attn.png Graphic file (type bmp)
-<figures//sparse_attn.png>
-[59] [60] [61]
-File: figures//cls_confuse.png Graphic file (type bmp)
-<figures//cls_confuse.png>
- [62] [63]
-File: figures//self_attn.png Graphic file (type bmp)
-<figures//self_attn.png>
-File: figures//sparse_select.png Graphic file (type bmp)
-<figures//sparse_select.png>
- [64] [65]
-File: figures//split_method.png Graphic file (type bmp)
-<figures//split_method.png>
- [66] [67]
-File: figures//tsne1.png Graphic file (type bmp)
-<figures//tsne1.png>
-File: figures//tsne2.png Graphic file (type bmp)
-<figures//tsne2.png>
-File: figures//tsne3.png Graphic file (type bmp)
-<figures//tsne3.png>
-) (./data/chap06.tex [68] [69]
-第6章
-[70
+LaTeX Warning: Reference `section:detect' on page 11 undefined on input line 398.
 
-]
-File: software_structure.jpg Graphic file (type bmp)
-<software_structure.jpg>
- [71] [72] [73]
-File: console.png Graphic file (type bmp)
-<console.png>
- [74]
-File: figures//software/login.png Graphic file (type bmp)
-<figures//software/login.png>
-File: figures//software/update.png Graphic file (type bmp)
-<figures//software/update.png>
-File: figures//software/detect.png Graphic file (type bmp)
-<figures//software/detect.png>
- [75]
-File: figures//software/recognition.png Graphic file (type bmp)
-<figures//software/recognition.png>
-File: figures//software/result.png Graphic file (type bmp)
-<figures//software/result.png>
- [76]
-File: figures//software/info.png Graphic file (type bmp)
-<figures//software/info.png>
- [77]
-File: figures//software/patient.png Graphic file (type bmp)
-<figures//software/patient.png>
-) (./data/chap07.tex [78] [79]
-第7章
-[80
 
-] [81]) [82] (./main.bbl [83
+LaTeX Warning: Reference `section:metrics' on page 11 undefined on input line 399.
+
+[11]
+Overfull \hbox (9.37512pt too wide) in alignment at lines 437--450
+[] [] [] [] [] [] [] 
+ []
+
+[12] [13]
+File: figures//detect_result/1.jpg Graphic file (type bmp)
+<figures//detect_result/1.jpg>
+File: figures//detect_result/2.jpg Graphic file (type bmp)
+<figures//detect_result/2.jpg>
+File: figures//detect_result/3.jpg Graphic file (type bmp)
+<figures//detect_result/3.jpg>
+File: figures//detect_result/4.jpg Graphic file (type bmp)
+<figures//detect_result/4.jpg>
+File: figures//detect_result/5.jpg Graphic file (type bmp)
+<figures//detect_result/5.jpg>
+File: figures//detect_result/6.jpg Graphic file (type bmp)
+<figures//detect_result/6.jpg>
+File: figures//detect_result/7.jpg Graphic file (type bmp)
+<figures//detect_result/7.jpg>
+File: figures//detect_result/8.jpg Graphic file (type bmp)
+<figures//detect_result/8.jpg>
+) [14] (./main.bbl) (./data/acknowledgements.tex [15
 
 
 
-] [84]
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 245.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 245.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 245.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 245.
-) (./data/acknowledgements.tex [85]) [86
+]) [16
 
 
-] (./data/resume.tex [87
+] (./data/resume.tex [17
 
 
-]) (./data/comments.tex [88
+]) (./data/comments.tex [18
 
 
-] [89
+] [19
 
-]) (./data/resolution.tex [90
+]) (./data/resolution.tex [20
 
 
 ]) (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A4090EB53028269B65E65E6D62791CAA;16087.
+(rerunfilecheck)             Checksum: D805E26BF5D45B3F256DBC4A3F372E25;5232.
  ) 
 Here is how much of TeX's memory you used:
- 32133 strings out of 476179
- 694325 string characters out of 5813073
- 1091927 words of memory out of 5000000
- 52222 multiletter control sequences out of 15000+600000
- 479171 words of font info for 195 fonts, out of 8000000 for 9000
+ 31119 strings out of 476179
+ 664657 string characters out of 5813073
+ 1066193 words of memory out of 5000000
+ 51310 multiletter control sequences out of 15000+600000
+ 478611 words of font info for 182 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  102i,16n,129p,1451b,2766s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (103 pages, 1866860 bytes).
+Output written on main.xdv (30 pages, 444788 bytes).
