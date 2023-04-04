@@ -254,7 +254,7 @@ $(0.25, 0.75)$。
 通常每个图像中包含1到10个有核血细胞，数据集总共标记了11352个血细胞，训练集有9065个血细胞，测试集有2287个血细胞。数据集的分布如
 表~\ref{table:cell_detect}所示：
 
-\begin{table}
+\begin{table}[htbp]
   \caption{骨髓血细胞检测数据集分布}   
   \centering 
   \label{table:cell_detect}
@@ -361,7 +361,7 @@ Faster-RCNN、Cascade-RCNN、RetinaNet与YOLOV3四种网络在输入图像大小
 如表~\ref{table:cell_Network}所示。我们比较了四种网络在NVIDIA TITAN V硬件环境下的每秒帧率（Frame Per Second，FPS），即每秒可以处理的
 图像数量，来评估网络是否可以满足在生产环境实时性的要求。
 
-\begin{table}
+\begin{table}[htbp]
   \caption{不同网络结构参数量、计算量与速度对比}   
   \centering 
   \label{table:cell_Network}
@@ -386,7 +386,7 @@ Faster-RCNN、Cascade-RCNN、RetinaNet与YOLOV3四种网络在输入图像大小
 四种检测网络在骨髓血细胞测试集上的结果如表~\ref{table:cell_test}所示，其中$\text{AP}_{Prim}$表示原始细胞在$IOU=0.75$下的$\text{AP}$值，
 其他$\text{AP}_{*}$代表各类血细胞的$\text{AP}$值。$\text{mAP}$为所有类别$\text{AP}$的平均值，可以直观的衡量网络检测效果。
 
-\begin{table}   
+\begin{table}[htbp]   
   \caption{不同目标检测方法在骨髓血细胞测试集上的检测结果}      
   \centering    
   \label{table:cell_test}
@@ -518,7 +518,7 @@ Faster-RCNN、Cascade-RCNN、RetinaNet与YOLOV3四种网络在输入图像大小
 RetinaNet检测网络在score（分类置信度） > 0.95、IOU=0.5条件下的混淆矩阵如图~\ref{fig:det_confusion}(b)所示, 骨髓血细胞的召回率0.964，正确率为0.934。
 检测网络在$IOU=0.75$条件下的平均精度(AP)为0.942。实验结果表明，在仅做检测后，骨髓血细胞召回率与准确率极高，可以满足实际应用需求。
 
-\begin{table}   
+\begin{table}[htbp]   
   \caption{RetinaNet网络各类别的准确率与召回率}      
   \centering    
   \label{table:cell_cls}

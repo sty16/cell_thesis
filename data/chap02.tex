@@ -8,7 +8,7 @@
 人体血细胞主要由骨髓内的造血干细胞分化而成。造血干细胞由髓系干细胞与淋系干细胞构成。其中髓系干细胞分化为粒细胞系统、红细包系统、单核细胞系统与巨核细胞系统，
 淋系干细胞分化为浆细胞系统与淋巴细胞系统。不同系统的细胞按照发育成熟过程可以分为原始、早幼与成熟这三个阶段。粒细胞与红细胞的幼稚阶段可再具体划分为早幼，中幼与晚幼这
 三个发育阶段。粒细胞系统根据细胞质内特殊颗粒对酸碱性物质亲和性，可分为嗜酸性粒细胞，嗜碱性粒细胞和中性粒细胞。骨髓血细胞六大系统血细胞的发育过程如图~\ref{fig:development}所示\cite{cong2002}：
-\begin{figure}
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=1.0\linewidth]{development.png}
   \caption{骨髓血细胞发育成熟过程示意图}
@@ -233,7 +233,7 @@
 我们使用labelme软件作为标注工具，如图~\ref{fig:annotations}所示，针对每一张图像生成json标注文件，记录血细胞边界框的左上角与右下角的坐标，最后再将标注转化为coco格式，并将数据集划分为训练集、测试集与验证集。
 经过检测网络，我们得到了单一血细胞图像，即图像中仅有一个完整的骨髓血细胞，这些图像再由经验丰富的病理医生完成类别标签的标注。
 
-\begin{figure}
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\linewidth]{annotations.jpg}
   \caption{labelme标注软件工具}
@@ -246,7 +246,7 @@
 得到一个初步的检测模型，然后对每张图像进行检测，并生成标注json文件，再反馈到labelme标注软件中进行微调。针对血细胞识别任务，经过检测网络，我们得到了多张单个血细胞图像，首先完成部分
 类别标注，训练初步的识别网络。对未标注的血细胞筛选出熵最大的预测样本反馈给病理医生进行核对。主动学习流程如图~\ref{fig:active}所示：
 
-\begin{figure}
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=1.0\linewidth]{active.jpg}
   \caption{主动学习标注框架示意图}
@@ -270,7 +270,7 @@
 
 神经网络发展历史最早可以追溯到20世纪五十年代，当时研究人员受到神经科学启发，模拟生物神经元结构提出了神经网络。
 神经元是神经网络的基本单元，其结构如图~\ref{fig:neuron}所示，由输入、加权、激活函数、输出这四个部分组成。
-\begin{figure}
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\linewidth]{neuron.jpg}
   \caption{神经元结构示意图}
@@ -303,7 +303,7 @@
 \end{equation}
 
 其中 $z^{l}$ 表示第$l$层的未激活值，$a^{l}$ 表示第$l$层的激活值，$W^{l}$ 和 $b^{l}$ 分别表示第$l$层的权重矩阵和偏置向量。
-\begin{figure}
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=0.65\linewidth]{perceptron.jpg}
   \caption{感知机网络模型示意图}
@@ -402,7 +402,7 @@ Adam优化算法(Adaptive Moment estimation)\cite{kingma2020method}集成了动�
 CNN引入了卷积层与池化层，通过稀疏连接与权值共享，可以更加有效的提取空间数据的特征模式，降低了模型参数量与计算复杂度。
 卷积神经网络由多个卷积层、池化层、全连接层等组成，典型结构如图~\ref{fig:cnn}所示。
 
-\begin{figure}
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=1.0\linewidth]{cnn.jpg}
   \caption{典型卷积神经网络结构示意图}
@@ -429,7 +429,7 @@ CNN引入了卷积层与池化层，通过稀疏连接与权值共享，可以�
 边界扩充是图像边界上进行零填充，可以使得图像边缘像素作为卷积核的中心进行卷积，避免边缘信息丢失。卷积核的输入通道数量由
 输入特征图的通道数决定。输出通道数据量为卷积核的个数，提高卷积核数量可以增加提取特征的丰富性，从而比高网络的表达能力。
 
-\begin{figure}
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=0.7\linewidth]{conv.jpg}
   \caption{CNN卷积层示意图}
@@ -445,7 +445,7 @@ CNN引入了卷积层与池化层，通过稀疏连接与权值共享，可以�
 平均池化在局部区域特征图中使用均值来表征此区域，整体特征信息更加平滑。
 通常池化核大小选择为$2 \times 2$，然后将输入特征图划分为多个相同大小的区域，以最大池化的方式进行。
 
-\begin{figure}
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=0.6\linewidth]{pool.jpg}
   \caption{CNN池化层示意图}
@@ -489,7 +489,7 @@ Javascript是一种解释型的轻量级Web开发编程语言，作为编程代�
 组件化，将界面拆分为多种组件，每个组件拥有自己的view与model，代码复用性与模型化程度更高；响应式设计，采用虚拟DOM与Diff算法优化渲染效率，极大减少了修改DOM元素的次数；
 生态环境丰富，Vue有大量的插件，方便扩展，社区活跃，大量优秀的开发者在持续的对框架进行维护、更新与完善。
 
-\begin{figure}
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=0.7\linewidth]{MVVM.jpg}
   \caption{MVVM框架示意图}
@@ -519,7 +519,7 @@ Django\cite{rubio2017beginning}是一个基于Python的开源Web后端框架。�
 Django框架具有如下的优势，（1）高度可扩展，框架的每个组件均可以替换与修改，便于添加与修改功能。（2）强大数据库访问组件，可以根据Model快速更改数据库模式，便捷的进行数据迁移，
 数据库操作代码简洁。（3）安全性，Django内置了多种安全机制和功能，包括了跨站请求伪造保护、跨站脚本攻击保护、SQL注入保护与认证与授权等。
 
-\begin{figure}
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=0.75\linewidth]{django.jpg}
   \caption{Django框架示意图}

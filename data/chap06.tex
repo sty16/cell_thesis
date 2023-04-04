@@ -73,7 +73,7 @@ MySQL是一个开源且功能强大的关系型数据库管理系统，支持并
 
 1）用户信息表，用户信息表如表~\ref{table:user_table}所示，其记录了用户基本信息如用户名、密码、头像、邮箱、手机等。用户密码通过MD5加密算法生成一个长度为128位的哈希值存储在数据库中，
 在登录时，通过比较用户密码的哈希值是否相同对用户进行校验。用户登录后可以对自己的个人信息进行修改。超级用户如医生可以对骨髓血细胞检测与识别的结果进行人工核对与修改。
-\begin{table}
+\begin{table}[h]
     \caption{用户信息表}   
     \centering 
     \label{table:user_table}
@@ -102,7 +102,7 @@ MySQL是一个开源且功能强大的关系型数据库管理系统，支持并
 2）检测文件表，表~\ref{table:detect_table}为检测文件表，该表用于存储医生上传的患者骨髓血细胞图像以及检测算法检测到的血细胞的坐标。
 首先根据上传的文件内容根据MD5算法计算出文件的128位哈希值，并将该名称作为文件名称落入到数据库中。血细胞检测结果坐标以
 json字符串的形式进行存储。
-\begin{table}
+\begin{table}[h]
     \caption{检测文件表}   
     \centering 
     \label{table:detect_table}
@@ -127,7 +127,7 @@ json字符串的形式进行存储。
 3）识别文件表，表~\ref{table:recog_table}为识别文件表，该表用于存储医生上传的患者骨髓血细胞切片图像与识别的血细胞类别信息。
 根据上传的文件内容根据MD5算法计算出文件的128位哈希值，并将该名称作为文件名称落入到数据库中。is\_confirmed字段
 表示该条识别结果是否被医生工人核对。
-\begin{table}
+\begin{table}[h]
     \caption{识别文件表}   
     \centering 
     \label{table:recog_table}
