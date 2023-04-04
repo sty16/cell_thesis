@@ -295,6 +295,13 @@ top-5平均分类正确率为$99.48\%$。我们注意到对于最常见的血细
 嗜酸性粒细胞、有核红细胞，网络预测结果与医生标注达到了极好的一致性，精确率与召回率均高于$90\%$。
 而其他类别例如不同发育阶段的粒细胞以及嗜碱性粒细胞，由于相邻发育阶段的粒细胞差异较为细微并且原始样本数量较少，识别更具挑战性，
 存在误分类是可以容忍的。
+\begin{figure}[htbp]
+   \centering   
+   \includegraphics[width=0.80\linewidth]{cls_confuse.png}   
+   \caption{改进Vision Transformer的识别混淆矩阵}   
+   \label{fig:cls_confuse} 
+\end{figure}  
+
 \begin{table}[htbp]
   \caption{改进Vision Transformer方法的识别精确率与召回率}   
   \centering 
@@ -313,17 +320,11 @@ top-5平均分类正确率为$99.48\%$。我们注意到对于最常见的血细
     8  & 杆状核嗜中性粒细胞（NGB） & 91.82 & 91.81 & 110   \\ 
     9  & 杆状核嗜中性粒细胞（NGB） & 93.50 & 93.50 & 200   \\  
     10 & 早幼粒细胞（PMO）        & 76.92 & 85.71 & 70  \\  
+    \hline
        & 总计                    &      &     & 1355   \\  
     \bottomrule[2pt]      
   \end{tabular} 
 \end{table}
-
-\begin{figure}[htbp]
-   \centering   
-   \includegraphics[width=0.75\linewidth]{cls_confuse.png}   
-   \caption{改进Vision Transformer的识别混淆矩阵}   
-   \label{fig:cls_confuse} 
-\end{figure}  
 
 此外，我们将本文提出的方法与其他深度学习方法例如VGG\cite{2014Very}、ResNet\cite{he2016deep}、SE-ResNet\cite{hu2018squeeze}、ResNext\cite{xie2017aggregated}、
 EfficientNet\cite{tan2019efficientnet}、Vision Transformer\cite{dosovitskiy2020image}进行了对比。
@@ -384,7 +385,7 @@ EfficientNet\cite{tan2019efficientnet}、Vision Transformer\cite{dosovitskiy2020
 未来我们会关注于Transformer网络的结构搜索，从而找到更加精准的模型速率与准确率的平衡。
 
 \begin{table}[htbp]
-  \caption{不同识别方法性能对比}   
+  \caption{不同Transformer结构的速率与准确率}   
   \centering 
   \label{table:detect_con}
   \begin{tabular}{cccccc}

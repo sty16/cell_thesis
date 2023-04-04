@@ -42,7 +42,7 @@
 \contentsline {subsubsection}{\numberline {3.4.2.2}检测算法精度对比}{35}{subsubsection.3.4.2.2}%
 \contentsline {subsubsection}{\numberline {3.4.2.3}检测网络与检测识别网络性能对比}{39}{subsubsection.3.4.2.3}%
 \contentsline {section}{\numberline {3.5}小结}{40}{section.3.5}%
-\contentsline {chapter}{\numberline {第4章}基于改进的RetianNet骨髓血细胞检测算法设计与实现}{42}{chapter.4}%
+\contentsline {chapter}{\numberline {第4章}基于改进的RetinaNet骨髓血细胞检测算法设计与实现}{42}{chapter.4}%
 \contentsline {section}{\numberline {4.1}引言}{42}{section.4.1}%
 \contentsline {section}{\numberline {4.2}改进的RetinaNet骨髓血细胞检测网络}{42}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}基于全局注意的路径聚合网络}{43}{subsection.4.2.1}%
@@ -59,7 +59,7 @@
 \contentsline {subsection}{\numberline {4.3.2}实验结果与分析}{52}{subsection.4.3.2}%
 \contentsline {subsubsection}{\numberline {4.3.2.1}评价指标}{52}{subsubsection.4.3.2.1}%
 \contentsline {subsubsection}{\numberline {4.3.2.2}实验结果}{53}{subsubsection.4.3.2.2}%
-\contentsline {subsubsection}{\numberline {4.3.2.3}改进网络结构}{55}{subsubsection.4.3.2.3}%
+\contentsline {subsubsection}{\numberline {4.3.2.3}改进网络结构}{54}{subsubsection.4.3.2.3}%
 \contentsline {subsubsection}{\numberline {4.3.2.4}标签分配策略}{56}{subsubsection.4.3.2.4}%
 \contentsline {section}{\numberline {4.4}小结}{57}{section.4.4}%
 \contentsline {chapter}{\numberline {第5章}基于改进Vision Transformer骨髓血细胞检测算法设计与实现}{58}{chapter.5}%

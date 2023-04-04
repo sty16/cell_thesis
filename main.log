@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  4 APR 2023 18:54
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  4 APR 2023 20:23
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1278,7 +1278,11 @@ LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
 ] [2] [3] [4] [5] [6]
 File: figures//structure.jpg Graphic file (type bmp)
 <figures//structure.jpg>
- [7] [8]) (./data/chap02.tex [9]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7] [8]) (./data/chap02.tex [9]
 第2章
 File: figures//development.png Graphic file (type bmp)
 <figures//development.png>
@@ -1634,16 +1638,11 @@ Underfull \hbox (badness 4441) in paragraph at lines 252--254
 
 [50]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 314.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[51] [52]
-Overfull \hbox (9.37512pt too wide) in alignment at lines 428--441
+ [51] [52] [53]
+Overfull \hbox (9.37512pt too wide) in alignment at lines 440--453
 [] [] [] [] [] [] [] 
  []
 
-[53] [54]
 File: figures//detect_result/1.jpg Graphic file (type bmp)
 <figures//detect_result/1.jpg>
 File: figures//detect_result/2.jpg Graphic file (type bmp)
@@ -1660,7 +1659,7 @@ File: figures//detect_result/7.jpg Graphic file (type bmp)
 <figures//detect_result/7.jpg>
 File: figures//detect_result/8.jpg Graphic file (type bmp)
 <figures//detect_result/8.jpg>
- [55] [56]) (./data/chap05.tex [57]
+[54] [55] [56]) (./data/chap05.tex [57]
 第5章
 [58
 
@@ -1680,10 +1679,10 @@ File: figures//discriminate.png Graphic file (type bmp)
 Missing character: There is no 𝛼 (U+1D6FC) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
 File: figures//sparse_attn.png Graphic file (type bmp)
 <figures//sparse_attn.png>
-[63] [64] [65]
+[63] [64]
 File: figures//cls_confuse.png Graphic file (type bmp)
 <figures//cls_confuse.png>
- [66] [67]
+ [65] [66] [67]
 File: figures//self_attn.png Graphic file (type bmp)
 <figures//self_attn.png>
 File: figures//sparse_select.png Graphic file (type bmp)
@@ -1705,20 +1704,10 @@ File: figures//tsne3.png Graphic file (type bmp)
 ]
 File: software_structure.jpg Graphic file (type bmp)
 <software_structure.jpg>
- [75]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[76]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+ [75] [76]
 File: console.png Graphic file (type bmp)
 <console.png>
-[77]
+ [77]
 File: figures//software/login.png Graphic file (type bmp)
 <figures//software/login.png>
 File: figures//software/update.png Graphic file (type bmp)
@@ -1770,15 +1759,15 @@ LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
 
 ]) (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CE6E094C8FE9184773DC82E32F6B33B4;15999.
+(rerunfilecheck)             Checksum: B637679A9B9F26A50887A2B2CF6629C8;15999.
  ) 
 Here is how much of TeX's memory you used:
  32328 strings out of 476179
  699829 string characters out of 5813073
- 1095428 words of memory out of 5000000
+ 1095440 words of memory out of 5000000
  52409 multiletter control sequences out of 15000+600000
  479171 words of font info for 195 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  102i,16n,129p,1451b,2777s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (109 pages, 2012900 bytes).
+Output written on main.xdv (109 pages, 2012432 bytes).

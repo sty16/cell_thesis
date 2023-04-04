@@ -1,4 +1,4 @@
-\chapter{基于改进的RetianNet骨髓血细胞检测算法设计与实现}
+\chapter{基于改进的RetinaNet骨髓血细胞检测算法设计与实现}
 \section{引言}
 
 第三章中，我们对比了多个单阶段与双阶段检测网络在骨髓血细胞数据上的性能，综合考虑计算量，参数量与检测精度等因素，
@@ -310,7 +310,7 @@ $p_i^*$与$t_i^*$代表了真实类别与坐标。$L_{cls}$与$L_{reg}$为交叉
 
 \renewcommand{\algorithmicrequire}{\textbf{输入：}\unskip}
 \renewcommand{\algorithmicensure}{\textbf{输出：}\unskip}
-\begin{algorithm}[h]
+\begin{algorithm}[htbp]
   \caption{最优输运标签分配} % 名称
   \label{alg:alg_ota}
   \begin{algorithmic}[1]
@@ -395,7 +395,7 @@ $p_i^*$与$t_i^*$代表了真实类别与坐标。$L_{cls}$与$L_{reg}$为交叉
 从表中我们可以看到，本节提出的改进模型效果较好，在交并比为0.75的条件下，f1-score为0.9474，召回率为0.950，准确率为0.9448。
 随着交并比的逐渐增大，网络的准确率与召回率均开始下降，在交并比为0.95时，下降最为明显，平均检测精度只有0.176。因此，对于高精度的定位（IOU>0.9），模型检测性能仍有待提升，我们认为
 未来可以在数据量上进行扩充，此外在标注上进行更加精细化的校对。
-\begin{table}[htbp]
+\begin{table}[htb]
   \caption{改进RetinaNet骨髓血细胞检测结果}   
   \centering 
   \label{table:cell_det}
@@ -421,7 +421,19 @@ $p_i^*$与$t_i^*$代表了真实类别与坐标。$L_{cls}$与$L_{reg}$为交叉
 RetinaNet\cite{lin2017focal}、YOLOV3\cite{redmon2018yolov3}与DETR\cite{zhu2020deformable}等六种基于深度学习的主流目标检测网络，
 这些网络均使用在COCO数据集上预训练模型进行参数初始化，然后基于迁移学习在骨髓血细胞检测数据集上进行微调。表~\ref{table:cell_det_con}为不网络的平均检测精度对比，
 其中$AP_{50}$表示在交并比为0.5条件下的平均检测精度。
-\begin{table}[htbp]
+
+从表~\ref{table:cell_det_con}中我们可以看到，SSD512网络检测精度最差，这是由于VGG16骨干网络特征表达能力相比与ResNet等
+残差网络更差。在交并比为0.5的条件下，DERT网络的平均精度最高，本节提出的网络略低于DETR方法。
+在交并比为0.75与0.9的条件下，本节的方法均高于其他对比方法，特别是在交并比为0.9的条件下，本节方法 
+相比与次优的Cascade-RCNN方法提升了约6.93\%。该结果说明Cascade-RCNN通过级联RPN网络的方式，可以有效的
+提升候选框的定位质量，而本文提出的改进点将IOU交并比纳入到检测网络的推理阶段，也可以帮助网络找到定位精度更好
+的候选框。在网络的计算量与参数量方面，DETR的计算量最低，SSD512的参数量最少，本文提出的改进方法相比与基础RetinaNet
+方法计算量增加了3.8\%，参数量增加了1.58MB。总而言之，本节提出的改进RetinaNet方法在骨髓血细胞的检测精度上要由于其他方法，
+交并比为0.75条件下的平均检测精度提升了1.26\%。
+
+本节提出的改进模型在骨髓血细胞数据集上检测的可视化结果如图~\ref{fig:detect_res}所示，图中将置信度阈值大于0.5的骨髓血细胞以红色检测框标出，左上角的
+数字为置信度分数，从图中我们可以看到，该网络可以有效的对密集与黏连的血细胞区域进行检测。
+\begin{table}[htb]
   \caption{不同目标检测方法在骨髓血细胞测试集上的性能对比}   
   \centering 
   \label{table:cell_det_con}
@@ -440,19 +452,7 @@ RetinaNet\cite{lin2017focal}、YOLOV3\cite{redmon2018yolov3}与DETR\cite{zhu2020
     \bottomrule[1pt]      
   \end{tabular*} 
 \end{table}
-
-从表中我们可以看到，SSD512网络检测精度最差，这是由于VGG16骨干网络特征表达能力相比与ResNet等
-残差网络更差。在交并比为0.5的条件下，DERT网络的平均精度最高，本节提出的网络略低于DETR方法。
-在交并比为0.75与0.9的条件下，本节的方法均高于其他对比方法，特别是在交并比为0.9的条件下，本节方法 
-相比与次优的Cascade-RCNN方法提升了约6.93\%。该结果说明Cascade-RCNN通过级联RPN网络的方式，可以有效的
-提升候选框的定位质量，而本文提出的改进点将IOU交并比纳入到检测网络的推理阶段，也可以帮助网络找到定位精度更好
-的候选框。在网络的计算量与参数量方面，DETR的计算量最低，SSD512的参数量最少，本文提出的改进方法相比与基础RetinaNet
-方法计算量增加了3.8\%，参数量增加了1.58MB。总而言之，本节提出的改进RetinaNet方法在骨髓血细胞的检测精度上要由于其他方法，
-交并比为0.75条件下的平均检测精度提升了1.26\%。
-
-本节提出的改进模型在骨髓血细胞数据集上检测的可视化结果如图~\ref{fig:detect_res}所示，图中将置信度阈值大于0.5的骨髓血细胞以红色检测框标出，左上角的
-数字为置信度阈值，从图中我们可以看到，该网络可以有效的对密集与黏连的血细胞区域进行检测。
-\begin{figure}[htbp]
+\begin{figure}[htb]
 	\centering
   \begin{subfigure}{0.24\linewidth}
     \centering
