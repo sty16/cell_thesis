@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  4 APR 2023 20:23
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.9)  5 APR 2023 21:20
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1426,44 +1426,32 @@ Underfull \hbox (badness 1859) in paragraph at lines 140--140
 \TU/SimSun(0)/m/n/11.04124 存 在 较 多 中 性 颗
  []
 
-File: figures//cell_example/中性晚幼粒.jpg Graphic file (type bmp)
-<figures//cell_example/中性晚幼粒.jpg>
-
-Underfull \hbox (badness 2269) in paragraph at lines 148--148
-[]|\TU/SimSun(0)/m/n/11.04124 胞 体 类 圆 形，|
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 150--150
-\TU/SimSun(0)/m/n/11.04124 存 在 较 多 中 性 颗
- []
-
 File: figures//cell_example/嗜酸性.jpg Graphic file (type bmp)
 <figures//cell_example/嗜酸性.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--158
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
 []|\TU/SimSun(0)/m/n/11.04124 直 径 \TU/TimesNewRoman(0)/m/n/11.04124 15~20
  []
 
 
-Underfull \hbox (badness 1859) in paragraph at lines 160--160
+Underfull \hbox (badness 1859) in paragraph at lines 150--150
 \TU/SimSun(0)/m/n/11.04124 红 色 的 嗜 酸 性 颗
  []
 
 File: figures//cell_example/嗜碱性.jpg Graphic file (type bmp)
 <figures//cell_example/嗜碱性.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--168
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
 []|\TU/SimSun(0)/m/n/11.04124 直 径 \TU/TimesNewRoman(0)/m/n/11.04124 10~15
  []
 
 
-Underfull \hbox (badness 1859) in paragraph at lines 170--170
+Underfull \hbox (badness 1859) in paragraph at lines 160--160
 \TU/SimSun(0)/m/n/11.04124 态 不 一 深 紫 红 色
  []
 
 
-Overfull \hbox (9.24347pt too wide) in alignment at lines 41--172
+Overfull \hbox (9.24347pt too wide) in alignment at lines 41--162
  [] [] [] [] [] 
  []
 
@@ -1503,13 +1491,13 @@ File: figures//conv.jpg Graphic file (type bmp)
  [19]
 File: figures//pool.jpg Graphic file (type bmp)
 <figures//pool.jpg>
- [20] [21]
+ [20]
 File: figures//MVVM.jpg Graphic file (type bmp)
 <figures//MVVM.jpg>
- [22]
+ [21] [22]
 File: figures//django.jpg Graphic file (type bmp)
 <figures//django.jpg>
- [23]) (./data/chap03.tex [24]
+) (./data/chap03.tex [23] [24]
 第3章
 File: figures//faster_rcnn.jpg Graphic file (type bmp)
 <figures//faster_rcnn.jpg>
@@ -1590,7 +1578,7 @@ File: figures//det_confusion1.png Graphic file (type bmp)
 <figures//det_confusion1.png>
 File: figures//features.jpg Graphic file (type bmp)
 <figures//features.jpg>
- [39] [40]) (./data/chap04.tex [41]
+ [39]) (./data/chap04.tex [40] [41]
 第4章
 File: figures//detect_problem.jpg Graphic file (type bmp)
 <figures//detect_problem.jpg>
@@ -1609,11 +1597,12 @@ File: figures//cell1.jpg Graphic file (type bmp)
 <figures//cell1.jpg>
 File: figures//cell2.jpg Graphic file (type bmp)
 <figures//cell2.jpg>
+ [45]
 File: figures//cls_reg1.jpg Graphic file (type bmp)
 <figures//cls_reg1.jpg>
 File: figures//cls_reg2.jpg Graphic file (type bmp)
 <figures//cls_reg2.jpg>
- [45] [46]
+ [46]
 File: figures//atss1.jpg Graphic file (type bmp)
 <figures//atss1.jpg>
 File: figures//atss2.jpg Graphic file (type bmp)
@@ -1621,7 +1610,7 @@ File: figures//atss2.jpg Graphic file (type bmp)
  [47] [48]
 File: figures//ota.jpg Graphic file (type bmp)
 <figures//ota.jpg>
- [49]
+
 Underfull \hbox (badness 1783) in paragraph at lines 252--254
 []\TU/SimSun(0)/m/n/12.045 最 优 输 运 问 题 可 以 在 多 项 式 的 时 间 复 杂 度 内，|  通 过 \TU/TimesNewRoman(0)/m/n/12.045 Sinkhorn \TU/SimSun(0)/m/n/12.045 快 速 迭 代
  []
@@ -1636,7 +1625,7 @@ Underfull \hbox (badness 4441) in paragraph at lines 252--254
 [] [][] [][] []$ \TU/SimSun(0)/m/n/12.045 上 述 问 题 添 加 了 拉 格 朗 日 算 子 和 扰 动 项 的 形 式 如
  []
 
-[50]
+[49] [50]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 314.
  [51] [52] [53]
 Overfull \hbox (9.37512pt too wide) in alignment at lines 440--453
@@ -1736,13 +1725,13 @@ File: figures//software/patient.png Graphic file (type bmp)
 
 ] [88] [89]
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 427.
+(Font)              scaled to size 7.00075pt on input line 435.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 427.
+(Font)              scaled to size 5.00053pt on input line 435.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 427.
+(Font)              scaled to size 6.99925pt on input line 435.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 427.
+(Font)              scaled to size 4.99947pt on input line 435.
  [90]) (./data/acknowledgements.tex [91]) [92
 
 
@@ -1762,12 +1751,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B637679A9B9F26A50887A2B2CF6629C8;15999.
  ) 
 Here is how much of TeX's memory you used:
- 32328 strings out of 476179
- 699829 string characters out of 5813073
- 1095440 words of memory out of 5000000
- 52409 multiletter control sequences out of 15000+600000
+ 32330 strings out of 476179
+ 699863 string characters out of 5813073
+ 1094509 words of memory out of 5000000
+ 52411 multiletter control sequences out of 15000+600000
  479171 words of font info for 195 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
- 102i,16n,129p,1451b,2777s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,16n,129p,1451b,2779s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (109 pages, 2012432 bytes).
+Output written on main.xdv (109 pages, 2012316 bytes).

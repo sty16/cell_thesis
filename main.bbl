@@ -1,4 +1,4 @@
-\begin{thebibliography}{77}
+\begin{thebibliography}{78}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -224,6 +224,14 @@ Ghosh M, Das D, Mandal S, et~al.
   morphometry\allowbreak[C]//\allowbreak
 2010 IEEE Students Technology Symposium (TechSym).
 \newblock IEEE, 2010: 59-66.
+
+\bibitem[Rezatofighi et~al.(2011)Rezatofighi and
+  Soltanian-Zadeh]{2011Automatic}
+Rezatofighi S~H, Soltanian-Zadeh H.
+\newblock Automatic recognition of five types of white blood cells in
+  peripheral blood\allowbreak[J].
+\newblock Computerized Medical Imaging and Graphics, 2011, 35\allowbreak (4):
+  333-343.
 
 \bibitem[孙凯\ 等(2020)孙凯, 姚旭峰, and 黄钢]{sunkai2020}
 孙凯, 姚旭峰, 黄钢.
