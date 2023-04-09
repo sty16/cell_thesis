@@ -45,7 +45,7 @@
 \contentsline {chapter}{\numberline {第4章}基于改进的RetinaNet骨髓血细胞检测算法设计与实现}{42}{chapter.4}%
 \contentsline {section}{\numberline {4.1}引言}{42}{section.4.1}%
 \contentsline {section}{\numberline {4.2}改进的RetinaNet骨髓血细胞检测网络}{42}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}基于全局注意的路径聚合网络}{43}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.1}基于全局注意力的路径聚合网络}{43}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}IOU预测分支}{45}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}训练标签分配策略}{46}{subsection.4.2.3}%
 \contentsline {subsubsection}{\numberline {4.2.3.1}硬标签分配策略}{47}{subsubsection.4.2.3.1}%

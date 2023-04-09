@@ -171,7 +171,7 @@ Vision Transformer的编码器由$L$个结构相同的编码模块堆叠而成�
 由于高层次特征的抽象性，其注意力图不一定能代表对应输入图像块的重要性，
 因此我们利用先前所有编码模块的注意力图信息并结合压缩激发模块来自主学习每个注意力图的权重。
 该模块首先将注意力图全局平均池化为一个描述符，接着使用两个全连接层建模注意力图间的相关性，
-最终得到每个注意力图的权重值$\mathbf{\alpha}$。将权重值归一化后与注意力图加权求和得到最终的注意力权重$\boldsymbol{A}_{\mathrm{attn}}$，
+最终得到每个注意力图的权重值$\alpha$。将权重值归一化后与注意力图加权求和得到最终的注意力权重$\boldsymbol{A}_{\mathrm{attn}}$，
 如式~\ref{eq:attn_se}所示。整个流程如图~\ref{fig:sparse_attn}所示：
 \begin{equation}
   \boldsymbol{A}_{\mathrm{attn}}=\sum_{i=1}^{L-1} \alpha_{i} \boldsymbol{A}_{i}
@@ -215,7 +215,7 @@ $\boldsymbol{A}_{\mathrm{attn}}$包含了低层特征与高层特征全部的注
 为了进一步增加网络提取特征的类内相似性与类间差异性，
 我们加入了对比损失$L_{\text {con }}$\cite{hadsell2006dimensionality}。对比损失使得不同标签对应的分类特征相似度最小，
 相同标签的分类特征相似度最大。为了使正负样本均衡，防止损失被简单的负样本（相似度很小的不同类别特征）所支配，
-我们引入阈值$t_{\text {con }}$，只有不同类别样本特征的相似度大于$t_{\text {con }}$时才计入到损失中，当输入数据的批大小为$N$时，
+我们引入阈值$t_{\text {con }}$，只有不同类别样本特征的相似度大于$t_{\text {con }}$时才计入到损失中，当输入数据的批量大小为$N$时，
 对比损失定义如式~\ref{eq:loss_con}所示：
 \begin{equation}
   L_{\text {con }}=\frac{1}{N^{2}} \sum_{i=1}^{N}\left[\sum_{j: y_{i}=y_{j}}\left(1-\frac{\mathbf{z}_{i} \cdot \mathbf{z}_{j}}{\left\|\mathbf{z}_{i}\right\|\left\|\mathbf{z}_{j}\right\|}\right)+\sum_{j: y_{i} \neq y_{j}} \max \left(\frac{\mathbf{z}_{i} \cdot \mathbf{z}_{j}}{\left\|\mathbf{z}_{i}\right\|\left\|\mathbf{z}_{j}\right\|}-t_{\text {con }}, 0\right)\right]
@@ -245,7 +245,7 @@ $\boldsymbol{A}_{\mathrm{attn}}$包含了低层特征与高层特征全部的注
     \toprule[2pt]
     序号 & 血细胞类别名  &  图像数量 & 是否选择 & 数据增强 \\
     \midrule[1.5pt] 
-        1 & 分页核嗜中性粒细胞（NGS） & 8484 & √ & 1000  \\ 
+        1 & 分叶核嗜中性粒细胞（NGS） & 8484 & √ & 1000  \\ 
         2 & 杆状核嗜中性粒细胞（NGB）  & 109 & √ & 545  \\ 
         3 & 典型淋巴细胞（LYT） & 3937 & √ & 1000  \\ 
         4 & 非典型淋巴细胞（LYA） & 11 & × &   \\ 
