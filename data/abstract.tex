@@ -3,37 +3,41 @@
 % 中英文摘要和关键字
 
 \begin{abstract}
-  论文的摘要是对论文研究内容和成果的高度概括。
-  摘要应对论文所研究的问题及其研究目的进行描述，对研究方法和过程进行简单介绍，对研究成果和所得结论进行概括。
-  摘要应具有独立性和自明性，其内容应包含与论文全文同等量的主要信息。
-  使读者即使不阅读全文，通过摘要就能了解论文的总体内容和主要成果。
+白血病是一种常见多发且较为凶险的血液疾病，其早期发现与治疗对延长患者生存时间、改善患者生活质量至关重要。
+目前白血病的临床诊断主要依靠医师对骨髓穿刺涂片进行形态学检查。
+人工镜检存在着繁琐费时、结果主观性强等缺点，并且培养病理诊断医师要耗费大量时间。
+近年来，计算机科学技术高速发展，人工智能技术被广泛应用于医学领域，其高效的计算与分析能力为疾病诊疗
+带来了深刻的变革。目前诸多研究学者开始研究基于深度学习的方法来自动定位与识别血细胞，上述研究主要基于
+通用的目标检测识别网络，缺少针对骨髓血细胞特性的改进。因此，我们与邃蓝智能科技 (上海) 有限公司进行合作，
+针对骨髓血细胞检测与识别关键问题进行研究，提高骨髓血细胞检测识别算法精度，并编写相关软件，为医生的临床诊断提供参考依据。
 
-  论文摘要的书写应力求精确、简明。
-  切忌写成对论文书写内容进行提要的形式，尤其要避免“第 1 章……；第 2 章……；……”这种或类似的陈述方式。
+首先，在数据方面，我们采用主动学习技术实现了骨髓血细胞数据标注迭代框架，并在医生的协作下快速完成了多批次骨髓血细胞
+边界框与类别信息的标注。在骨髓血细胞检测方面，我们对比了多种单阶段与双阶段目标检测网络，将性能优异RetinaNet作为基线模型。
+我们对比了RetinaNet网络在仅检测与检测识别一体化任务上准确率的差异，并确定了先检测再识别的骨髓血细胞处理流程。
+针对密集、堆叠与黏连骨髓血细胞区域的漏检、错检等问题，我们提出了全局注意力自下而上路径聚合网络结构，IOU预测分支与
+最优输运的全局最优标签分配策略，改进方法平均检测精度相比于主流目标检测网络提升了1\% 以上，达到了较为先进的性能。
+在骨髓血细胞识别方面，我们基于Vision Transformer网络实现了骨髓血细胞的细粒度识别。
+在该方法中，我们采用基于滑动窗的图像块划分方法，保留局部细节信息。此外，我们提出了辨识性区域选择模块，引导网络对细胞核，
+细胞质等细微差异区域进行聚焦。引入了对比损失，约束骨髓血细胞的类间差异性与类内聚集性。
+该方法在慕尼黑骨髓血细胞数据集上的平均分类准确率为 91.96\%，相比于基线模型提升了0.74\%。
+最后，我们基于B/S架构设计并开发了骨髓血细胞检测与识别软件，将上述骨髓血细胞检测识别算法进行落地部署，
+软件可以自动完成血细胞的定位与分类计数，用于辅助医生临床诊断。
 
-  关键词是为了文献标引工作、用以表示全文主要内容信息的单词或术语。
-  关键词不超过 5 个，每个关键词中间用分号分隔。
+
+
 
   % 关键词用“英文逗号”分隔，输出时会自动处理为正确的分隔符
   \thusetup{
-    keywords = {关键词 1, 关键词 2, 关键词 3, 关键词 4, 关键词 5},
+    keywords = {医学图像分析, 骨髓血细胞, 深度学习, 检测识别},
   }
 \end{abstract}
 
 \begin{abstract*}
-  An abstract of a dissertation is a summary and extraction of research work and contributions.
-  Included in an abstract should be description of research topic and research objective, brief introduction to methodology and research process, and summary of conclusion and contributions of the research.
-  An abstract should be characterized by independence and clarity and carry identical information with the dissertation.
-  It should be such that the general idea and major contributions of the dissertation are conveyed without reading the dissertation.
+  Leukemia is a common, multiple and dangerous blood disease, whose early diagnosis and treatment are
+crucial to prolong the survival time and improve the quality of patients' live. 
+At present, the clinical diagnosis of leukemia mainly relies on the morphological examination of bone marrow aspiration smear by physicians.
 
-  An abstract should be concise and to the point.
-  It is a misunderstanding to make an abstract an outline of the dissertation and words “the first chapter”, “the second chapter” and the like should be avoided in the abstract.
-
-  Keywords are terms used in a dissertation for indexing, reflecting core information of the dissertation.
-  An abstract may contain a maximum of 5 keywords, with semi-colons used in between to separate one another.
-
-  % Use comma as separator when inputting
   \thusetup{
-    keywords* = {keyword 1, keyword 2, keyword 3, keyword 4, keyword 5},
+    keywords* = {Medical Image Analysis, Bone Marrow Blood Cells, Deep Learning, Detection and Recognition},
   }
 \end{abstract*}
