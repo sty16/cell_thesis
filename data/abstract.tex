@@ -17,11 +17,11 @@
 针对密集、堆叠与黏连骨髓血细胞区域的漏检、错检等问题，我们提出了全局注意力自下而上路径聚合网络结构，IOU预测分支与
 最优输运的全局最优标签分配策略，改进方法平均检测精度相比于主流目标检测网络提升了1\% 以上，达到了较为先进的性能。
 在骨髓血细胞识别方面，我们基于Vision Transformer网络实现了骨髓血细胞的细粒度识别。
-在该方法中，我们采用基于滑动窗的图像块划分方法，保留局部细节信息。此外，我们提出了辨识性区域选择模块，引导网络对细胞核，
+在该方法中，我们采用基于滑动窗的图像块划分方法，保留局部细节信息。此外，我们提出了辨识性区域选择模块，引导网络对细胞核、
 细胞质等细微差异区域进行聚焦。引入了对比损失，约束骨髓血细胞的类间差异性与类内聚集性。
 该方法在慕尼黑骨髓血细胞数据集上的平均分类准确率为 91.96\%，相比于基线模型提升了0.74\%。
 最后，我们基于B/S架构设计并开发了骨髓血细胞检测与识别软件，将上述骨髓血细胞检测识别算法进行落地部署，
-软件可以自动完成血细胞的定位与分类计数，用于辅助医生临床诊断。
+软件可以自动完成骨髓血细胞的定位与分类计数，用于辅助医生临床诊断。
 
 
 
@@ -33,9 +33,37 @@
 \end{abstract}
 
 \begin{abstract*}
-  Leukemia is a common, multiple and dangerous blood disease, whose early diagnosis and treatment are
+Leukemia is a common, multiple and dangerous blood disease, whose early diagnosis and treatment are
 crucial to prolong the survival time and improve the quality of patients' live. 
 At present, the clinical diagnosis of leukemia mainly relies on the morphological examination of bone marrow aspiration smear by physicians.
+Manual microscopic examination is very cumbersome and time-consuming and the results are highly subjective. In addition, it takes a lot of time to train experienced pathologists.
+In recent years, with the rapid development of computer science and technology, artificial intelligence technology has been widely used in the medical field. Its efficient computing and analysis capabilities 
+have brought profound changes to the diagnosis and treatment of diseases. 
+At present, many researchers have begun to study methods based on deep learning to automatically locate and identify blood cells. 
+The above researches are mainly based on general-purpose target detection and recognition networks 
+and lack improvements for the characteristics of bone marrow blood cells.
+Therefore, we cooperate with Deep Voxel Intelligent Technology to research the key issues of bone marrow blood cell 
+detection and recognition. We aims to improve the accuracy of bone marrow blood cell detection and recognition and make software to provide reference for doctors' clinical diagnosis.
+
+First, in terms of dataset, we used active learning technology to realize the iterative framework for bone marrow blood cell data 
+annotations and quickly completed the annotations of bone marrow blood cell dataset with the cooperation of doctors.
+In terms of bone marrow blood cell detection, we compared a variety of one-stage and two-stage target detection networks. 
+We finally used RetinaNet as the baseline model. We compared the accuracy of the RetinaNet network between the task of only detection and the integration task of detection and recognition
+and determined the processing flow of detection first and then recognition.
+Aiming at the missed detection and wrong detection of stacked and cohesive bone marrow blood cell regions,
+we propose a global attention bottom-up path aggregation structure, IOU prediction branches and optimal transport label assignment strategy.
+Compared with the mainstream target detection network, our method
+improved the average detection accuracy by more than one percent and achieved state of the art.
+In terms of bone marrow blood cell recognition, we realized the fine-grained recognition of bone marrow blood cells based on the Vision Transformer network.
+In this method, we adopt a sliding window-based image patch division method to preserve local detail information. 
+In addition, we propose a discriminative region selection module to guide the network to focus on nuanced regions such as nucleus and cytoplasm. 
+A contrast loss is introduced to constrain the inter-class diversity and intra-class aggregation of bone marrow blood cells.
+The average classification accuracy of this method on the Munich bone marrow blood cell dataset is 91.96 percent, 
+which is 0.74 percent higher than the baseline model.
+Finally, we designed and developed the bone marrow blood cell detection and recognition software based on the B/S architecture.
+We deployed the above bone marrow blood cell detection and recognition algorithm in this software. 
+The software can automatically complete the positioning, 
+classification and counting of bone marrow blood cells to assist doctors in clinical diagnosis.
 
   \thusetup{
     keywords* = {Medical Image Analysis, Bone Marrow Blood Cells, Deep Learning, Detection and Recognition},

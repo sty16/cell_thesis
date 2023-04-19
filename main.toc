@@ -1,9 +1,9 @@
 \contentsline {chapter}{摘\hskip 1em\relax 要}{I}{section*.9}%
 \contentsline {chapter}{Abstract}{II}{section*.11}%
-\contentsline {chapter}{目\hskip 1em\relax 录}{III}{section*.13}%
-\contentsline {chapter}{插图清单}{VI}{section*.15}%
-\contentsline {chapter}{附表清单}{VIII}{section*.17}%
-\contentsline {chapter}{符号和缩略语说明}{IX}{section*.19}%
+\contentsline {chapter}{目\hskip 1em\relax 录}{IV}{section*.13}%
+\contentsline {chapter}{插图清单}{VII}{section*.15}%
+\contentsline {chapter}{附表清单}{IX}{section*.17}%
+\contentsline {chapter}{符号和缩略语说明}{X}{section*.19}%
 \contentsline {chapter}{\numberline {第1章}绪论}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}研究背景与意义}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}研究现状与进展}{2}{section.1.2}%
