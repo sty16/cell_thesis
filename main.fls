@@ -1272,6 +1272,7 @@ INPUT data/chap01.tex
 INPUT ./data/chap01.tex
 INPUT ./data/chap01.tex
 INPUT data/chap01.tex
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
 INPUT ./figures//structure.jpg
 INPUT ./figures//structure.jpg
 INPUT figures//structure.jpg

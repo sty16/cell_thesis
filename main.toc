@@ -67,7 +67,7 @@
 \contentsline {section}{\numberline {5.2}改进的Vision Transformer骨髓血细胞识别网络}{59}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}重叠图像块划分}{59}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}编码层}{61}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}稀疏注意力模块}{62}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.3}稀疏注意力模块}{63}{subsection.5.2.3}%
 \contentsline {subsection}{\numberline {5.2.4}损失函数}{64}{subsection.5.2.4}%
 \contentsline {section}{\numberline {5.3}实验结果分析}{65}{section.5.3}%
 \contentsline {subsection}{\numberline {5.3.1}数据集介绍}{65}{subsection.5.3.1}%
@@ -77,7 +77,7 @@
 \contentsline {subsubsection}{\numberline {5.3.4.1}图像块划分方法}{70}{subsubsection.5.3.4.1}%
 \contentsline {subsubsection}{\numberline {5.3.4.2}稀疏注意力模块}{71}{subsubsection.5.3.4.2}%
 \contentsline {subsubsection}{\numberline {5.3.4.3}对比损失}{71}{subsubsection.5.3.4.3}%
-\contentsline {section}{\numberline {5.4}小结}{72}{section.5.4}%
+\contentsline {section}{\numberline {5.4}小结}{73}{section.5.4}%
 \contentsline {chapter}{\numberline {第6章}骨髓血细胞检测与识别软件设计}{74}{chapter.6}%
 \contentsline {section}{\numberline {6.1}需求分析}{74}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}功能需求分析}{74}{subsection.6.1.1}%

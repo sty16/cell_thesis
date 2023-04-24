@@ -18,6 +18,14 @@
 \newblock 我国白血病流行病学调查的现状和对策\allowbreak[J].
 \newblock 临床血液学杂志, 2009, 22\allowbreak (2): 166-167.
 
+\bibitem[孙天宇\ 等(2022)孙天宇, 朱庆涛, 杨健, and
+  曾亮]{SWGC202206005}
+孙天宇, 朱庆涛, 杨健, 等.
+\newblock 基于改进Vision
+  Transformer的血细胞图像识别方法研究\allowbreak[J/OL].
+\newblock 生物医学工程学杂志, 2022, 39\allowbreak (6): 1097-1107.
+\newblock DOI: \doi{10.7507/1001-5515.202203008}.
+
 \bibitem[Musto et~al.(2019)Musto, Statuto, Valvano, Grieco, Nozza, Vona,
   Bochicchio, La~Rocca, and D’Auria]{musto2019update}
 Musto P, Statuto T, Valvano L, et~al.
@@ -425,14 +433,6 @@ Computer Vision--ECCV 2020: 16th European Conference, Glasgow, UK, August
 Villani C, et~al.
 \newblock Optimal transport: old and new: volume 338\allowbreak[M].
 \newblock Springer, 2009.
-
-\bibitem[孙天宇\ 等(2022)孙天宇, 朱庆涛, 杨健, and
-  曾亮]{SWGC202206005}
-孙天宇, 朱庆涛, 杨健, 等.
-\newblock 基于改进Vision
-  Transformer的血细胞图像识别方法研究\allowbreak[J/OL].
-\newblock 生物医学工程学杂志, 2022, 39\allowbreak (6): 1097-1107.
-\newblock DOI: \doi{10.7507/1001-5515.202203008}.
 
 \bibitem[Hadsell et~al.(2006)Hadsell, Chopra, and
   LeCun]{hadsell2006dimensionality}
