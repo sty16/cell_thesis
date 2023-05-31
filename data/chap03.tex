@@ -419,7 +419,9 @@ Faster-RCNN、Cascade-RCNN、RetinaNet与YOLOV3四种网络在输入图像大小
 从表中可以看出，所有检测器针对单核细胞(Mono)的检测效果较差。$\text{AP}$值均小于$0.5$，
 针对有核红细胞的检测效果最好，$\text{AP}$值大于$0.85$，单核细胞在数据集中样本数量最少，有核红细胞在数据集中的
 样本数量最多，因此网络学习的效果与数据集中的样本量有关，需要增加类别较差样本的数量来提升该类血细胞的检测精度。
-平均检测精度（mAP）最高的网络为双阶段网络Cascade-RCNN，单阶网络RetinaNet次之，Faster-RCNN检测精度最差。RetinaNet在多类血细胞如原始细胞、浆细胞、
+平均检测精度（mAP）最高的网络为双阶段网络Cascade-RCNN，
+我们认为Cascade-RCNN中多个级联的区域推荐网络可以筛选出质量更好的候选框，因此检测性能最好。
+单阶网络RetinaNet次之，这与单阶段网络生成密集的候选框，部分框质量较差有关，Faster-RCNN检测精度最差。RetinaNet在多类血细胞如原始细胞、浆细胞、
 红细胞等平均检测精度最高，虽然平均检测精度稍低于Cascade-RCNN，但相比于Cascade-RCNN的计算量更少与速度更快，具有更高的性价比。
 
 \begin{figure}[htbp]                     

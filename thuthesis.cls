@@ -2492,7 +2492,7 @@
   \thu@titlepage@info@tabular{2.8cm}{2.8cm}{1.34cm}{%
     \thu@info@item{培养单位}{}{\thu@department}%
     %\thu@info@item{工程领域}{}{\thu@discipline}%
-    \thu@info@item{专业领域}{}{\thu@discipline}%
+    %\thu@info@item{专业领域}{}{\thu@discipline}%
     \thu@info@item{申请人}{\thu@name@title}{\thu@author}%
     \thu@info@item{学号}{}{\thu@student@id}%
     \thu@info@item{指导教师}{\thu@name@title}{\thu@supervisor}%
